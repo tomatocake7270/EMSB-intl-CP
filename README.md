@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is the cross-platform version of EMSB Intl App
 
 ## Available Scripts
 
