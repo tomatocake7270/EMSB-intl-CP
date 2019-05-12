@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Media } from 'reactstrap';
+import QcEdu from './AdmissionQcEduComp';
 
 function AdmissionS3(props) {
     return(
@@ -95,6 +96,7 @@ function AdmissionS3(props) {
                 </Row>
 
             </Container>
+            <QcEdu/>
         </div>
     );
 }

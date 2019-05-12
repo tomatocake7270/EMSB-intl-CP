@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Media } from 'reactstrap';
+import QcEdu from './AdmissionQcEduComp';
 
 function AdmissionS2(props) {
     return(
@@ -117,8 +118,8 @@ function AdmissionS2(props) {
                 </Row>
 
             </Container>
+            <QcEdu/>
         </div>
     );
 }
-
 export default AdmissionS2;
