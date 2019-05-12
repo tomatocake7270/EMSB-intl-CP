@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Media } from 'reactstrap';
 
-function AdmissionS2(props) {
+function AdmissionS3(props) {
     return(
         <div className="text-center">
             <Container className="my-3 border-bottom border-primary pb-1">
@@ -18,7 +18,7 @@ function AdmissionS2(props) {
                     </Media>
                     <Media className="mx-3">
                         <Media left href="/admission/step2">
-                            <Media object src="/assets/images/admission-step-selected.png" alt="selected" className="img-fluid"/>
+                            <Media object src="/assets/images/admission-step-deselected.png" alt="selected" className="img-fluid"/>
                         </Media>
                         <Media body>
                             <Media heading className="mt-1 ml-2">
@@ -28,7 +28,7 @@ function AdmissionS2(props) {
                     </Media>
                     <Media className="mx-3">
                         <Media left href="/admission/step3">
-                            <Media object src="/assets/images/admission-step-deselected.png" alt="selected" className="img-fluid"/>
+                            <Media object src="/assets/images/admission-step-selected.png" alt="selected" className="img-fluid"/>
                         </Media>
                         <Media body>
                             <Media heading className="mt-1 ml-2">
@@ -43,41 +43,43 @@ function AdmissionS2(props) {
                 <Row>
                     {/* className="border border-primary rounded" */}
                     <Col md="6">  
-                        <div className="d-flex flex-column align-items-center text-left mt-2">
-                            <Media className="my-2">
+                        <div className="d-flex flex-column align-items-start text-left mt-2">
+                            <p>After receiving the CAQ, the Custodian of the Student  (for those requiring custodianship refer to Home Stay) will come to the EMSB with:</p>
+                            <Media className="my-1">
                                 <Media left href="#">
                                     <Media object src="/assets/images/admission-check.png" alt="checkmark" className="img-fluid admission-checkmark" />
                                 </Media>
                                 <Media body className="ml-2">
-                                    <p>The Parent/Guardian/Agency will then start the process. (Allow 6 - 20 weeks)</p>
+                                    <p>The CAQ</p>
                                 </Media>
                             </Media>
-                            <Media className="mb-2">
+                            <Media className="mb-1">
                                 <Media left href="#">
                                     <Media object src="/assets/images/admission-check.png" alt="checkmark" className="img-fluid admission-checkmark" />
                                 </Media>
                                 <Media body className="ml-2">
-                                    <p>Apply for CAQ from Immigration, Diversité et Inclusion Québec: by first register online and pay the fee and then mail the documents to designated address.</p>
+                                    <p>The birth certificate of the student showing parents names (in their mother tongue  and translated into either English or French).</p>
                                 </Media>
                             </Media>
-                            <Media className="mb-2">
+                            <Media className="mb-1">
                                 <Media left href="#">
                                     <Media object src="/assets/images/admission-check.png" alt="checkmark" className="img-fluid admission-checkmark" />
                                 </Media>
                                 <Media body className="ml-2">
-                                    <p>With CAQ in hand, then apply for Study Permit from Canadian Federal Government through the online system. No mailing needed.</p>
+                                    <p>A Certified Cheque or Money Order payable to the EMSB to cover the full period the student will attend school. </p>
                                 </Media>
                             </Media>
+                            <p>We will then complete the registration and apply for the Certificate of Eligibility for the student to attend an English School. ( Allow 3 - 4 weeks)</p>
                         </div>
                     </Col>
                     <Col md="6">
-                        <div className="d-flex flex-column align-items-start text-left my-4 pt-2 pl-3 border border-primary rounded">
+                        <div className="d-flex flex-column align-items-start text-left my-3 pt-2 pl-3 border border-primary rounded">
                             <Media>
                                 <Media left href="#">
                                     <Media object src="/assets/images/admission-link.png" alt="link" className="img-fluid admission-link-icon" />
                                 </Media>
                                 <Media body className="ml-2">
-                                    <p>Steps to Apply for CAQ</p>
+                                    <p>Education Cost in Quebec</p>
                                 </Media>
                             </Media>
                             <Media>
@@ -85,31 +87,7 @@ function AdmissionS2(props) {
                                     <Media object src="/assets/images/admission-link.png" alt="link" className="img-fluid admission-link-icon" />
                                 </Media>
                                 <Media body className="ml-2">
-                                    <p>CAQ Online Application Portal</p>
-                                </Media>
-                            </Media>
-                            <Media>
-                                <Media left href="#">
-                                    <Media object src="/assets/images/admission-link.png" alt="link" className="img-fluid admission-link-icon" />
-                                </Media>
-                                <Media body className="ml-2">
-                                    <p>CAQ Application Checklist (non-adult)</p>
-                                </Media>
-                            </Media>
-                            <Media>
-                                <Media left href="#">
-                                    <Media object src="/assets/images/admission-link.png" alt="link" className="img-fluid admission-link-icon" />
-                                </Media>
-                                <Media body className="ml-2">
-                                    <p>Study Permit Online Application Portal</p>
-                                </Media>
-                            </Media>
-                            <Media>
-                                <Media left href="#">
-                                    <Media object src="/assets/images/admission-link.png" alt="link" className="img-fluid admission-link-icon" />
-                                </Media>
-                                <Media body className="ml-2">
-                                    <p>Study Permit Application Checklist</p>
+                                    <p>Canada Homestay Network</p>
                                 </Media>
                             </Media>
                         </div>
@@ -121,4 +99,4 @@ function AdmissionS2(props) {
     );
 }
 
-export default AdmissionS2;
+export default AdmissionS3;

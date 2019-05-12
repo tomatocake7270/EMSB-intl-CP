@@ -27,7 +27,7 @@ function Admission(props) {
                         </Media>
                     </Media>
                     <Media className="mx-3">
-                        <Media left href="#">
+                        <Media left href="/admission/step3">
                             <Media object src="assets/images/admission-step-deselected.png" alt="selected" className="img-fluid"/>
                         </Media>
                         <Media body>
