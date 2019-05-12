@@ -36,3 +36,16 @@
   height: auto;
   /* margin: 0 0 20px 0; */
 }
+
+.admission-checkmark {
+  width: 40px;
+  height: auto;
+}
+.admission-form-icon {
+  width: 40px;
+  height: auto;
+}
+.admission-link-icon {
+  width: 30px;
+  height: auto;
+}

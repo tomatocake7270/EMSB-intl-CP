@@ -33,8 +33,7 @@ function Schools(props) {
                 </Row>
             </Container>
 
-            <Container className="my-4">
-                
+            <Container className="my-4">                
                 <Row className="my-5">
                     <Col>
                         <img src="assets/images/schoolLogos/FACE.png" width="120px" className="img-fluid" alt="FACE School"></img>

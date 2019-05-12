@@ -10,7 +10,7 @@ function Footer(props) {
                     <Col md={{ size: 5, offset: 1}}>
                         <Media>
                             <Media left href="#">
-                                <Media object src="assets/images/EMSB-intl-logo.png" alt="EMSB" className="img-fluid emsb-footer-logo"/>
+                                <Media object src="/assets/images/EMSB-intl-logo.png" alt="EMSB" className="img-fluid emsb-footer-logo"/>
                             </Media>
                             <Media body>
                                 <Media heading className="mt-2">

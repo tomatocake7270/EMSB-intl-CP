@@ -21,8 +21,8 @@ class Header extends React.Component {
     render() {
         return(
             <React.Fragment>
-                <Navbar color="light" light expand="md">
-                    <NavbarBrand href="/">ESMB International</NavbarBrand>
+                <Navbar color="light" light expand="md" sticky="top">
+                    <NavbarBrand href="/">EMSB International Students</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from './HomeComp';
 import Admission from './AdmissionComp';
+import AdmissionS2 from './AdmissionStep2Comp';
 import Schools from './SchoolsComp';
 import Students from './StudentsComp';
 import Contacts from './ContactsComp';
@@ -51,6 +52,11 @@ class Main extends React.Component {
                 <Contacts></Contacts>
             );
         }
+        const AdmissionS2Page = () => {
+            return (
+                <AdmissionS2></AdmissionS2>
+            )
+        }
         return(
             <div>
                 <Header />
@@ -60,6 +66,7 @@ class Main extends React.Component {
                     <Route exact path="/schools"    component={SchoolsPage}></Route>
                     <Route exact path="/students"   component={StudentsPage}></Route>
                     <Route exact path="/contacts"   component={ContactsPage}></Route>
+                    <Route exact path="/admission/step2"    component={AdmissionS2Page}></Route>
                     <Redirect to="/home"></Redirect>
                 </Switch>
                 <Footer />
