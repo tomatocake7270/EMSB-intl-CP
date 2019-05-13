@@ -46,21 +46,20 @@ function Students() {
             </Container>
             <Container>
                 <div className="d-flex justify-content-around my-3 py-2 border border-primary rounded">
-                    <RenderList iconUrl = {listInfo.fieldTripReg.iconUrl}
-                                altText = {listInfo.fieldTripReg.altText}
-                                heading = {listInfo.fieldTripReg.heading} />
-                    <RenderList iconUrl = {listInfo.fieldTripFAQ.iconUrl}
-                                altText = {listInfo.fieldTripFAQ.altText}
-                                heading = {listInfo.fieldTripFAQ.heading} />
+                    <Row className="my-1">
+                        <Col md="auto" className="ml-4">
+                            <RenderList iconUrl = {listInfo.fieldTripReg.iconUrl}
+                                        altText = {listInfo.fieldTripReg.altText}
+                                        heading = {listInfo.fieldTripReg.heading} />
+                        </Col>
+                        <Col md="auto" className="ml-4">
+                            <RenderList iconUrl = {listInfo.fieldTripFAQ.iconUrl}
+                                        altText = {listInfo.fieldTripFAQ.altText}
+                                        heading = {listInfo.fieldTripFAQ.heading} />
+                        </Col>                
+                    </Row>
                 </div>
-                {/* <Row className="my-1">
-                    <Col md="6">
-                        
-                    </Col>
-                    <Col md="6">
-                        
-                    </Col>                
-                </Row> */}
+                
             </Container>
         </div>
     )
