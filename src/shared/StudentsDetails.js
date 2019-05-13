@@ -26,6 +26,34 @@ export const titleInfo = {
 }
 
 export const cardInfo = {
+    ziplining: {
+        imgUrl: "/assets/images/fieldTrips/ziplining.jpg",
+        iconUrl: "/assets/images/fieldTrips/ziplining-bg.png",
+        altText: "Ziplining",
+        heading: "Abraska Ziplining",
+        location: "Marieville, Québec"
+    },
+    ski: {
+        imgUrl: "/assets/images/fieldTrips/ski.jpg",
+        iconUrl: "/assets/images/fieldTrips/ski-bg.png",
+        altText: "Ski",
+        heading: "Ski and Snowboarding",
+        location: "Mont Rinaud, Québec"
+    },
+    qcCity: {
+        imgUrl: "/assets/images/fieldTrips/qc-city.jpg",
+        iconUrl: "/assets/images/fieldTrips/qc-city-bg.png",
+        altText: "QC City",
+        heading: "Québec City and Ice Hotel",
+        location: "Québec City, Québec"
+    },
+    sugarShack: {
+        imgUrl: "/assets/images/fieldTrips/sugar-shack.jpg",
+        iconUrl: "/assets/images/fieldTrips/sugar-shack-bg.png",
+        altText: "Sugar Shack",
+        heading: "Sugar Shack",
+        location: "Sucrie de la Montagne, Québec"
+    },
     rosettaStone: {
         imgUrl: "/assets/images/fieldTrips/ziplining.jpg",
         iconUrl: "/assets/images/fieldTrips/ziplining-bg.png",

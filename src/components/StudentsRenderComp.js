@@ -23,22 +23,22 @@ export const RenderMedia = (props) => {
     )
 }
 
-export const RenderCard = ({ imgUrl, iconUrl, altText, heading }) => {
+export const RenderCard = (props) => {
     return (
         <Col md="6" className="my-1">
             <Card className="border rounded">
-                <CardImg top width="100%" src={imgUrl} alt={altText} className="img-fluid"/>
-                <CardBody className="bg-success">
+                <CardImg top width="100%" src={props.imgUrl} alt={props.altText} className="img-fluid"/>
+                <CardBody className="bg-primary">
                     <Media>
                         <Media left href="#">
-                            <Media object src={iconUrl} alt={altText} className="img-fluid students-field-trip-icon"/>
+                            <Media object src={props.iconUrl} alt={props.altText} className="img-fluid students-field-trip-icon"/>
                         </Media>
                         <Media body className="ml-2 mt-1">
                             <Media heading>
-                                {heading}
+                                {props.heading}
                             </Media>
                             <div className="d-flex justify-content-between">
-                                <p className="students-field-trip-location"></p>
+                                <p className="students-field-trip-location">{props.location}</p>
                                 <FontAwesomeIcon icon={ faInfoCircle } size="lg"/>
                             </div>
                         </Media>
