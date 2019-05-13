@@ -92,7 +92,7 @@ function StudentsStudy() {
                                 iconUrl = {cardInfo.vitalEnglish.iconUrl}
                                 altText = {cardInfo.vitalEnglish.altText}
                                 heading = {cardInfo.vitalEnglish.heading} />
-                </Row>
+                </Row>  
             </Container>
         </div>
     )
