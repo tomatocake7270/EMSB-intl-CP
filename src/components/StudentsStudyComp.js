@@ -1,55 +1,7 @@
 import React from 'react'
 import { Container, Row, Col, Media, Card, CardImg, CardBody } from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import { titleInfo, cardInfo } from '../shared/StudentsDetails';
-
-// import Students from './StudentsComp';
-
-const RenderMedia = ({href, url, title}) => {
-    return (
-        // <Media object src={titleImageUrl.url[url]} alt="Field Trip" className="img-fluid"/>
-        <Media className="mx-3">
-            <Media body>
-                <Media heading className="mt-2 mr-2">
-                    {title}
-                </Media> 
-            </Media>
-            <Media right href={href} id="RegistrationTooltip">
-            <Media object src={url} alt="Field Trip" className="img-fluid"/>
-                {/* <UncontrolledTooltip placement="right" target="RegistrationTooltip">
-                    Register Now!
-                </UncontrolledTooltip> */}
-            </Media>
-        </Media>
-    )
-}
-
-const RenderCard = ({ imgUrl, iconUrl, altText, heading }) => {
-    return (
-        <Col md="6" className="my-1">
-            <Card className="border rounded">
-                <CardImg top width="100%" src={imgUrl} alt={altText} className="img-fluid"/>
-                <CardBody className="bg-success">
-                    <Media>
-                        <Media left href="#">
-                            <Media object src={iconUrl} alt={altText} className="img-fluid students-field-trip-icon"/>
-                        </Media>
-                        <Media body className="ml-2 mt-1">
-                            <Media heading>
-                                {heading}
-                            </Media>
-                            <div className="d-flex justify-content-between">
-                                <p className="students-field-trip-location"></p>
-                                <FontAwesomeIcon icon={ faInfoCircle } size="lg"/>
-                            </div>
-                        </Media>
-                    </Media>
-                </CardBody>
-            </Card>
-        </Col>
-    )
-}
+import { RenderMedia, RenderCard } from './StudentsRenderComp';
 
 function StudentsStudy() {    
     return(
