@@ -43,7 +43,7 @@ function Admission(props) {
                 <Row>
                     {/* className="border border-primary rounded" */}
                     <Col md="6">  
-                        <div className="d-flex flex-column align-items-center text-left mt-2">
+                        <div className="d-flex flex-column align-items-start text-left mt-2">
                             <Media className="my-2">
                                 <Media left href="#">
                                     <Media object src="assets/images/admission-check.png" alt="checkmark" className="img-fluid admission-checkmark" />

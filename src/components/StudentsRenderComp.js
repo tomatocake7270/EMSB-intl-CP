@@ -35,7 +35,7 @@ export const RenderCard = (props) => {
                         </Media>
                         <Media body className="ml-2 mt-1">
                             <Media heading>
-                                {props.heading}
+                                <p className="students-card-heading">{props.heading}</p>
                             </Media>
                             <div className="d-flex justify-content-between">
                                 <p className="students-field-trip-location">{props.location}</p>

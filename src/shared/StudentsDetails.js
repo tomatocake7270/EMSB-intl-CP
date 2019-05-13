@@ -55,21 +55,21 @@ export const cardInfo = {
         location: "Sucrie de la Montagne, Québec"
     },
     rosettaStone: {
-        imgUrl: "/assets/images/fieldTrips/ziplining.jpg",
-        iconUrl: "/assets/images/fieldTrips/ziplining-bg.png",
+        imgUrl: "/assets/images/studyAssist/study-rosetta.jpg",
+        iconUrl: "/assets/images/studyAssist/study-rosetta-icon.png",
         altText: "Rosetta Stone",
-        heading: "Learn English/French on Rosetta Stone"
+        heading: "Learn English/French in Rosetta Stone® with EMSB free full-access licence"
     },
     learnQuebec: {
-        imgUrl: "/assets/images/fieldTrips/ziplining.jpg",
-        iconUrl: "/assets/images/fieldTrips/ziplining-bg.png",
-        altText: "Rosetta Stone",
-        heading: "Learn English/French on Rosetta Stone"
+        imgUrl: "/assets/images/studyAssist/study-learnQc.jpg",
+        iconUrl: "/assets/images/studyAssist/study-learnQc-icon.png",
+        altText: "LEARN Quebec",
+        heading: "Online Tutoring for Grade 7 to 11 on LEARN Quebec"
     },
     vitalEnglish: {
-        imgUrl: "/assets/images/fieldTrips/ziplining.jpg",
-        iconUrl: "/assets/images/fieldTrips/ziplining-bg.png",
-        altText: "Rosetta Stone",
-        heading: "Learn English/French on Rosetta Stone"
+        imgUrl: "/assets/images/studyAssist/study-vitalEn.jpg",
+        iconUrl: "/assets/images/studyAssist/study-vitalEn-icon.png",
+        altText: "Vital English",
+        heading: "Test Your English Skills and Improve them on Vital English"
     }
 }
