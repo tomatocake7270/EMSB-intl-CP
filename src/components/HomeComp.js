@@ -52,8 +52,8 @@ class Home extends React.Component {
                     </Col>
                     </Row>
                 </Container>
-                <Announce></Announce>
-                <StoryGallery></StoryGallery>
+                <Announce/>
+                <StoryGallery/>
             </div>
         );
     }

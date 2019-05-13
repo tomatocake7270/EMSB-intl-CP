@@ -61,3 +61,21 @@
 .admission-qc-edu-title-german {
   font-size: 18px;
 }
+
+.students-field-trip-icon {
+  width: 100px;
+  height: auto;
+}
+.students-field-trip-location {
+  font-size: 22px;
+}
+.students-field-trip-date {
+  font-size: 22px;
+}
+.students-field-trip-small-title {
+  font-size: 30px;
+}
+
+.fa-info-circle {
+  color: white;
+}
