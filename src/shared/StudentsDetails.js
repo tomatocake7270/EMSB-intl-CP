@@ -24,3 +24,24 @@ export const titleInfo = {
         title: "Health Support"
     }
 }
+
+export const cardInfo = {
+    rosettaStone: {
+        imgUrl: "/assets/images/fieldTrips/ziplining.jpg",
+        iconUrl: "/assets/images/fieldTrips/ziplining-bg.png",
+        altText: "Rosetta Stone",
+        heading: "Learn English/French on Rosetta Stone"
+    },
+    learnQuebec: {
+        imgUrl: "/assets/images/fieldTrips/ziplining.jpg",
+        iconUrl: "/assets/images/fieldTrips/ziplining-bg.png",
+        altText: "Rosetta Stone",
+        heading: "Learn English/French on Rosetta Stone"
+    },
+    vitalEnglish: {
+        imgUrl: "/assets/images/fieldTrips/ziplining.jpg",
+        iconUrl: "/assets/images/fieldTrips/ziplining-bg.png",
+        altText: "Rosetta Stone",
+        heading: "Learn English/French on Rosetta Stone"
+    }
+}
