@@ -62,6 +62,10 @@
   font-size: 18px;
 }
 
+.students-title-icon-small {
+  width: 52px;
+  height: auto;
+}
 .students-field-trip-icon {
   width: 100px;
   height: auto;
@@ -75,6 +79,8 @@
 .students-field-trip-small-title {
   font-size: 30px;
 }
+
+
 
 .fa-info-circle {
   color: white;

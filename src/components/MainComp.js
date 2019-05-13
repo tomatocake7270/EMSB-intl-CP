@@ -3,6 +3,8 @@ import Home from './HomeComp';
 import Admission from './AdmissionComp';
 import AdmissionS2 from './AdmissionStep2Comp';
 import AdmissionS3 from './AdmissionStep3Comp';
+import StudentsStudy from './StudentsStudyComp';
+import StudentsHealth from './StudentsHealthComp';
 import Schools from './SchoolsComp';
 import Students from './StudentsComp';
 import Contacts from './ContactsComp';
@@ -30,51 +32,63 @@ class Main extends React.Component {
     render() {
         const HomePage = () => {
             return(
-                <Home></Home>
+                <Home/>
             );
         }
         const AdmissionPage = () => {
             return(
-                <Admission></Admission>
+                <Admission/>
             );
         }
         const SchoolsPage = () => {
             return (
-                <Schools></Schools>
+                <Schools/>
             );
         }
         const StudentsPage = () => {
             return (
-                <Students></Students>
+                <Students/>
             );
         }
         const ContactsPage = () => {
             return (
-                <Contacts></Contacts>
+                <Contacts/>
             );
         }
         const AdmissionS2Page = () => {
             return (
-                <AdmissionS2></AdmissionS2>
+                <AdmissionS2/>
             )
         }
         const AdmissionS3Page = () => {
             return (
-                <AdmissionS3></AdmissionS3>
+                <AdmissionS3/>
+            )
+        }
+        const StudentsStudyPage = () => {
+            return (
+                <StudentsStudy/>
+            )
+        }
+        const StudentsHealthPage = () => {
+            return (
+                <StudentsHealth/>
             )
         }
         return(
             <div>
                 <Header />
                 <Switch>
-                    <Route path="/home"             component={HomePage}></Route>
-                    <Route exact path="/admission"  component={AdmissionPage}></Route>
-                    <Route exact path="/schools"    component={SchoolsPage}></Route>
-                    <Route exact path="/students"   component={StudentsPage}></Route>
-                    <Route exact path="/contacts"   component={ContactsPage}></Route>
-                    <Route exact path="/admission/step2"    component={AdmissionS2Page}></Route>
-                    <Route exact path="/admission/step3"    component={AdmissionS3Page}></Route>
-                    <Redirect to="/home"></Redirect>
+                    <Route path="/home"             component={HomePage}/>
+                    <Route exact path="/admission"  component={AdmissionPage}/>
+                    <Route exact path="/schools"    component={SchoolsPage}/>
+                    <Route exact path="/students"   component={StudentsPage}/>
+                    <Route exact path="/contacts"   component={ContactsPage}/>
+                    <Route exact path="/admission/step2"    component={AdmissionS2Page}/>
+                    <Route exact path="/admission/step3"    component={AdmissionS3Page}/>
+                    <Route exact path="/students/study"     component={StudentsStudyPage}/>
+                    <Route exact path="/students/health"    component={StudentsHealthPage}/>
+                    <Redirect to="/home"/>
                 </Switch>
                 <Footer />
             </div>
