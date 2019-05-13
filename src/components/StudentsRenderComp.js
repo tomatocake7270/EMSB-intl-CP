@@ -48,3 +48,16 @@ export const RenderCard = (props) => {
         </Col>
     )
 }
+
+export const RenderList = (props) => {
+    return (
+        <Media className="my-2">
+            <Media left href={props.linkUrl}>
+                <Media object src={props.iconUrl} alt={props.altText} className="img-fluid" />
+            </Media>
+            <Media heading className="ml-2 mt-3">
+                <p>{props.heading}</p>
+            </Media>
+        </Media>
+    )
+}

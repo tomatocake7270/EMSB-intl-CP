@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col, Media, Card, CardImg, CardBody } from 'reactstrap';
-import { titleInfo, cardInfo } from '../shared/StudentsDetails';
-import { RenderMedia, RenderCard } from './StudentsRenderComp';
+import { titleInfo, cardInfo, listInfo } from '../shared/StudentsDetails';
+import { RenderMedia, RenderCard, RenderList } from './StudentsRenderComp';
 
 function StudentsStudy() {    
     return(
@@ -30,47 +30,21 @@ function StudentsStudy() {
                     
                     <Col md="6" className="my-1">
                         <div className="d-flex flex-column align-items-start my-1 py-2 pl-3 border border-primary rounded">
-                            
-                            <Media className="my-2">
-                                <Media left href="#">
-                                    <Media object src="/assets/images/studyAssist/study-rosetta-demo.png" alt="Video demos" className="img-fluid" />
-                                </Media>
-                                <Media heading className="ml-2 mt-3">
-                                    <p>View Demo Videos</p>
-                                </Media>
-                            </Media>
-                            <Media className="my-2">
-                                <Media left href="#">
-                                    <Media object src="/assets/images/studyAssist/study-check-licence.png" alt="Video demos" className="img-fluid" />
-                                </Media>
-                                <Media heading className="ml-2 mt-3">
-                                    <p>Check Your Licence</p>
-                                </Media>
-                            </Media>
-                            <Media className="my-2">
-                                <Media left href="#">
-                                    <Media object src="/assets/images/studyAssist/study-web.png" alt="Video demos" className="img-fluid" />
-                                </Media>
-                                <Media heading className="ml-2 mt-3">
-                                    <p>Log in from Desktop Version</p>
-                                </Media>
-                            </Media>
-                            <Media className="my-2">
-                                <Media left href="#">
-                                    <Media object src="/assets/images/studyAssist/study-app-store.png" alt="Video demos" className="img-fluid" />
-                                </Media>
-                                <Media heading className="ml-2 mt-3">
-                                    <p>Download from iOS devices</p>
-                                </Media>
-                            </Media>
-                            <Media className="my-2">
-                                <Media left href="#">
-                                    <Media object src="/assets/images/studyAssist/study-google-play.png" alt="Video demos" className="img-fluid" />
-                                </Media>
-                                <Media heading className="ml-2 mt-3">
-                                    <p>Download from Android devices</p>
-                                </Media>
-                            </Media>
+                            <RenderList iconUrl = {listInfo.rosettaItem1.iconUrl}
+                                        altText = {listInfo.rosettaItem1.altText}
+                                        heading = {listInfo.rosettaItem1.heading} />
+                            <RenderList iconUrl = {listInfo.rosettaItem2.iconUrl}
+                                        altText = {listInfo.rosettaItem2.altText}
+                                        heading = {listInfo.rosettaItem2.heading} />
+                            <RenderList iconUrl = {listInfo.rosettaItem3.iconUrl}
+                                        altText = {listInfo.rosettaItem3.altText}
+                                        heading = {listInfo.rosettaItem3.heading} />
+                            <RenderList iconUrl = {listInfo.rosettaItem4.iconUrl}
+                                        altText = {listInfo.rosettaItem4.altText}
+                                        heading = {listInfo.rosettaItem4.heading} />
+                            <RenderList iconUrl = {listInfo.rosettaItem5.iconUrl}
+                                        altText = {listInfo.rosettaItem5.altText}
+                                        heading = {listInfo.rosettaItem5.heading} />
                         </div>
                     </Col>
                     <RenderCard imgUrl  = {cardInfo.learnQuebec.imgUrl}
