@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col, Media, Card, CardImg, CardBody } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import { titleInfo, cardInfo, listInfo } from '../shared/StudentsDetails';
 import { RenderMedia, RenderCard, RenderList } from './StudentsRenderComp';
 
