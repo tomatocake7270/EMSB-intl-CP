@@ -1,7 +1,3 @@
-.App {
-  /* text-align: center; */
-}
-
 .jumbotron {
   /* //padding: 0; */
   margin: 0px auto;
@@ -62,6 +58,9 @@
   font-size: 18px;
 }
 
+.students-card-heading {
+  color: rgb(238, 243, 249);
+}
 .students-title-icon-small {
   width: 52px;
   height: auto;

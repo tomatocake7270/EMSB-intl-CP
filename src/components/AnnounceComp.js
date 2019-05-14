@@ -6,7 +6,7 @@ function Announce(props) {
         <Container className="homeWhatsNew my-3">
           <div className="d-flex flex-column align-items-center">
             <h4>
-            <img src="assets/images/home-announce.png" className="home-logos mx-auto img-fluid"></img>
+            <img src="assets/images/home-announce.png" alt="Announcement" className="home-logos mx-auto img-fluid"></img>
               Announcements
             </h4>
           
@@ -17,7 +17,7 @@ function Announce(props) {
                     April 22, 2019
                   </ToastHeader>
                   <ToastBody>
-                  The new EMSB Admin App developed especially for admin users is just available for download on the App Store! 😃
+                  The new EMSB Admin App developed especially for admin users is just available for download on the App Store!
                   </ToastBody>
                 </Toast>
               </Col>
@@ -27,7 +27,7 @@ function Announce(props) {
                     April 24, 2019
                   </ToastHeader>
                   <ToastBody>
-                  🔎We are now awaiting the final review by EMSB before the official release. 🕵️‍
+                  We are now awaiting the final review by EMSB before the official release.
                   </ToastBody>
                 </Toast>
               </Col>
