@@ -79,8 +79,26 @@
   font-size: 30px;
 }
 
-
-
 .fa-info-circle {
   color: white;
+}
+
+.contact-icon-group {
+  margin: 1.8rem 0 0 0;
+}
+.contact-icon {
+  color: #2e86de;
+  margin: 0 .4rem 0 .4rem;
+}
+.contact-staff-media {
+  width: 20rem;
+}
+.contact-staff-name {
+  text-align: left;
+  font-size: 1.3rem;
+  margin: 1.1rem 0 0 .8rem;
+}
+
+ul {
+  list-style-type:none;
 }
