@@ -33,12 +33,13 @@ export const staffInfo = {
     staff2: { //Jeanine
         id: 2,
         schools: [
-            "LaurenHill Academy,&nbsp;",
-            "LaurenHill Junior Campus,&nbsp;",
-            "Marymount Academy,&nbsp;",
-            "Rosemount High School,&nbsp;",
-            "Royal Vale School,&nbsp;",
-            "Westmount High School"
+            "LaurenHill Academy, ",
+            "LaurenHill Junior Campus, ",
+            "Marymount Academy, ",
+            "Rosemount High School, ",
+            "Royal West Academy, ",
+            "Royal Vale School, ",
+            "Vincent Massey Collegiate"
         ],
         phone: "(514) 483-7200 ext. 7259",
         email: "jlason@emsb.qc.ca"
@@ -46,12 +47,12 @@ export const staffInfo = {
     staff3: { //Charles
         id: 3,
         schools: [
-            "F.A.C.E. School,&nbsp;",
-            "James Lyng High School,&nbsp;",
-            "Laurier MacDonald High School,&nbsp;",
-            "Lester B. Pearson High School,&nbsp;",
-            "Rosemount High School,&nbsp;",
-            "Vincent Massey Collegiate,&nbsp;",
+            "F.A.C.E. School, ",
+            "James Lyng High School, ",
+            "Laurier MacDonald High School, ",
+            "Lester B. Pearson High School, ",
+            "Rosemount High School, ",
+            "Vincent Massey Collegiate, ",
             "Royal West Academy"
         ],
         phone: "(514) 483-7200 ext. 7788",
@@ -60,7 +61,7 @@ export const staffInfo = {
     staff4: { //Ping
         id: 4,
         schools: [
-            "LaurenHill Junior Campus,&nbsp;",
+            "LaurenHill Junior Campus, ",
             "Westmount High School"
         ],
         phone: "(514) 483-7200 ext. 7788",
@@ -69,9 +70,9 @@ export const staffInfo = {
     staff5: { //Angela
         id: 5,
         schools: [
-            "John F. Kennedy High School,&nbsp;",
-            "LaurenHill Academy,&nbsp",
-            "Laurier MacDonald High School,&nbsp;",
+            "John F. Kennedy High School, ",
+            "LaurenHill Academy, ",
+            "Laurier MacDonald High School, ",
             "Marymount Academy"
         ],
         phone: "(514) 483-7200 ext. 7788",
