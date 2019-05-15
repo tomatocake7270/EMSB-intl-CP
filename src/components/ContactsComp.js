@@ -1,23 +1,41 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Media } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlusCircle, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faPlusCircle, faMinusCircle, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { RenderStaffDropdown } from './ContactsRenderComp';
+import { postInfo, staffInfo } from '../shared/ContactDetails';
 
-const Contacts = (props) => {
+const Contacts = () => {
 
     const [ staffState, setStaffState ] = useState({
+        showStaff0: false,
         showStaff1: false,
         showStaff2: false,
         showStaff3: false,
         showStaff4: false,
-        showStaff5: false,
-        showStaff6: false
+        showStaff5: false
     });
 
-    const toggleStaff = () => {
+    const toggleStaff1 = () => {
         const doesShowStaff1 = staffState.showStaff1;
         setStaffState({ showStaff1: !doesShowStaff1 }); 
-    }
+    };
+
+    let plusBtnClass    = "contact-icon"; 
+    let minusBtnClass   = ["d-none", "contact-icon"].join(" "); //可以没有 contact-icon 这里做演示
+    let staff1Dropdown  = null;
+    
+    if (staffState.showStaff1) {
+        plusBtnClass    = ["d-none", "contact-icon"].join(" ");
+        minusBtnClass   = "contact-icon";
+        staff1Dropdown = (
+            <RenderStaffDropdown //>id      = {staffInfo.staff1.id}
+                                //  schools = {<p>{staffInfo.staff3.schools[i]}</p>}
+                                    schools = {<p>{staffInfo.staff1.schools}</p>}
+                                    phone   = {staffInfo.staff1.phone}
+                                    email   = {staffInfo.staff1.email} />
+        )
+    };
 
     return(
         <div>
@@ -64,27 +82,13 @@ const Contacts = (props) => {
                                     </Media>
                                     <div className="d-flex justify-content-end contact-icon-group">
                                         <FontAwesomeIcon icon={ faEnvelope } size="lg" className="contact-icon" />
-                                        <FontAwesomeIcon icon={ faPhone } size="lg" className="contact-icon" />
-                                        <FontAwesomeIcon icon={ faPlusCircle } size="lg" className="contact-icon" />
+                                        <FontAwesomeIcon icon={ faPhone } size="lg" className="contact-icon display" />
+                                        <FontAwesomeIcon icon={ faPlusCircle } size="lg" className={plusBtnClass}  onClick={toggleStaff1} />
+                                        <FontAwesomeIcon icon={ faMinusCircle } size="lg" className={minusBtnClass} onClick={toggleStaff1} />
                                     </div>
                                 </div>
                                 
-                                {/* dropdown */}
-                                <div className="d-flex flex-column align-items-start text-left border border-secondary my-1 px-1 pt-2 rounded">
-                                    <h5 className="border-bottom border-info">Schools in charge</h5>
-                                    <div className="d-flex flex-wrap">
-                                        <p>F.A.C.E. School,&nbsp;</p>
-                                        <p>James Lyng High School,&nbsp;</p>
-                                        <p>John F. Kennedy High School,&nbsp;</p>
-                                        <p>John Paul I High School,&nbsp;</p>
-                                        <p>Lester B. Pearson High School,&nbsp;</p>
-                                        <p>Westmount High School</p>
-                                    </div>
-                                    <h5 className="border-bottom border-info">Phone number</h5>
-                                    <p>(514) 483-7200 ext. 7259</p>
-                                    <h5 className="border-bottom border-info">Email</h5>
-                                    <p>ngillespie@emsb.qc.ca</p>
-                                </div>
+                                { staff1Dropdown }
                                 
                                 <div className="d-flex justify-content-between">
                                     <Media className="my-2 contact-staff-media">
@@ -124,7 +128,7 @@ const Contacts = (props) => {
                                     <div className="d-flex justify-content-end contact-icon-group">
                                         <FontAwesomeIcon icon={ faEnvelope } size="lg" className="contact-icon" />
                                         <FontAwesomeIcon icon={ faPhone } size="lg" className="contact-icon" />
-                                        <FontAwesomeIcon icon={ faPlusCircle } size="lg" className="contact-icon" onClick={toggleStaff} />
+                                        <FontAwesomeIcon icon={ faPlusCircle } size="lg" className="contact-icon"/>
                                     </div>
                                 </div>
                                 
