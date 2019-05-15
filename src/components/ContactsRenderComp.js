@@ -3,9 +3,9 @@ import React from 'react';
 //Staff detail dropdown
 export const RenderStaffDropdown = (props) => {
     return (
-        <div className="d-flex flex-column align-items-start text-left border border-secondary my-1 px-1 pt-2 rounded">
+        <div className="d-flex flex-column align-items-start text-left border border-secondary mb-2 px-1 pt-2 rounded">
             <h5 className="border-bottom border-info">Schools in charge</h5>
-            <div className="d-flex flex-wrap" id={props.id}>
+            <div className="d-flex flex-wrap mb-1" id={props.id}>
                 {props.schools}
             </div>
             <h5 className="border-bottom border-info">Phone number</h5>

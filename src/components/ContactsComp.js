@@ -30,7 +30,6 @@ const Contacts = () => {
         minusBtnClass   = "contact-icon";
         staff1Dropdown = (
             <RenderStaffDropdown //>id      = {staffInfo.staff1.id}
-                                //  schools = {<p>{staffInfo.staff3.schools[i]}</p>}
                                     schools = {<p>{staffInfo.staff1.schools}</p>}
                                     phone   = {staffInfo.staff1.phone}
                                     email   = {staffInfo.staff1.email} />
