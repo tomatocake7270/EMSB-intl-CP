@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { titleInfo, cardInfo, listInfo } from '../shared/StudentsDetails';
 import { RenderMedia, RenderCard, RenderList } from './StudentsRenderComp';
+import { faMapMarkedAlt } from '@fortawesome/free-solid-svg-icons';
 
 function Students() {    
     return(
@@ -26,22 +27,26 @@ function Students() {
                                 iconUrl = {cardInfo.ziplining.iconUrl}
                                 altText = {cardInfo.ziplining.altText}
                                 heading = {cardInfo.ziplining.heading} 
-                                location= {cardInfo.ziplining.location} />
+                                location= {cardInfo.ziplining.location}
+                                faIcon  = { faMapMarkedAlt } />
                     <RenderCard imgUrl  = {cardInfo.ski.imgUrl}
                                 iconUrl = {cardInfo.ski.iconUrl}
                                 altText = {cardInfo.ski.altText}
                                 heading = {cardInfo.ski.heading} 
-                                location= {cardInfo.ski.location} />
+                                location= {cardInfo.ski.location}
+                                faIcon  = { faMapMarkedAlt } />
                     <RenderCard imgUrl  = {cardInfo.qcCity.imgUrl}
                                 iconUrl = {cardInfo.qcCity.iconUrl}
                                 altText = {cardInfo.qcCity.altText}
                                 heading = {cardInfo.qcCity.heading} 
-                                location= {cardInfo.qcCity.location} />
+                                location= {cardInfo.qcCity.location}
+                                faIcon  = { faMapMarkedAlt } />
                     <RenderCard imgUrl  = {cardInfo.sugarShack.imgUrl}
                                 iconUrl = {cardInfo.sugarShack.iconUrl}
                                 altText = {cardInfo.sugarShack.altText}
                                 heading = {cardInfo.sugarShack.heading} 
-                                location= {cardInfo.sugarShack.location} />
+                                location= {cardInfo.sugarShack.location}
+                                faIcon  = { faMapMarkedAlt } />
                 </Row> 
             </Container>
             <Container>

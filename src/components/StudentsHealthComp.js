@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Row, Col } from 'reactstrap';
 import { titleInfo, cardInfo, listInfo } from '../shared/StudentsDetails';
 import { RenderMedia, RenderCard, RenderList } from './StudentsRenderComp';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 function StudentsHealth() {
     return(
@@ -24,7 +25,8 @@ function StudentsHealth() {
                     <RenderCard imgUrl  = {cardInfo.guardMe.imgUrl}
                                 iconUrl = {cardInfo.guardMe.iconUrl}
                                 altText = {cardInfo.guardMe.altText}
-                                heading = {cardInfo.guardMe.heading} />
+                                heading = {cardInfo.guardMe.heading}
+                                faIcon  = { faExternalLinkAlt } />
                     <Col md="6" className="my-1">
                         <div className="d-flex flex-column align-items-start my-1 py-2 pl-3 border border-primary rounded">
                             <RenderList iconUrl = {listInfo.guardMeItem1.iconUrl}
@@ -38,7 +40,8 @@ function StudentsHealth() {
                     <RenderCard imgUrl  = {cardInfo.keepMeSafe.imgUrl}
                                 iconUrl = {cardInfo.keepMeSafe.iconUrl}
                                 altText = {cardInfo.keepMeSafe.altText}
-                                heading = {cardInfo.keepMeSafe.heading} />
+                                heading = {cardInfo.keepMeSafe.heading}
+                                faIcon  = { faExternalLinkAlt } />
                     <Col md="6" className="my-1">
                         <div className="d-flex flex-column align-items-start my-1 py-2 pl-3 border border-primary rounded">
                             <RenderList iconUrl = {listInfo.keepMeSafeItem1.iconUrl}

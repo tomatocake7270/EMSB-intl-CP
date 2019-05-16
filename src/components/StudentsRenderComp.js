@@ -39,7 +39,33 @@ export const RenderCard = (props) => {
                             </Media>
                             <div className="d-flex justify-content-between">
                                 <p className="students-field-trip-location">{props.location}</p>
-                                <FontAwesomeIcon icon={ faMapMarkedAlt } size="lg"/>
+                                <FontAwesomeIcon icon={props.faIcon} size="lg"/>
+                            </div>
+                        </Media>
+                    </Media>
+                </CardBody>
+            </Card>
+        </Col>
+    )
+}
+
+export const RenderStudyCard = (props) => {
+    return (
+        <Col md="6" className="my-1">
+            <Card className="border rounded">
+                <CardImg top width="100%" src={props.imgUrl} alt={props.altText} className="img-fluid"/>
+                <CardBody className="bg-primary">
+                    <Media>
+                        <Media left href="#">
+                            <Media object src={props.iconUrl} alt={props.altText} className="img-fluid students-field-trip-icon"/>
+                        </Media>
+                        <Media body className="ml-2 mt-1">
+                            <Media heading>
+                                <p className="students-card-heading">{props.heading}</p>
+                            </Media>
+                            <div className="d-flex justify-content-between">
+                                <p className="students-field-trip-location">{props.location}</p>
+                                <FontAwesomeIcon icon={props.faIcon} size="lg"/>
                             </div>
                         </Media>
                     </Media>

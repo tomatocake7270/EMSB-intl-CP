@@ -1,7 +1,8 @@
 import React from 'react'
 import { Container, Row, Col } from 'reactstrap';
 import { titleInfo, cardInfo, listInfo } from '../shared/StudentsDetails';
-import { RenderMedia, RenderCard, RenderList } from './StudentsRenderComp';
+import { RenderMedia, RenderCard, RenderList, RenderStudyCard } from './StudentsRenderComp';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 
 function StudentsStudy() {    
@@ -19,7 +20,6 @@ function StudentsStudy() {
                     <RenderMedia title = {titleInfo.healthSupport.title}
                                  href  = {titleInfo.healthSupport.href}
                                  url   = {titleInfo.healthSupport.url.urlDeselected}/>
-                
                 </div>
             </Container>
             <Container>
@@ -27,7 +27,8 @@ function StudentsStudy() {
                     <RenderCard imgUrl  = {cardInfo.rosettaStone.imgUrl}
                                 iconUrl = {cardInfo.rosettaStone.iconUrl}
                                 altText = {cardInfo.rosettaStone.altText}
-                                heading = {cardInfo.rosettaStone.heading} />
+                                heading = {cardInfo.rosettaStone.heading} 
+                                faIcon  = { faExternalLinkAlt } />
                     
                     <Col md="6" className="my-1">
                         <div className="d-flex flex-column align-items-start my-1 py-2 pl-3 border border-primary rounded">
@@ -51,11 +52,13 @@ function StudentsStudy() {
                     <RenderCard imgUrl  = {cardInfo.learnQuebec.imgUrl}
                                 iconUrl = {cardInfo.learnQuebec.iconUrl}
                                 altText = {cardInfo.learnQuebec.altText}
-                                heading = {cardInfo.learnQuebec.heading} />
+                                heading = {cardInfo.learnQuebec.heading} 
+                                faIcon  = { faExternalLinkAlt } />
                     <RenderCard imgUrl  = {cardInfo.vitalEnglish.imgUrl}
                                 iconUrl = {cardInfo.vitalEnglish.iconUrl}
                                 altText = {cardInfo.vitalEnglish.altText}
-                                heading = {cardInfo.vitalEnglish.heading} />
+                                heading = {cardInfo.vitalEnglish.heading}
+                                faIcon  = { faExternalLinkAlt } />
                 </Row>  
             </Container>
         </div>
