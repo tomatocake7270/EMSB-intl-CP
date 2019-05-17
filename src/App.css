@@ -99,6 +99,17 @@
   margin: 1.1rem 0 0 .8rem;
 }
 
-ul {
+ul, .ul-school-mission-list {
   list-style-type:none;
+}
+
+.breadcrumb {
+  background-color: white;
+  margin: 0 auto 0 auto;
+  /* padding: 0; */
+  padding-top: 0;
+}
+
+.school-philo-list-icon {
+  color: #2e86de;
 }

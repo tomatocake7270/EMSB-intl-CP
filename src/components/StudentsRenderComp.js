@@ -1,7 +1,6 @@
 import React from 'react'
 import { Col, Card, CardImg, CardBody, Media } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInfoCircle, faMapMarkedAlt} from '@fortawesome/free-solid-svg-icons';
 
 //数据输出方，用 props.输出数据名
 export const RenderMedia = (props) => {

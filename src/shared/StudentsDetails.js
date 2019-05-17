@@ -58,13 +58,13 @@ export const cardInfo = {
         imgUrl: "/assets/images/studyAssist/study-rosetta.jpg",
         iconUrl: "/assets/images/studyAssist/study-rosetta-icon.png",
         altText: "Rosetta Stone",
-        heading: "Learn English/French in Rosetta Stone® with EMSB free full-access licence"
+        heading: "Learn English/French in Rosetta Stone® Full-access Licence"
     },
     learnQuebec: {
         imgUrl: "/assets/images/studyAssist/study-learnQc.jpg",
         iconUrl: "/assets/images/studyAssist/study-learnQc-icon.png",
         altText: "LEARN Quebec",
-        heading: "Online Tutoring for Grade 7 to 11 on LEARN Quebec"
+        heading: "Online Tutoring for Grade 7 to 11 on LEARN Quebec haha"
     },
     vitalEnglish: {
         imgUrl: "/assets/images/studyAssist/study-vitalEn.jpg",

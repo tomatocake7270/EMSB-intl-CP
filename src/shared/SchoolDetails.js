@@ -3,6 +3,7 @@ export const SCHOOLS =
         {
             id: 0,
             name: 'FACE School',
+            route: 'face',
             image: [
                 '',
                 '',
@@ -18,6 +19,7 @@ export const SCHOOLS =
         {
             id: 1,
             name: 'James Lyng High School',
+            route: 'jlh',
             image: [
                 '',
                 '',
