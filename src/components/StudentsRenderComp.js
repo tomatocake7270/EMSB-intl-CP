@@ -1,24 +1,27 @@
 import React from 'react'
 import { Col, Card, CardImg, CardBody, Media } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 //数据输出方，用 props.输出数据名
 export const RenderMedia = (props) => {
     return (
         // <Media object src={titleImageUrl.url[url]} alt="Field Trip" className="img-fluid"/>
-        <Media className="mx-3">
-            <Media body>
-                <Media heading className="mt-2 mr-2">
-                    {props.title}
-                </Media> 
+        <Link to={props.href}>
+            <Media className="mx-3">
+                <Media body>
+                    <Media heading className="mt-2 mr-2">
+                        {props.title}
+                    </Media> 
+                </Media>
+                <Media right id="RegistrationTooltip">
+                <Media object src={props.url} alt="Field Trip" className="img-fluid"/>
+                    {/* <UncontrolledTooltip placement="right" target="RegistrationTooltip">
+                        Register Now!
+                    </UncontrolledTooltip> */}
+                </Media>
             </Media>
-            <Media right href={props.href} id="RegistrationTooltip">
-            <Media object src={props.url} alt="Field Trip" className="img-fluid"/>
-                {/* <UncontrolledTooltip placement="right" target="RegistrationTooltip">
-                    Register Now!
-                </UncontrolledTooltip> */}
-            </Media>
-        </Media>
+        </Link>
     )
 }
 

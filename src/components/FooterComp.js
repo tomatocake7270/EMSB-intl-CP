@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Footer(props) {
     return(
         <React.Fragment>
-            <div className="footer">       
+            <div className="footer mt-auto">       
                 <Row>
                     <Col md={{ size: 5, offset: 1}}>
                         <Media>

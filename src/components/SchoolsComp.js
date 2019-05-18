@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { Link } from 'react-router-dom';
 import SchoolEMSBCal from './SchoolEMSBCalComp';
 import SchoolPicker from './SchoolBadgesRenderComp';
 import { schoolsInfo } from '../shared/SchoolDetails';

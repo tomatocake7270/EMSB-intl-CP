@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'reactstrap';
 import { titleInfo, cardInfo, listInfo } from '../shared/StudentsDetails';
-import { RenderMedia, RenderCard, RenderList, RenderStudyCard } from './StudentsRenderComp';
+import { RenderMedia, RenderCard, RenderList } from './StudentsRenderComp';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 

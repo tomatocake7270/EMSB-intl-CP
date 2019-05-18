@@ -56,7 +56,7 @@ const CurrentSchool = (props) => {
             <Container className="px-5">
                 <Breadcrumb tag="nav" listTag="div" className="mx-2 school-breadcrumb">
                     <BreadcrumbItem tag="a" className=""><Link to="/schools">School Picker</Link></BreadcrumbItem>
-                    <BreadcrumbItem active tag="span" href="#">FACE School</BreadcrumbItem>
+                    <BreadcrumbItem active tag="span" href="#">{props.name}</BreadcrumbItem>
                 </Breadcrumb>
                 <Row className="text-left mx-2 mb-3">
                     <Col lg="5" className="mb-3">
