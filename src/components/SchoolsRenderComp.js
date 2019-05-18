@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlusCircle, faMinusCircle, faCheckCircle} from '@fortawesome/free-solid-svg-icons';
 import SchoolEMSBCal from './SchoolEMSBCalComp';
 
-const SchoolFACE = () => {
+const CurrentSchool = (props) => {
 
     const [ philoState, setPhiloState ] = useState({
         showPhilo: false
@@ -15,12 +15,12 @@ const SchoolFACE = () => {
         const doesShowPhilo = philoState.showPhilo;
         setPhiloState({ showPhilo: !doesShowPhilo });
     };
-
+    
     let plusBtnClass    = ["mt-1", "ml-3", "school-philo-list-icon"].join(" ");
     let minusBtnClass   = "d-none";
 
     let philoDropdown = null;
-
+    
     if(philoState.showPhilo) {
         plusBtnClass    = "d-none";
         minusBtnClass   = ["mt-1", "ml-3", "school-philo-list-icon"].join(" ");
@@ -29,31 +29,26 @@ const SchoolFACE = () => {
                 <div className="d-flex justify-content-start">
                     <FontAwesomeIcon icon={ faCheckCircle } size="sm" className="mt-1 school-philo-list-icon" />
                     <p className="ml-3">
-                        To combine academic and artistic development which provides our students with many challenges in which they can flourish and develop their full potential.
+                        {props.philo1}
                     </p>
                 </div>
                 <div className="d-flex justify-content-start">
                     <FontAwesomeIcon icon={ faCheckCircle } size="sm" className="mt-1 school-philo-list-icon" />
                     <p className="ml-3">
-                    To teach our important values which are openess of mind, respect, responsibility, independence, self-discipline, accomplishment and self-esteem.
+                        {props.philo2}
                     </p>
                 </div>
                 <div className="d-flex justify-content-start">
                     <FontAwesomeIcon icon={ faCheckCircle } size="sm" className="mt-1 school-philo-list-icon" />
                     <p className="ml-3">
-                    To develop respect for others, an appreciation for the many facets of the world, an open mind, a more active vision of life, teamwork, and to foster intellectual, emotional, and spiritual growth.
+                        {props.philo3}
                     </p>
                 </div>
             </div>
         )
     };
 
-    const faceImg = [
-        { src: '/assets/images/schools/FACE-0.jpg' },
-        { src: '/assets/images/schools/FACE-1.jpg' },
-        { src: '/assets/images/schools/FACE-2.jpg' },
-        { src: '/assets/images/schools/FACE-3.jpg' }
-    ];
+    //const faceImg = [{props.images}];
     
     return (
         <div className="text-center">
@@ -65,7 +60,7 @@ const SchoolFACE = () => {
                 </Breadcrumb>
                 <Row className="text-left mx-2 mb-3">
                     <Col lg="5" className="mb-3">
-                        <UncontrolledCarousel items={ faceImg } />
+                        <UncontrolledCarousel items={props.imgUrl} />
                     </Col>
                     <Col lg="7">
                         <Row>
@@ -75,7 +70,7 @@ const SchoolFACE = () => {
                                         <Media object src="/assets/images/schools/school-intro.png" alt="Intro" className="img-fluid" />
                                     </Media>
                                     <Media body className="ml-2 mt-1">
-                                        <p><b>Fine Arts Core Education (FACE) High School</b> is located north of Sherbrooke St. West and is accessible by bus, McGill Metro, and Central or Windsor Train Stations.</p>
+                                        <p>{props.intro}</p>
                                     </Media>
                                 </Media>
                             </Col>
@@ -85,7 +80,7 @@ const SchoolFACE = () => {
                                         <Media object src="/assets/images/schools/school-address.png" alt="School address" className="img-fluid" />
                                     </Media>
                                     <Media body className="ml-2 mt-1">
-                                        <p>3449 University Street, Montreal, QC, H3A 2A8</p>
+                                        <p>{props.address}</p>
                                     </Media>
                                 </Media>
                             </Col>
@@ -95,7 +90,7 @@ const SchoolFACE = () => {
                                         <Media object src="/assets/images/schools/school-call.png" alt="School address" className="img-fluid" />
                                     </Media>
                                     <Media body className="ml-2 mt-1">
-                                        <p>(514) 350-8899</p>
+                                        <p>{props.telephone}</p>
                                     </Media>
                                 </Media>
                             </Col>
@@ -105,7 +100,7 @@ const SchoolFACE = () => {
                                         <Media object src="/assets/images/schools/school-email.png" alt="School address" className="img-fluid" />
                                     </Media>
                                     <Media body className="ml-2 mt-1">
-                                        <p>face@emsb.qc.ca</p>
+                                        <p>{props.email}</p>
                                     </Media>
                                 </Media>
                             </Col>
@@ -115,7 +110,7 @@ const SchoolFACE = () => {
                                         <Media object src="/assets/images/schools/school-website.png" alt="School address" className="img-fluid" />
                                     </Media>
                                     <Media body className="ml-2 mt-1">
-                                        <p>http://face-english.csdm.ca</p>
+                                        <p>{props.website}</p>
                                     </Media>
                                 </Media>
                             </Col>
@@ -150,11 +145,10 @@ const SchoolFACE = () => {
                             </Col>
                         </Row>
                     </Col>
-
                 </Row>
             </Container>
         </div>
-    )
+    );
 }
 
-export default SchoolFACE; 
+export default CurrentSchool;

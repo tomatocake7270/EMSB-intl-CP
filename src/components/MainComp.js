@@ -9,13 +9,13 @@ import StudentsHealth from './StudentsHealthComp';
 
 import Schools from './SchoolsComp';
 import SchoolFACE from './SchoolFACEComp';
+import CurrentSchool from './SchoolsRenderComp';
 
 import Students from './StudentsComp';
 import Contacts from './ContactsComp';
 import Footer from './FooterComp';
 import Header from './HeaderComp';
 import { Switch, Route, Redirect } from 'react-router-dom';
-
 
 
 class Main extends React.Component {
@@ -84,6 +84,13 @@ class Main extends React.Component {
                 <SchoolFACE />
             )
         }
+
+        const SchoolInQuestion = () => {
+            return (
+                <CurrentSchool />
+            )
+        }
+
         return(
             <div>
                 <Header />
@@ -96,7 +103,8 @@ class Main extends React.Component {
                     <Route exact path="/admission/step3"    component={AdmissionS3Page}/>
                     
                     <Route exact path="/schools"            component={SchoolsPage}/>
-                    <Route exact path="/schools/face"       component={ SchoolFACEPage } />
+                    <Route exact path="/schools/face"       component={SchoolFACEPage} />
+                    {/* <Route exact path="/schools/"  */}
 
                     <Route exact path="/students/study"     component={StudentsStudyPage}/>
                     <Route exact path="/students/health"    component={StudentsHealthPage}/>

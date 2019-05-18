@@ -1,57 +1,57 @@
 import React from 'react';
-import { Container, Row, Col, Button } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import SchoolEMSBCal from './SchoolEMSBCalComp';
+import SchoolPicker from './SchoolBadgesRenderComp';
+import { schoolsInfo } from '../shared/SchoolDetails';
 
-function Schools(props) {
+const Schools = () => {
     return(
         <div className="text-center">
             <SchoolEMSBCal />
 
             <Container className="my-4">                
                 <Row className="my-5">
-                    <Col>
-                        <Button color="link" href="/schools/face">
-                            <img src="assets/images/schoolLogos/FACE.png" width="120px" className="img-fluid" alt="FACE School"></img>
-                        </Button>
-                        
-                    </Col>
-                    <Col>
-                        <img src="assets/images/schoolLogos/JL.png" width="120px" className="img-fluid" alt="FACE School"></img>
-                    </Col>
-                    <Col>
-                        <img src="assets/images/schoolLogos/JFK.png" width="120px" className="img-fluid" alt="FACE School"></img>
-                    </Col>
-                    <Col>
-                        <img src="assets/images/schoolLogos/LBP.jpg" width="120px" className="img-fluid" alt="FACE School"></img>
-                    </Col>
+                    <SchoolPicker route     = {schoolsInfo[0].route} 
+                                  iconUrl   = {schoolsInfo[0].iconUrl}
+                                  name      = {schoolsInfo[0].name} />
+                    <SchoolPicker route     = {schoolsInfo[1].route} 
+                                  iconUrl   = {schoolsInfo[1].iconUrl}
+                                  name      = {schoolsInfo[1].name} />
+                    <SchoolPicker route     = {schoolsInfo[2].route} 
+                                  iconUrl   = {schoolsInfo[2].iconUrl}
+                                  name      = {schoolsInfo[2].name} />
+                    <SchoolPicker route     = {schoolsInfo[3].route} 
+                                  iconUrl   = {schoolsInfo[3].iconUrl}
+                                  name      = {schoolsInfo[3].name} />
                 </Row>
                 <Row className="mb-5">
-                    <Col>
-                        <img src="assets/images/schoolLogos/LHA.jpg" width="120px" className="img-fluid" alt="FACE School"></img>
-                    </Col>
-                    <Col>
-                        <img src="assets/images/schoolLogos/JP.jpg" width="120px" className="img-fluid" alt="FACE School"></img>
-                    </Col>
-                    <Col>
-                        <img src="assets/images/schoolLogos/LMac.jpg" width="120px" className="img-fluid" alt="FACE School"></img>
-                    </Col>
-                    <Col>
-                        <img src="assets/images/schoolLogos/MM.png" width="120px" className="img-fluid" alt="FACE School"></img>
-                    </Col>
+                    <SchoolPicker route     = {schoolsInfo[4].route} 
+                                  iconUrl   = {schoolsInfo[4].iconUrl}
+                                  name      = {schoolsInfo[4].name} />
+                    <SchoolPicker route     = {schoolsInfo[5].route} 
+                                  iconUrl   = {schoolsInfo[5].iconUrl}
+                                  name      = {schoolsInfo[5].name} />
+                    <SchoolPicker route     = {schoolsInfo[6].route} 
+                                  iconUrl   = {schoolsInfo[6].iconUrl}
+                                  name      = {schoolsInfo[6].name} />
+                    <SchoolPicker route     = {schoolsInfo[7].route} 
+                                  iconUrl   = {schoolsInfo[7].iconUrl}
+                                  name      = {schoolsInfo[7].name} />
                 </Row>
                 <Row className="mb-5">
-                    <Col>
-                        <img src="assets/images/schoolLogos/RM.jpg" width="120px" className="img-fluid" alt="FACE School"></img>
-                    </Col>
-                    <Col>
-                        <img src="assets/images/schoolLogos/RV.png" width="120px" className="img-fluid" alt="FACE School"></img>
-                    </Col>
-                    <Col>
-                        <img src="assets/images/schoolLogos/VMC.jpg" width="120px" className="img-fluid" alt="FACE School"></img>
-                    </Col>
-                    <Col>
-                        <img src="assets/images/schoolLogos/WM.jpg" width="120px" className="img-fluid" alt="FACE School"></img>
-                    </Col>
+                    <SchoolPicker route     = {schoolsInfo[8].route} 
+                                  iconUrl   = {schoolsInfo[8].iconUrl}
+                                  name      = {schoolsInfo[8].name} />
+                    <SchoolPicker route     = {schoolsInfo[9].route} 
+                                  iconUrl   = {schoolsInfo[9].iconUrl}
+                                  name      = {schoolsInfo[9].name} />
+                    <SchoolPicker route     = {schoolsInfo[10].route} 
+                                  iconUrl   = {schoolsInfo[10].iconUrl}
+                                  name      = {schoolsInfo[10].name} />
+                    <SchoolPicker route     = {schoolsInfo[11].route} 
+                                  iconUrl   = {schoolsInfo[11].iconUrl}
+                                  name      = {schoolsInfo[11].name} />
                 </Row>
                 <Row className="mb-5">
                     <Col>
