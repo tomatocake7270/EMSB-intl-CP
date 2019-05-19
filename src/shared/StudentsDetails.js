@@ -174,8 +174,9 @@ export const fieldTripDetail = {
             { src: '/assets/images/schools/FACE-1.jpg' },
             { src: '/assets/images/schools/FACE-2.jpg' },
             { src: '/assets/images/schools/FACE-3.jpg' }
-        ],
+        ],        
         intro: "Ziplining is a fun activity you can practice in Canada during the summer or fall season. In Montreal area, there are several parks with treetop challenge games and zip line adventures that wil make you appreciate the beutiful summer and fall colors from different heights.",
+        introIcon: "/assets/images/fieldTrips/ft-ziplining-intro.png",
         location: "45 Chemin du Sous-Bois, Mont St-Grégoire, QC",
         dateTime: "Monday Oct. 1, 2018 at 8:30 am",
         meetingPoint: "Westmount High School Front Entrance",
@@ -203,28 +204,24 @@ export const fieldTripDetail = {
             { src: '/assets/images/schools/FACE-2.jpg' },
             { src: '/assets/images/schools/FACE-3.jpg' }
         ],
-        intro: "Every winter, we are leading the international students to learn and practice two essential winter sports in Canada – skiing and snowboarding – on pedagogical days at Mont Rigaud. From beginners to skilled players, all students can have a lot of fun on the different levels of the ski lanes.",
+        intro: " Every winter, we are leading the international students to learn and practice two essential winter sports in Canada – skiing and snowboarding – on pedagogical days at Mont Rigaud. From beginners to skilled players, all students can have a lot of fun on the different levels of the ski lanes.",
+        introIcon: "/assets/images/fieldTrips/ft-ski-intro.png",
         location: "321 des Erables, Rigau, QC, J0P 1P0",
-        dateTime: "Feb 22 & Mar 1, 2019 at 8:30 am",
-        meetingPoint: "Westmount High School Front Entrance",
+        dateTime: "1st: Feb 22; 2nd: Mar 1, 2019 at 8:30 am",
+        meetingPoint: "1st: John F. Kennedy High School Front Entrance; 2nd: Westmount High School Front Entrance",
         transportation: "School bus",
-        backToMontreal: "Same day, approximately 5:00 pm",
-        whatToBring: [
-            "Lunch, snacks",
-            "Bottles of water",
-            "A pair of thin gloves"
-        ],
-        whatToWear: [
-            "Comfortable clothes with multiple layerse",
-            "Running shoes"
-        ],
+        backToMontreal: "Same day, at about 5:00 pm",
+        whatToBring:
+            "Lunch, snacks; Bottles of water",
+        whatToWear: 
+            "Snow pants (water-proof), snow gloves (water-proof), skiing goggles (optional) ",
         schedule: [
             "08:30 Departure from school",
             "09:45 Arrival at Rigaud",
-            "10:00 – 12:30 Ziplining",
-            "12:00 – 12:45 Lunch",
-            "12:45 – 14:45 Ziplining",
-            "15:00 Departure from Rigaud to school",
+            "10:00 – 11:00 Ski lesson for beginners",
+            "12:00 Lunch on site (bought at the cafeteria)",
+            "15:00 Return rented equipment",
+            "15:30 Departure from Rigaud to school",
             "16:00 Estimated arrival at school"
         ]
     },
@@ -236,29 +233,25 @@ export const fieldTripDetail = {
             { src: '/assets/images/schools/FACE-2.jpg' },
             { src: '/assets/images/schools/FACE-3.jpg' }
         ],
-        intro: "Ziplining is a fun activity you can practice in Canada during the summer or fall season. In Montreal area, there are several parks with treetop challenge games and zip line adventures that wil make you appreciate the beutiful summer and fall colors from different heights.",
-        location: "45 Chemin du Sous-Bois, Mont St-Grégoire, QC",
-        dateTime: "Monday Oct. 1, 2018 at 8:30 am",
+        intro: "Quebec City sits on the Saint Lawrence River in Canada's mostly French-speaking Quebec province. Dating to 1608, it has a fortified colonial core, Vieux-Québec and Place Royale, with very European style stone buildings and narrow streets.",
+        introIcon: "/assets/images/fieldTrips/ft-qc-intro.png",
+        location: "Old-Quebec, Quebec City, QC",
+        dateTime: "Saturday Mar 16, 2019 at 7:00 am",
         meetingPoint: "Westmount High School Front Entrance",
-        transportation: "School bus",
-        backToMontreal: "Same day, approximately 4:00 pm",
-        whatToBring: [
-            "Lunch, snacks",
-            "Bottles of water",
-            "A pair of thin gloves"
-        ],
-        whatToWear: [
-            "Comfortable clothes with multiple layerse",
-            "Running shoes"
-        ],
+        transportation: "Coach bus",
+        backToMontreal: "Same day, approximately 8:00 pm",
+        whatToBring:
+            "Lunch, snacks; Bottles of water; Snow pants; Water-resistent gloves (for Ice Hotel and Tubing)",
+        whatToWear: 
+            "Comfortable clothes with multiple layerse; Snow boots",
         schedule: [
-            "08:30 Departure from school",
-            "09:45 Arrival at Rigaud",
-            "10:00 – 12:30 Ziplining",
-            "12:00 – 12:45 Lunch",
-            "12:45 – 14:45 Ziplining",
-            "15:00 Departure from Rigaud to school",
-            "16:00 Estimated arrival at school"
+            "07:00 Departure from school",
+            "09:30 Arrival at Ice Hotel",
+            "11:00 Play ice-tubing, lunch on site",
+            "13:30 Travel to Old-Quebec",
+            "15:00 Dinner at Restaurant Côtes-à-Côtes (paid by EMSB)",
+            "17:30 Leave for Montreal",
+            "20:00 Estimated arrival at school"
         ]
     },
     sugarShack: {
@@ -269,29 +262,25 @@ export const fieldTripDetail = {
             { src: '/assets/images/schools/FACE-2.jpg' },
             { src: '/assets/images/schools/FACE-3.jpg' }
         ],
-        intro: "Ziplining is a fun activity you can practice in Canada during the summer or fall season. In Montreal area, there are several parks with treetop challenge games and zip line adventures that wil make you appreciate the beutiful summer and fall colors from different heights.",
-        location: "45 Chemin du Sous-Bois, Mont St-Grégoire, QC",
-        dateTime: "Monday Oct. 1, 2018 at 8:30 am",
-        meetingPoint: "Westmount High School Front Entrance",
+        intro: "A sugar shack (French: cabane à sucre), a.k.a. sugar house, is a semi-commercial establishment, primarily found in Eastern Canada. They are small cabins or groups of cabins where sap collected from sugar maple trees is boiled into maple syrup. Today many sugar shacks are commercially operated and also offer reception halls and outdoor activities open to the general public during certain months. Many of these activities include sleigh-riding, tours of the grounds, and eating maple toffee made in the house often in front of custormers.",
+        introIcon: "/assets/images/fieldTrips/ft-sugar-intro.png",
+        location: "300 Chemin Saint-Georges, Rigaud, QC",
+        dateTime: "1st: March 29; 2nd: April 5, 2019 at 9:30 am",
+        meetingPoint: "1st: John F. Kennedy High School; 2nd: Westmount High School",
         transportation: "School bus",
-        backToMontreal: "Same day, approximately 4:00 pm",
-        whatToBring: [
-            "Lunch, snacks",
-            "Bottles of water",
-            "A pair of thin gloves"
-        ],
-        whatToWear: [
-            "Comfortable clothes with multiple layerse",
-            "Running shoes"
-        ],
+        backToMontreal: "Same day, at about 3:00 pm",
+        whatToBring:
+            "Snacks; Bottles of water",
+        whatToWear: 
+            "Spring clothes",
         schedule: [
-            "08:30 Departure from school",
-            "09:45 Arrival at Rigaud",
-            "10:00 – 12:30 Ziplining",
-            "12:00 – 12:45 Lunch",
-            "12:45 – 14:45 Ziplining",
-            "15:00 Departure from Rigaud to school",
-            "16:00 Estimated arrival at school"
+            "09:30 Departure from school",
+            "10:30 Arrival at Sugar Shack",
+            "11:00 Tractor ride",
+            "11:30 Lunch on site (paid by EMSB)",
+            "12:30 Walk around and visit the Maple Syrup Factory",
+            "14:00 Departure from Rigaud to school",
+            "15:00 Estimated arrival at school"
         ]
     }
 }

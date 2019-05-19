@@ -6,8 +6,10 @@ import AdmissionS3 from './AdmissionStep3Comp';
 
 import Students from './StudentsComp';
 import StudentZLTest from './StudentsFieldTripTestComp';
+import CurrentFieldTrip from './StudentsFieldTripRenderComp';
 import StudentsStudy from './StudentsStudyComp';
 import StudentsHealth from './StudentsHealthComp';
+import { fieldTripDetail } from '../shared/StudentsDetails';
 
 import Schools from './SchoolsComp';
 import { CurrentSchool } from './SchoolsRenderComp';
@@ -45,7 +47,94 @@ class Main extends React.Component {
         
         const StudentsStudyPage     = () => { return ( <StudentsStudy /> )}
         const StudentsHealthPage    = () => { return ( <StudentsHealth /> )}
-        const StudentFTTestPage     = () => { return ( <StudentZLTest />)}
+        const StudentZipliningPage  = () => { 
+            return (
+                <CurrentFieldTrip   schedule0 = {fieldTripDetail.ziplining.schedule[0]}
+                                    schedule1 = {fieldTripDetail.ziplining.schedule[1]}
+                                    schedule2 = {fieldTripDetail.ziplining.schedule[2]}
+                                    schedule3 = {fieldTripDetail.ziplining.schedule[3]}
+                                    schedule4 = {fieldTripDetail.ziplining.schedule[4]}
+                                    schedule5 = {fieldTripDetail.ziplining.schedule[5]}
+                                    schedule6 = {fieldTripDetail.ziplining.schedule[6]}
+                                    trip      = {fieldTripDetail.ziplining.tripName}
+                                    imgs      = {fieldTripDetail.ziplining.imgUrl}
+                                    location  = {fieldTripDetail.ziplining.location}
+                                    intro     = {fieldTripDetail.ziplining.intro}
+                                    introIcon = {fieldTripDetail.ziplining.introIcon}
+                                    date      = {fieldTripDetail.ziplining.dateTime}
+                                    meet      = {fieldTripDetail.ziplining.meetingPoint}
+                                    back      = {fieldTripDetail.ziplining.backToMontreal}
+                                    transport = {fieldTripDetail.ziplining.transportation}
+                                    bring     = {fieldTripDetail.ziplining.whatToBring}
+                                    wear      = {fieldTripDetail.ziplining.whatToWear} />
+            )
+        }
+        const StudentSkiPage        = () => {
+            return (
+                <CurrentFieldTrip   schedule0 = {fieldTripDetail.skiBoarding.schedule[0]}
+                                    schedule1 = {fieldTripDetail.skiBoarding.schedule[1]}
+                                    schedule2 = {fieldTripDetail.skiBoarding.schedule[2]}
+                                    schedule3 = {fieldTripDetail.skiBoarding.schedule[3]}
+                                    schedule4 = {fieldTripDetail.skiBoarding.schedule[4]}
+                                    schedule5 = {fieldTripDetail.skiBoarding.schedule[5]}
+                                    schedule6 = {fieldTripDetail.skiBoarding.schedule[6]}
+                                    trip      = {fieldTripDetail.skiBoarding.tripName}
+                                    imgs      = {fieldTripDetail.skiBoarding.imgUrl}
+                                    location  = {fieldTripDetail.skiBoarding.location}
+                                    intro     = {fieldTripDetail.skiBoarding.intro}
+                                    introIcon = {fieldTripDetail.skiBoarding.introIcon}
+                                    date      = {fieldTripDetail.skiBoarding.dateTime}
+                                    meet      = {fieldTripDetail.skiBoarding.meetingPoint}
+                                    back      = {fieldTripDetail.skiBoarding.backToMontreal}
+                                    transport = {fieldTripDetail.skiBoarding.transportation}
+                                    bring     = {fieldTripDetail.skiBoarding.whatToBring}
+                                    wear      = {fieldTripDetail.skiBoarding.whatToWear} />
+            )
+        }
+        const StudentQcPage         = () => {
+            return (
+                <CurrentFieldTrip   schedule0 = {fieldTripDetail.qcCity.schedule[0]}
+                                    schedule1 = {fieldTripDetail.qcCity.schedule[1]}
+                                    schedule2 = {fieldTripDetail.qcCity.schedule[2]}
+                                    schedule3 = {fieldTripDetail.qcCity.schedule[3]}
+                                    schedule4 = {fieldTripDetail.qcCity.schedule[4]}
+                                    schedule5 = {fieldTripDetail.qcCity.schedule[5]}
+                                    schedule6 = {fieldTripDetail.qcCity.schedule[6]}
+                                    trip      = {fieldTripDetail.qcCity.tripName}
+                                    imgs      = {fieldTripDetail.qcCity.imgUrl}
+                                    location  = {fieldTripDetail.qcCity.location}
+                                    intro     = {fieldTripDetail.qcCity.intro}
+                                    introIcon = {fieldTripDetail.qcCity.introIcon}
+                                    date      = {fieldTripDetail.qcCity.dateTime}
+                                    meet      = {fieldTripDetail.qcCity.meetingPoint}
+                                    back      = {fieldTripDetail.qcCity.backToMontreal}
+                                    transport = {fieldTripDetail.qcCity.transportation}
+                                    bring     = {fieldTripDetail.qcCity.whatToBring}
+                                    wear      = {fieldTripDetail.qcCity.whatToWear} />
+            )
+        }
+        const StudentSugarPage      = () => {
+            return (
+                <CurrentFieldTrip   schedule0 = {fieldTripDetail.sugarShack.schedule[0]}
+                                    schedule1 = {fieldTripDetail.sugarShack.schedule[1]}
+                                    schedule2 = {fieldTripDetail.sugarShack.schedule[2]}
+                                    schedule3 = {fieldTripDetail.sugarShack.schedule[3]}
+                                    schedule4 = {fieldTripDetail.sugarShack.schedule[4]}
+                                    schedule5 = {fieldTripDetail.sugarShack.schedule[5]}
+                                    schedule6 = {fieldTripDetail.sugarShack.schedule[6]}
+                                    trip      = {fieldTripDetail.sugarShack.tripName}
+                                    imgs      = {fieldTripDetail.sugarShack.imgUrl}
+                                    location  = {fieldTripDetail.sugarShack.location}
+                                    intro     = {fieldTripDetail.sugarShack.intro}
+                                    introIcon = {fieldTripDetail.sugarShack.introIcon}
+                                    date      = {fieldTripDetail.sugarShack.dateTime}
+                                    meet      = {fieldTripDetail.sugarShack.meetingPoint}
+                                    back      = {fieldTripDetail.sugarShack.backToMontreal}
+                                    transport = {fieldTripDetail.sugarShack.transportation}
+                                    bring     = {fieldTripDetail.sugarShack.whatToBring}
+                                    wear      = {fieldTripDetail.sugarShack.whatToWear} />
+            )
+        }
 
         const SchoolFACEPage        = () => {
             return (
@@ -260,7 +349,10 @@ class Main extends React.Component {
                     <Route exact path="/students/study"             component={StudentsStudyPage} />
                     <Route exact path="/students/health"            component={StudentsHealthPage} />
                     <Route exact path="/students"                   component={StudentsPage} />
-                    <Route exact path="/students/ziplining"         component={StudentFTTestPage} />
+                    <Route exact path="/students/ziplining"         component={StudentZipliningPage} />
+                    <Route exact path="/students/skisnowboarding"   component={StudentSkiPage} />
+                    <Route exact path="/students/qccity"            component={StudentQcPage} />
+                    <Route exact path="/students/sugarshack"        component={StudentSugarPage} />
                     
                     <Redirect to="/home"/>
                 </Switch>

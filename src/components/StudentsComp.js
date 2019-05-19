@@ -34,18 +34,21 @@ function Students() {
                                 altText = {cardInfo.ski.altText}
                                 heading = {cardInfo.ski.heading} 
                                 location= {cardInfo.ski.location}
+                                route   = {cardInfo.ski.route}
                                 faIcon  = { faMapMarkedAlt } />
                     <RenderCard imgUrl  = {cardInfo.qcCity.imgUrl}
                                 iconUrl = {cardInfo.qcCity.iconUrl}
                                 altText = {cardInfo.qcCity.altText}
                                 heading = {cardInfo.qcCity.heading} 
                                 location= {cardInfo.qcCity.location}
+                                route   = {cardInfo.qcCity.route}
                                 faIcon  = { faMapMarkedAlt } />
                     <RenderCard imgUrl  = {cardInfo.sugarShack.imgUrl}
                                 iconUrl = {cardInfo.sugarShack.iconUrl}
                                 altText = {cardInfo.sugarShack.altText}
                                 heading = {cardInfo.sugarShack.heading} 
                                 location= {cardInfo.sugarShack.location}
+                                route   = {cardInfo.sugarShack.route}
                                 faIcon  = { faMapMarkedAlt } />
                 </Row> 
             </Container>
