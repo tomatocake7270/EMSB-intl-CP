@@ -47,8 +47,6 @@ const CurrentSchool = (props) => {
             </div>
         )
     };
-
-    //const faceImg = [{props.images}];
     
     return (
         <div className="text-center">

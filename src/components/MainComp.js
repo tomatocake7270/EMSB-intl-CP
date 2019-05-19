@@ -8,7 +8,6 @@ import StudentsStudy from './StudentsStudyComp';
 import StudentsHealth from './StudentsHealthComp';
 
 import Schools from './SchoolsComp';
-import SchoolFACE from './SchoolFACEComp';
 import CurrentSchool from './SchoolsRenderComp';
 import { schoolsInfo } from '../shared/SchoolDetails';
 
@@ -18,20 +17,6 @@ import Footer from './FooterComp';
 import Header from './HeaderComp';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
-// const SchoolInQuestion = (schoolId) => {
-//     return (
-//         <CurrentSchool  philo1      = {schoolsInfo[schoolId].philo[0]}
-//                         philo2      = {schoolsInfo[schoolId].philo[1]}
-//                         philo3      = {schoolsInfo[schoolId].philo[2]}
-//                         name        = {schoolsInfo[schoolId].name}
-//                         imgUrl      = {schoolsInfo[schoolId].imgUrl}
-//                         intro       = {schoolsInfo[schoolId].intro}
-//                         address     = {schoolsInfo[schoolId].address}
-//                         telephone   = {schoolsInfo[schoolId].telephone}
-//                         email       = {schoolsInfo[schoolId].email}
-//                         website     = {schoolsInfo[schoolId].website} />
-//     )
-// }
 
 class Main extends React.Component {
     constructor(props) {
@@ -49,57 +34,197 @@ class Main extends React.Component {
     }
 
     render() {
-        const HomePage = () => {
-            return(
-                <Home/>
-            );
-        }
-        const AdmissionPage = () => {
-            return(
-                <Admission/>
-            );
-        }
-        const SchoolsPage = () => {
+        const HomePage              = () => { return ( <Home/> )}
+        const AdmissionPage         = () => { return ( <Admission/> )}
+        const SchoolsPage           = () => { return ( <Schools/> )}
+        const StudentsPage          = () => { return ( <Students/> )}
+        const ContactsPage          = () => { return ( <Contacts/> )}
+        const AdmissionS2Page       = () => { return ( <AdmissionS2/> )}
+        const AdmissionS3Page       = () => { return ( <AdmissionS3/> )}
+        const StudentsStudyPage     = () => { return ( <StudentsStudy/> )}
+        const StudentsHealthPage    = () => { return ( <StudentsHealth/> )}
+        const SchoolFACEPage        = () => {
             return (
-                <Schools/>
-            );
-        }
-        const StudentsPage = () => {
-            return (
-                <Students/>
-            );
-        }
-        const ContactsPage = () => {
-            return (
-                <Contacts/>
-            );
-        }
-        const AdmissionS2Page = () => {
-            return (
-                <AdmissionS2/>
+                <CurrentSchool  philo1      = {schoolsInfo[0].philo[0]}
+                                philo2      = {schoolsInfo[0].philo[1]}
+                                philo3      = {schoolsInfo[0].philo[2]}
+                                name        = {schoolsInfo[0].name}
+                                imgUrl      = {schoolsInfo[0].imgUrl}
+                                intro       = {schoolsInfo[0].intro}
+                                address     = {schoolsInfo[0].address}
+                                telephone   = {schoolsInfo[0].telephone}
+                                email       = {schoolsInfo[0].email}
+                                website     = {schoolsInfo[0].website} />
             )
         }
-        const AdmissionS3Page = () => {
+        const SchoolJLPage          = () => {
             return (
-                <AdmissionS3/>
+                <CurrentSchool  philo1      = {schoolsInfo[1].philo[0]}
+                                philo2      = {schoolsInfo[1].philo[1]}
+                                philo3      = {schoolsInfo[1].philo[2]}
+                                name        = {schoolsInfo[1].name}
+                                imgUrl      = {schoolsInfo[1].imgUrl}
+                                intro       = {schoolsInfo[1].intro}
+                                address     = {schoolsInfo[1].address}
+                                telephone   = {schoolsInfo[1].telephone}
+                                email       = {schoolsInfo[1].email}
+                                website     = {schoolsInfo[1].website} />
             )
         }
-        const StudentsStudyPage = () => {
+        const SchoolJFKPage         = () => {
             return (
-                <StudentsStudy/>
+                <CurrentSchool  philo1      = {schoolsInfo[2].philo[0]}
+                                philo2      = {schoolsInfo[2].philo[1]}
+                                philo3      = {schoolsInfo[2].philo[2]}
+                                name        = {schoolsInfo[2].name}
+                                imgUrl      = {schoolsInfo[2].imgUrl}
+                                intro       = {schoolsInfo[2].intro}
+                                address     = {schoolsInfo[2].address}
+                                telephone   = {schoolsInfo[2].telephone}
+                                email       = {schoolsInfo[2].email}
+                                website     = {schoolsInfo[2].website} />
             )
         }
-        const StudentsHealthPage = () => {
+        const SchoolLBPPage         = () => {
             return (
-                <StudentsHealth/>
+                <CurrentSchool  philo1      = {schoolsInfo[3].philo[0]}
+                                philo2      = {schoolsInfo[3].philo[1]}
+                                philo3      = {schoolsInfo[3].philo[2]}
+                                name        = {schoolsInfo[3].name}
+                                imgUrl      = {schoolsInfo[3].imgUrl}
+                                intro       = {schoolsInfo[3].intro}
+                                address     = {schoolsInfo[3].address}
+                                telephone   = {schoolsInfo[3].telephone}
+                                email       = {schoolsInfo[3].email}
+                                website     = {schoolsInfo[3].website} />
             )
         }
-        const SchoolFACEPage = () => {
+        const SchoolLHPage          = () => {
             return (
-                <SchoolFACE />
+                <CurrentSchool  philo1      = {schoolsInfo[4].philo[0]}
+                                philo2      = {schoolsInfo[4].philo[1]}
+                                philo3      = {schoolsInfo[4].philo[2]}
+                                name        = {schoolsInfo[4].name}
+                                imgUrl      = {schoolsInfo[4].imgUrl}
+                                intro       = {schoolsInfo[4].intro}
+                                address     = {schoolsInfo[4].address}
+                                telephone   = {schoolsInfo[4].telephone}
+                                email       = {schoolsInfo[4].email}
+                                website     = {schoolsInfo[4].website} />
             )
         }
-
+        const SchoolJPIPage         = () => {
+            return (
+                <CurrentSchool  philo1      = {schoolsInfo[5].philo[0]}
+                                philo2      = {schoolsInfo[5].philo[1]}
+                                philo3      = {schoolsInfo[5].philo[2]}
+                                name        = {schoolsInfo[5].name}
+                                imgUrl      = {schoolsInfo[5].imgUrl}
+                                intro       = {schoolsInfo[5].intro}
+                                address     = {schoolsInfo[5].address}
+                                telephone   = {schoolsInfo[5].telephone}
+                                email       = {schoolsInfo[5].email}
+                                website     = {schoolsInfo[5].website} />
+            )
+        }
+        const SchoolLMACPage        = () => {
+            return (
+                <CurrentSchool  philo1      = {schoolsInfo[6].philo[0]}
+                                philo2      = {schoolsInfo[6].philo[1]}
+                                philo3      = {schoolsInfo[6].philo[2]}
+                                name        = {schoolsInfo[6].name}
+                                imgUrl      = {schoolsInfo[6].imgUrl}
+                                intro       = {schoolsInfo[6].intro}
+                                address     = {schoolsInfo[6].address}
+                                telephone   = {schoolsInfo[6].telephone}
+                                email       = {schoolsInfo[6].email}
+                                website     = {schoolsInfo[6].website} />
+            )
+        }
+        const SchoolMMAPage         = () => {
+            return (
+                <CurrentSchool  philo1      = {schoolsInfo[7].philo[0]}
+                                philo2      = {schoolsInfo[7].philo[1]}
+                                philo3      = {schoolsInfo[7].philo[2]}
+                                name        = {schoolsInfo[7].name}
+                                imgUrl      = {schoolsInfo[7].imgUrl}
+                                intro       = {schoolsInfo[7].intro}
+                                address     = {schoolsInfo[7].address}
+                                telephone   = {schoolsInfo[7].telephone}
+                                email       = {schoolsInfo[7].email}
+                                website     = {schoolsInfo[7].website} />
+            )
+        }
+        const SchoolRMHPage         = () => {
+            return (
+                <CurrentSchool  philo1      = {schoolsInfo[8].philo[0]}
+                                philo2      = {schoolsInfo[8].philo[1]}
+                                philo3      = {schoolsInfo[8].philo[2]}
+                                name        = {schoolsInfo[8].name}
+                                imgUrl      = {schoolsInfo[8].imgUrl}
+                                intro       = {schoolsInfo[8].intro}
+                                address     = {schoolsInfo[8].address}
+                                telephone   = {schoolsInfo[8].telephone}
+                                email       = {schoolsInfo[8].email}
+                                website     = {schoolsInfo[8].website} />
+            )
+        }
+        const SchoolRVPage          = () => {
+            return (
+                <CurrentSchool  philo1      = {schoolsInfo[9].philo[0]}
+                                philo2      = {schoolsInfo[9].philo[1]}
+                                philo3      = {schoolsInfo[9].philo[2]}
+                                name        = {schoolsInfo[9].name}
+                                imgUrl      = {schoolsInfo[9].imgUrl}
+                                intro       = {schoolsInfo[9].intro}
+                                address     = {schoolsInfo[9].address}
+                                telephone   = {schoolsInfo[9].telephone}
+                                email       = {schoolsInfo[9].email}
+                                website     = {schoolsInfo[9].website} />
+            )
+        }
+        const SchoolVMCPage         = () => {
+            return (
+                <CurrentSchool  philo1      = {schoolsInfo[10].philo[0]}
+                                philo2      = {schoolsInfo[10].philo[1]}
+                                philo3      = {schoolsInfo[10].philo[2]}
+                                name        = {schoolsInfo[10].name}
+                                imgUrl      = {schoolsInfo[10].imgUrl}
+                                intro       = {schoolsInfo[10].intro}
+                                address     = {schoolsInfo[10].address}
+                                telephone   = {schoolsInfo[10].telephone}
+                                email       = {schoolsInfo[10].email}
+                                website     = {schoolsInfo[10].website} />
+            )
+        }
+        const SchoolWMHPage         = () => {
+            return (
+                <CurrentSchool  philo1      = {schoolsInfo[11].philo[0]}
+                                philo2      = {schoolsInfo[11].philo[1]}
+                                philo3      = {schoolsInfo[11].philo[2]}
+                                name        = {schoolsInfo[11].name}
+                                imgUrl      = {schoolsInfo[11].imgUrl}
+                                intro       = {schoolsInfo[11].intro}
+                                address     = {schoolsInfo[11].address}
+                                telephone   = {schoolsInfo[11].telephone}
+                                email       = {schoolsInfo[11].email}
+                                website     = {schoolsInfo[11].website} />
+            )
+        }
+        const SchoolRWAPage         = () => {
+            return (
+                <CurrentSchool  philo1      = {schoolsInfo[12].philo[0]}
+                                philo2      = {schoolsInfo[12].philo[1]}
+                                philo3      = {schoolsInfo[12].philo[2]}
+                                name        = {schoolsInfo[12].name}
+                                imgUrl      = {schoolsInfo[12].imgUrl}
+                                intro       = {schoolsInfo[12].intro}
+                                address     = {schoolsInfo[12].address}
+                                telephone   = {schoolsInfo[12].telephone}
+                                email       = {schoolsInfo[12].email}
+                                website     = {schoolsInfo[12].website} />
+            )
+        }
         
 
         return(
@@ -113,27 +238,24 @@ class Main extends React.Component {
                     <Route exact path="/admission/step2"    component={AdmissionS2Page}/>
                     <Route exact path="/admission/step3"    component={AdmissionS3Page}/>
                     
-                    <Route exact path="/schools"            component={SchoolsPage}/>
-                    <Route exact path="/schools/face"       component={SchoolFACEPage} />
-                    <Route exact path="/schools/jameslyng"  component={() => {
-                        return (
-                            <CurrentSchool  philo1      = {schoolsInfo[1].philo[0]}
-                                            philo2      = {schoolsInfo[1].philo[1]}
-                                            philo3      = {schoolsInfo[1].philo[2]}
-                                            name        = {schoolsInfo[1].name}
-                                            imgUrl      = {schoolsInfo[1].imgUrl}
-                                            intro       = {schoolsInfo[1].intro}
-                                            address     = {schoolsInfo[1].address}
-                                            telephone   = {schoolsInfo[1].telephone}
-                                            email       = {schoolsInfo[1].email}
-                                            website     = {schoolsInfo[1].website} />
-                        );             
-                    }} />
-                    {/* <Route exact path="/schools/johnfkennedy" component={{SchoolInQuestion(2)}} /> */}
+                    <Route exact path="/schools"                    component={SchoolsPage}/>
+                    <Route exact path="/schools/face"               component={SchoolFACEPage} />
+                    <Route exact path="/schools/jameslyng"          component={SchoolJLPage} />
+                    <Route exact path="/schools/johnfkennedy"       component={SchoolJFKPage} />
+                    <Route exact path="/schools/lesterbpearson"     component={SchoolLBPPage} />
+                    <Route exact path="/schools/laurenhill"         component={SchoolLHPage} />
+                    <Route exact path="/schools/johnpauli"          component={SchoolJPIPage} />
+                    <Route exact path="/schools/lauriermacdonald"   component={SchoolLMACPage} />
+                    <Route exact path="/schools/marymount"          component={SchoolMMAPage} />
+                    <Route exact path="/schools/rosemount"          component={SchoolRMHPage} />
+                    <Route exact path="/schools/royalvale"          component={SchoolRVPage} />
+                    <Route exact path="/schools/vincentmassey"      component={SchoolVMCPage} />
+                    <Route exact path="/schools/westmount"          component={SchoolWMHPage} />
+                    <Route exact path="/schools/royalwest"          component={SchoolRWAPage} />
 
-                    <Route exact path="/students/study"     component={StudentsStudyPage}/>
-                    <Route exact path="/students/health"    component={StudentsHealthPage}/>
-                    <Route exact path="/students"           component={StudentsPage}/>
+                    <Route exact path="/students/study"             component={StudentsStudyPage}/>
+                    <Route exact path="/students/health"            component={StudentsHealthPage}/>
+                    <Route exact path="/students"                   component={StudentsPage}/>
                     
                     <Redirect to="/home"/>
                 </Switch>

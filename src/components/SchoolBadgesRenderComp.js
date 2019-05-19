@@ -6,7 +6,7 @@ const SchoolPicker = (props) => {
     return (
         <Col>
             <Link to={`/schools/${props.route}`} > 
-                <img src={props.iconUrl} width="120px" className="img-fluid" alt={props.name}></img>
+                <img src={props.iconUrl} width={props.iconWidth} className="img-fluid" alt={props.name}></img>
             </Link>
         </Col>
     )

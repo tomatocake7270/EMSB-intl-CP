@@ -5,6 +5,7 @@ export const schoolsInfo =
             name: 'FACE School',
             route: 'face',
             iconUrl: 'assets/images/schoolLogos/FACE.png',
+            iconWidth: '120',
             imgUrl: [
                 { src: '/assets/images/schools/FACE-0.jpg' },
                 { src: '/assets/images/schools/FACE-1.jpg' },
@@ -27,6 +28,7 @@ export const schoolsInfo =
             name: 'James Lyng High School',
             route: 'jameslyng',
             iconUrl: 'assets/images/schoolLogos/JL.png',
+            iconWidth: '120',
             imgUrl: [
                 { src: '/assets/images/schools/FACE-0.jpg' },
                 { src: '/assets/images/schools/FACE-1.jpg' },
@@ -49,6 +51,7 @@ export const schoolsInfo =
             name: 'John F. Kennedy High School',
             route: 'johnfkennedy',
             iconUrl: 'assets/images/schoolLogos/JFK.png',
+            iconWidth: '120',
             imgUrl: [
                 { src: '/assets/images/schools/FACE-0.jpg' },
                 { src: '/assets/images/schools/FACE-1.jpg' },
@@ -71,6 +74,7 @@ export const schoolsInfo =
             name: 'Lester B. Pearson High School',
             route: 'lesterbpearson',
             iconUrl: 'assets/images/schoolLogos/LBP.jpg',
+            iconWidth: '120',
             imgUrl: [
                 { src: '/assets/images/schools/FACE-0.jpg' },
                 { src: '/assets/images/schools/FACE-1.jpg' },
@@ -93,6 +97,7 @@ export const schoolsInfo =
             name: 'LaurenHill Academy & LaurenHill Juniro Campus',
             route: 'laurenhill',
             iconUrl: 'assets/images/schoolLogos/LHA.jpg',
+            iconWidth: '120',
             imgUrl: [
                 { src: '/assets/images/schools/FACE-0.jpg' },
                 { src: '/assets/images/schools/FACE-1.jpg' },
@@ -115,6 +120,7 @@ export const schoolsInfo =
             name: 'John Paul I Junior High School',
             route: 'johnpauli',
             iconUrl: 'assets/images/schoolLogos/JP.jpg',
+            iconWidth: '120',
             imgUrl: [
                 { src: '/assets/images/schools/FACE-0.jpg' },
                 { src: '/assets/images/schools/FACE-1.jpg' },
@@ -137,6 +143,7 @@ export const schoolsInfo =
             name: 'Laurier MacDonald High School',
             route: 'lauriermacdonald',
             iconUrl: 'assets/images/schoolLogos/LMac.jpg',
+            iconWidth: '120',
             imgUrl: [
                 { src: '/assets/images/schools/FACE-0.jpg' },
                 { src: '/assets/images/schools/FACE-1.jpg' },
@@ -159,6 +166,7 @@ export const schoolsInfo =
             name: 'Marymount Academy',
             route: 'marymount',
             iconUrl: 'assets/images/schoolLogos/MM.png',
+            iconWidth: '120',
             imgUrl: [
                 { src: '/assets/images/schools/FACE-0.jpg' },
                 { src: '/assets/images/schools/FACE-1.jpg' },
@@ -181,6 +189,7 @@ export const schoolsInfo =
             name: 'Rosemount High School',
             route: 'rosemount',
             iconUrl: 'assets/images/schoolLogos/RM.jpg',
+            iconWidth: '120',
             imgUrl: [
                 { src: '/assets/images/schools/FACE-0.jpg' },
                 { src: '/assets/images/schools/FACE-1.jpg' },
@@ -203,6 +212,7 @@ export const schoolsInfo =
             name: 'Royal Vale School',
             route: 'royalvale',
             iconUrl: 'assets/images/schoolLogos/RV.png',
+            iconWidth: '120',
             imgUrl: [
                 { src: '/assets/images/schools/FACE-0.jpg' },
                 { src: '/assets/images/schools/FACE-1.jpg' },
@@ -225,6 +235,7 @@ export const schoolsInfo =
             name: 'Vincent Massey Collegiate',
             route: 'vincentmassey',
             iconUrl: 'assets/images/schoolLogos/VMC.jpg',
+            iconWidth: '120',
             imgUrl: [
                 { src: '/assets/images/schools/FACE-0.jpg' },
                 { src: '/assets/images/schools/FACE-1.jpg' },
@@ -247,6 +258,7 @@ export const schoolsInfo =
             name: 'Westmount High School',
             route: 'westmount',
             iconUrl: 'assets/images/schoolLogos/WM.jpg',
+            iconWidth: '120',
             imgUrl: [
                 { src: '/assets/images/schools/FACE-0.jpg' },
                 { src: '/assets/images/schools/FACE-1.jpg' },
@@ -269,21 +281,22 @@ export const schoolsInfo =
             name: 'Royal West Academy',
             route: 'royalwest',
             iconUrl: 'assets/images/schoolLogos/RWA.jpg',
+            iconWidth: '240',
             imgUrl: [
                 { src: '/assets/images/schools/FACE-0.jpg' },
                 { src: '/assets/images/schools/FACE-1.jpg' },
                 { src: '/assets/images/schools/FACE-2.jpg' },
                 { src: '/assets/images/schools/FACE-3.jpg' }
             ],
-            intro: 'Westmount High School is located near the corner of Greene Avenue and is accessible by bus, the Atwater Metro, and/or the Vendome Metro/Train Station.',
+            intro: 'Royal West Academy is located near the corner of Westminster and St. Jacques/Avon and is accessible by commuter train to the Montreal West Train Station, bus, and/or the Snowdon Metro, the Vendome Metro/Train Station, and the Villa Maria Metro.',
             address: '4350 St. Catherine Street West, Westmount, QC, H3Z 1R1',
             telephone: '(514) 933-2701',
             email: 'westmounthigh@emsb.qc.ca',
             website: 'https://duxvitaeratio.ca',
             philo: [
-                'To create and maintain a safe and effective learning environment while encouraging self-expression, self-discipline and self-fulfillment.',
-                'To serve students\' needs while developing their self-discipline and respect for each other.',
-                'To provide an exceptional learning environment where students can explore their interests and reach their potential.'
+                'To provide a structured milieu in which students are committed to academic achievement, bilingualism, computer literacy, an appreciation of the arts, an understanding of social issues and a sense of community responsibilities.',
+                'To encourage the development of self-discipline, learning and interpersonal skills, a strong sense of responsibility and self-esteem in the students.',
+                'To participate in the compulsory extra-curricular program that includes athletic, cultural, environmental, and community service activities as a means to promote personal development and physical well-being.'
             ]
         }
 
