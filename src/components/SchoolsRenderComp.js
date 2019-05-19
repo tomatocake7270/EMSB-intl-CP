@@ -5,8 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlusCircle, faMinusCircle, faCheckCircle} from '@fortawesome/free-solid-svg-icons';
 import SchoolEMSBCal from './SchoolEMSBCalComp';
 
-const CurrentSchool = (props) => {
-
+export const CurrentSchool = (props) => {
     const [ philoState, setPhiloState ] = useState({
         showPhilo: false
     });
@@ -149,4 +148,12 @@ const CurrentSchool = (props) => {
     );
 }
 
-export default CurrentSchool;
+export const SchoolPicker = (props) => {
+    return (
+        <Col>
+            <Link to={`/schools/${props.route}`} > 
+                <img src={props.iconUrl} width={props.iconWidth} className="img-fluid" alt={props.name}></img>
+            </Link>
+        </Col>
+    )
+}

@@ -18,7 +18,6 @@ function Students() {
                     <RenderMedia title = {titleInfo.healthSupport.title}
                                  href  = {titleInfo.healthSupport.href}
                                  url   = {titleInfo.healthSupport.url.urlDeselected}/>
-                    
                 </div>
             </Container> 
             <Container>
@@ -28,6 +27,7 @@ function Students() {
                                 altText = {cardInfo.ziplining.altText}
                                 heading = {cardInfo.ziplining.heading} 
                                 location= {cardInfo.ziplining.location}
+                                route   = {cardInfo.ziplining.route}
                                 faIcon  = { faMapMarkedAlt } />
                     <RenderCard imgUrl  = {cardInfo.ski.imgUrl}
                                 iconUrl = {cardInfo.ski.iconUrl}

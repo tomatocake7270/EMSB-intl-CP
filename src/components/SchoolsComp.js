@@ -1,7 +1,8 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row } from 'reactstrap';
 import SchoolEMSBCal from './SchoolEMSBCalComp';
-import SchoolPicker from './SchoolBadgesRenderComp';
+//import SchoolPicker from './SchoolBadgesRenderComp';
+import { SchoolPicker } from './SchoolsRenderComp';
 import { schoolsInfo } from '../shared/SchoolDetails';
 
 const Schools = () => {

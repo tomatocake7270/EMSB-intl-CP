@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Media } from 'reactstrap'; 
 
-function QcEdu(props) {
+export const QcEdu = () => {
     return(
         <div className="text-center">
             <Container className="my-3 border-bottom border-primary pb-1">
@@ -86,7 +86,5 @@ function QcEdu(props) {
                 </Row>
             </Container>
         </div>
-    );
+    )
 }
-
-export default QcEdu;

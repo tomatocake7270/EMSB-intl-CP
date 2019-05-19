@@ -41,7 +41,9 @@ export const RenderCard = (props) => {
                             </Media>
                             <div className="d-flex justify-content-between">
                                 <p className="students-field-trip-location">{props.location}</p>
-                                <FontAwesomeIcon icon={props.faIcon} size="lg"/>
+                                <Link to={`/students/${props.route}`}>
+                                    <FontAwesomeIcon icon={props.faIcon} size="lg"/>
+                                </Link>
                             </div>
                         </Media>
                     </Media>

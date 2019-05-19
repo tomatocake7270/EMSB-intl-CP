@@ -1,45 +1,51 @@
 import React from 'react';
 import { Container, Row, Col, Media } from 'reactstrap';
-import QcEdu from './AdmissionQcEduComp';
+import { Link } from 'react-router-dom';
+import { QcEdu } from './AdmissionRenderComp';
 
-function AdmissionS2(props) {
+const AdmissionS2 = () => {
     return(
         <div className="text-center">
             <Container className="my-3 border-bottom border-primary pb-1">
                 <div className="d-flex justify-content-center">
-                    <Media className="mx-3">
-                        <Media left href="/admission">
-                            <Media object src="/assets/images/admission-step-deselected.png" alt="selected" className="img-fluid"/>
-                        </Media>
-                        <Media body>
-                            <Media heading className="mt-1 ml-2">
-                                <p>Step 1</p>
+                    <Link to="/admission">
+                        <Media className="mx-3">
+                            <Media left href="#">
+                                <Media object src="/assets/images/admission-step-deselected.png" alt="selected" className="img-fluid"/>
+                            </Media>
+                            <Media body>
+                                <Media heading className="mt-1 ml-2">
+                                    <p>Step 1</p>
+                                </Media>
                             </Media>
                         </Media>
-                    </Media>
-                    <Media className="mx-3">
-                        <Media left href="/admission/step2">
-                            <Media object src="/assets/images/admission-step-selected.png" alt="selected" className="img-fluid"/>
-                        </Media>
-                        <Media body>
-                            <Media heading className="mt-1 ml-2">
-                                <p>Step 2</p>
+                    </Link>
+                    <Link to="/admission/step2">
+                        <Media className="mx-3">
+                            <Media left href="#">
+                                <Media object src="/assets/images/admission-step-selected.png" alt="selected" className="img-fluid"/>
+                            </Media>
+                            <Media body>
+                                <Media heading className="mt-1 ml-2">
+                                    <p>Step 2</p>
+                                </Media>
                             </Media>
                         </Media>
-                    </Media>
-                    <Media className="mx-3">
-                        <Media left href="/admission/step3">
-                            <Media object src="/assets/images/admission-step-deselected.png" alt="selected" className="img-fluid"/>
-                        </Media>
-                        <Media body>
-                            <Media heading className="mt-1 ml-2">
-                                <p>Step 3</p>
+                    </Link>
+                    <Link to="/admission/step3">
+                        <Media className="mx-3">
+                            <Media left href="#">
+                                <Media object src="/assets/images/admission-step-deselected.png" alt="selected" className="img-fluid"/>
+                            </Media>
+                            <Media body>
+                                <Media heading className="mt-1 ml-2">
+                                    <p>Step 3</p>
+                                </Media>
                             </Media>
                         </Media>
-                    </Media>
+                    </Link>
                 </div>
             </Container>
-        
             <Container className="my-3">
                 <Row>
                     {/* className="border border-primary rounded" */}

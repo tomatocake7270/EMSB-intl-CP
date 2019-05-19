@@ -1,3 +1,4 @@
+//Students 标题选项
 export const titleInfo = {
     fieldTrips: {
         href: "/students/",
@@ -27,6 +28,7 @@ export const titleInfo = {
 
 export const cardInfo = {
     ziplining: {
+        route: "ziplining",
         imgUrl: "/assets/images/fieldTrips/ziplining.jpg",
         iconUrl: "/assets/images/fieldTrips/ziplining-bg.png",
         altText: "Ziplining",
@@ -34,6 +36,7 @@ export const cardInfo = {
         location: "Marieville, Québec"
     },
     ski: {
+        route: "skisnowboarding",
         imgUrl: "/assets/images/fieldTrips/ski.jpg",
         iconUrl: "/assets/images/fieldTrips/ski-bg.png",
         altText: "Ski",
@@ -41,6 +44,7 @@ export const cardInfo = {
         location: "Mont Rinaud, Québec"
     },
     qcCity: {
+        route: "qccity",
         imgUrl: "/assets/images/fieldTrips/qc-city.jpg",
         iconUrl: "/assets/images/fieldTrips/qc-city-bg.png",
         altText: "QC City",
@@ -48,6 +52,7 @@ export const cardInfo = {
         location: "Québec City, Québec"
     },
     sugarShack: {
+        route: "sugarshack",
         imgUrl: "/assets/images/fieldTrips/sugar-shack.jpg",
         iconUrl: "/assets/images/fieldTrips/sugar-shack-bg.png",
         altText: "Sugar Shack",
@@ -55,30 +60,35 @@ export const cardInfo = {
         location: "Sucrie de la Montagne, Québec"
     },
     rosettaStone: {
+        route: "rosettastone",
         imgUrl: "/assets/images/studyAssist/study-rosetta.jpg",
         iconUrl: "/assets/images/studyAssist/study-rosetta-icon.png",
         altText: "Rosetta Stone",
         heading: "Learn English/French in Rosetta Stone® Full-access Licence"
     },
     learnQuebec: {
+        route: "learnquebec",
         imgUrl: "/assets/images/studyAssist/study-learnQc.jpg",
         iconUrl: "/assets/images/studyAssist/study-learnQc-icon.png",
         altText: "LEARN Quebec",
         heading: "Online Tutoring for Grade 7 to 11 on LEARN Quebec haha"
     },
     vitalEnglish: {
+        route: "vitalenglish",
         imgUrl: "/assets/images/studyAssist/study-vitalEn.jpg",
         iconUrl: "/assets/images/studyAssist/study-vitalEn-icon.png",
         altText: "Vital English",
         heading: "Test Your English Skills and Improve them on Vital English"
     },
     guardMe: {
+        route: "guardme",
         imgUrl: "/assets/images/healthSupport/health-guardMe.jpg",
         iconUrl: "/assets/images/healthSupport/health-guardMe-icon.png",
         altText: "Guard.Me",
         heading: "Use Guard.me Insurance Card to Protect Your Physical Health"
     },
     keepMeSafe: {
+        route: "keepmesafe",
         imgUrl: "/assets/images/healthSupport/health-mental.jpg",
         iconUrl: "/assets/images/healthSupport/health-mental-icon.png",
         altText: "Keep.meSAFE",
@@ -153,4 +163,135 @@ export const listInfo = {
         altText: "Hot line",
         heading: "Call an Advisor for Help (in Canada)"
     },
+}
+
+//Field trip info
+export const fieldTripDetail = {
+    ziplining: {
+        tripName: "Abraska Ziplining Trip",
+        imgUrl: [
+            { src: '/assets/images/schools/FACE-0.jpg' },
+            { src: '/assets/images/schools/FACE-1.jpg' },
+            { src: '/assets/images/schools/FACE-2.jpg' },
+            { src: '/assets/images/schools/FACE-3.jpg' }
+        ],
+        intro: "Ziplining is a fun activity you can practice in Canada during the summer or fall season. In Montreal area, there are several parks with treetop challenge games and zip line adventures that wil make you appreciate the beutiful summer and fall colors from different heights.",
+        location: "45 Chemin du Sous-Bois, Mont St-Grégoire, QC",
+        dateTime: "Monday Oct. 1, 2018 at 8:30 am",
+        meetingPoint: "Westmount High School Front Entrance",
+        transportation: "School bus",
+        backToMontreal: "Same day, approximately 4:00 pm",
+        whatToBring:
+            "Lunch, snacks; Bottles of water; A pair of thin gloves",
+        whatToWear: 
+            "Comfortable clothes with multiple layerse; Running shoes",
+        schedule: [
+            "08:30 Departure from school",
+            "09:45 Arrival at Rigaud",
+            "10:00 – 12:30 Ziplining",
+            "12:00 – 12:45 Lunch",
+            "12:45 – 14:45 Ziplining",
+            "15:00 Departure from Rigaud to school",
+            "16:00 Estimated arrival at school"
+        ]
+    },
+    skiBoarding: {
+        tripName: "Ski and Snowboarding Trip",
+        imgUrl: [
+            { src: '/assets/images/schools/FACE-0.jpg' },
+            { src: '/assets/images/schools/FACE-1.jpg' },
+            { src: '/assets/images/schools/FACE-2.jpg' },
+            { src: '/assets/images/schools/FACE-3.jpg' }
+        ],
+        intro: "Every winter, we are leading the international students to learn and practice two essential winter sports in Canada – skiing and snowboarding – on pedagogical days at Mont Rigaud. From beginners to skilled players, all students can have a lot of fun on the different levels of the ski lanes.",
+        location: "321 des Erables, Rigau, QC, J0P 1P0",
+        dateTime: "Feb 22 & Mar 1, 2019 at 8:30 am",
+        meetingPoint: "Westmount High School Front Entrance",
+        transportation: "School bus",
+        backToMontreal: "Same day, approximately 5:00 pm",
+        whatToBring: [
+            "Lunch, snacks",
+            "Bottles of water",
+            "A pair of thin gloves"
+        ],
+        whatToWear: [
+            "Comfortable clothes with multiple layerse",
+            "Running shoes"
+        ],
+        schedule: [
+            "08:30 Departure from school",
+            "09:45 Arrival at Rigaud",
+            "10:00 – 12:30 Ziplining",
+            "12:00 – 12:45 Lunch",
+            "12:45 – 14:45 Ziplining",
+            "15:00 Departure from Rigaud to school",
+            "16:00 Estimated arrival at school"
+        ]
+    },
+    qcCity: {
+        tripName: "Quebec City and Ice Hotel Trip",
+        imgUrl: [
+            { src: '/assets/images/schools/FACE-0.jpg' },
+            { src: '/assets/images/schools/FACE-1.jpg' },
+            { src: '/assets/images/schools/FACE-2.jpg' },
+            { src: '/assets/images/schools/FACE-3.jpg' }
+        ],
+        intro: "Ziplining is a fun activity you can practice in Canada during the summer or fall season. In Montreal area, there are several parks with treetop challenge games and zip line adventures that wil make you appreciate the beutiful summer and fall colors from different heights.",
+        location: "45 Chemin du Sous-Bois, Mont St-Grégoire, QC",
+        dateTime: "Monday Oct. 1, 2018 at 8:30 am",
+        meetingPoint: "Westmount High School Front Entrance",
+        transportation: "School bus",
+        backToMontreal: "Same day, approximately 4:00 pm",
+        whatToBring: [
+            "Lunch, snacks",
+            "Bottles of water",
+            "A pair of thin gloves"
+        ],
+        whatToWear: [
+            "Comfortable clothes with multiple layerse",
+            "Running shoes"
+        ],
+        schedule: [
+            "08:30 Departure from school",
+            "09:45 Arrival at Rigaud",
+            "10:00 – 12:30 Ziplining",
+            "12:00 – 12:45 Lunch",
+            "12:45 – 14:45 Ziplining",
+            "15:00 Departure from Rigaud to school",
+            "16:00 Estimated arrival at school"
+        ]
+    },
+    sugarShack: {
+        tripName: "Sugar Shack Trip",
+        imgUrl: [
+            { src: '/assets/images/schools/FACE-0.jpg' },
+            { src: '/assets/images/schools/FACE-1.jpg' },
+            { src: '/assets/images/schools/FACE-2.jpg' },
+            { src: '/assets/images/schools/FACE-3.jpg' }
+        ],
+        intro: "Ziplining is a fun activity you can practice in Canada during the summer or fall season. In Montreal area, there are several parks with treetop challenge games and zip line adventures that wil make you appreciate the beutiful summer and fall colors from different heights.",
+        location: "45 Chemin du Sous-Bois, Mont St-Grégoire, QC",
+        dateTime: "Monday Oct. 1, 2018 at 8:30 am",
+        meetingPoint: "Westmount High School Front Entrance",
+        transportation: "School bus",
+        backToMontreal: "Same day, approximately 4:00 pm",
+        whatToBring: [
+            "Lunch, snacks",
+            "Bottles of water",
+            "A pair of thin gloves"
+        ],
+        whatToWear: [
+            "Comfortable clothes with multiple layerse",
+            "Running shoes"
+        ],
+        schedule: [
+            "08:30 Departure from school",
+            "09:45 Arrival at Rigaud",
+            "10:00 – 12:30 Ziplining",
+            "12:00 – 12:45 Lunch",
+            "12:45 – 14:45 Ziplining",
+            "15:00 Departure from Rigaud to school",
+            "16:00 Estimated arrival at school"
+        ]
+    }
 }

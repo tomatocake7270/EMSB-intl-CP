@@ -4,14 +4,15 @@ import Admission from './AdmissionComp';
 import AdmissionS2 from './AdmissionStep2Comp';
 import AdmissionS3 from './AdmissionStep3Comp';
 
+import Students from './StudentsComp';
+import StudentZLTest from './StudentsFieldTripTestComp';
 import StudentsStudy from './StudentsStudyComp';
 import StudentsHealth from './StudentsHealthComp';
 
 import Schools from './SchoolsComp';
-import CurrentSchool from './SchoolsRenderComp';
+import { CurrentSchool } from './SchoolsRenderComp';
 import { schoolsInfo } from '../shared/SchoolDetails';
 
-import Students from './StudentsComp';
 import Contacts from './ContactsComp';
 import Footer from './FooterComp';
 import Header from './HeaderComp';
@@ -34,15 +35,18 @@ class Main extends React.Component {
     }
 
     render() {
-        const HomePage              = () => { return ( <Home/> )}
-        const AdmissionPage         = () => { return ( <Admission/> )}
-        const SchoolsPage           = () => { return ( <Schools/> )}
-        const StudentsPage          = () => { return ( <Students/> )}
-        const ContactsPage          = () => { return ( <Contacts/> )}
-        const AdmissionS2Page       = () => { return ( <AdmissionS2/> )}
-        const AdmissionS3Page       = () => { return ( <AdmissionS3/> )}
-        const StudentsStudyPage     = () => { return ( <StudentsStudy/> )}
-        const StudentsHealthPage    = () => { return ( <StudentsHealth/> )}
+        const HomePage              = () => { return ( <Home /> )}
+        const AdmissionPage         = () => { return ( <Admission /> )}
+        const SchoolsPage           = () => { return ( <Schools /> )}
+        const StudentsPage          = () => { return ( <Students /> )}
+        const ContactsPage          = () => { return ( <Contacts /> )}
+        const AdmissionS2Page       = () => { return ( <AdmissionS2 /> )}
+        const AdmissionS3Page       = () => { return ( <AdmissionS3 /> )}
+        
+        const StudentsStudyPage     = () => { return ( <StudentsStudy /> )}
+        const StudentsHealthPage    = () => { return ( <StudentsHealth /> )}
+        const StudentFTTestPage     = () => { return ( <StudentZLTest />)}
+
         const SchoolFACEPage        = () => {
             return (
                 <CurrentSchool  philo1      = {schoolsInfo[0].philo[0]}
@@ -253,9 +257,10 @@ class Main extends React.Component {
                     <Route exact path="/schools/westmount"          component={SchoolWMHPage} />
                     <Route exact path="/schools/royalwest"          component={SchoolRWAPage} />
 
-                    <Route exact path="/students/study"             component={StudentsStudyPage}/>
-                    <Route exact path="/students/health"            component={StudentsHealthPage}/>
-                    <Route exact path="/students"                   component={StudentsPage}/>
+                    <Route exact path="/students/study"             component={StudentsStudyPage} />
+                    <Route exact path="/students/health"            component={StudentsHealthPage} />
+                    <Route exact path="/students"                   component={StudentsPage} />
+                    <Route exact path="/students/ziplining"         component={StudentFTTestPage} />
                     
                     <Redirect to="/home"/>
                 </Switch>
