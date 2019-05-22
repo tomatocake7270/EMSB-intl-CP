@@ -53,7 +53,7 @@ function Students() {
                 </Row> 
             </Container>
             <Container>
-                <div className="d-flex justify-content-around my-3 py-2 border border-primary rounded">
+                <div className="d-flex justify-content-around my-3 py-2 border rounded">
                     <Row className="my-1">
                         <Col md="auto" className="ml-4">
                             <RenderList iconUrl = {listInfo.fieldTripReg.iconUrl}

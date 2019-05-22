@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Container, Row, Col, Media } from 'reactstrap';
 
@@ -58,7 +59,7 @@ const Stories = () => {
                     <Col md="6" className="my-2">
                         <Media className="pl-2 pt-3 pr-3 m-1 border rounded">
                             <Media left href="#">
-                                <Media object src="/assets/images/home/student-boy-1.png" alt="Boy 1" className="img-fluid" />
+                                <Media object src="/assets/images/home/student-girl-3.png" alt="Girl 3" className="img-fluid" />
                             </Media>
                             <Media body className="ml-2">
                                 <h5>I love singing so much, and I am so lucky that there are a lot of activities in my school to develop my art talents!</h5>
