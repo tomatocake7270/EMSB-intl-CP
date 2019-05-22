@@ -6,10 +6,10 @@ const Stories = () => {
     return (
         <Container className="my-3">
             <div className="d-flex flex-column align-items-center">
-                <h4>
-                <img src="/assets/images/home/students.png" alt="Students" className="home-logos mx-3 img-fluid"></img>
+                <h2 className="red-font bold-font">
+                <img src="/assets/images/home/students.png" alt="Students" className="home-banner-icon mx-3 img-fluid"></img>
                  Our Students
-                </h4>
+                </h2>
                 <Row>
                     <Col md="6" className="my-2">
                         <Media className="pl-2 pt-3 pr-3 m-1 border rounded">

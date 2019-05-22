@@ -13,7 +13,7 @@ const Footer = () => {
                                 <Media object src="/assets/images/EMSB-intl-logo.png" alt="EMSB" className="img-fluid emsb-footer-logo"/>
                             </Media>
                             <Media body className="ml-2">
-                                <Media heading className="mt-2">
+                                <Media heading className="mt-2 dark-grey-font">
                                 EMSB, International Students
                                 </Media>
                                 <ul className="list-unstyled">
@@ -31,7 +31,7 @@ const Footer = () => {
                                 <Media object src="/assets/images/home/office-hours.png" alt="Office hours" className="img-fluid emsb-footer-logo"/>
                             </Media>
                             <Media body className="ml-2">
-                                <Media heading className="mt-2">
+                                <Media heading className="mt-2 dark-grey-font">
                                 Office Hours
                                 </Media>
                                 <ul className="list-unstyled">
@@ -46,13 +46,13 @@ const Footer = () => {
                     </Col>
                 </Row>
                 <div className="d-flex flex-column align-items-center">
-                    <p className="mb-0">&copy; English Montreal School Board, 2019</p>
+                    <p className="mb-0 footer-links">&copy; English Montreal School Board, 2019</p>
                     <p className="mb-0">
-                        <Link to="/home">Home</Link> | 
-                        <Link to="/admission"> Admission</Link> | 
-                        <Link to="/schools"> Schools</Link> | 
-                        <Link to="/students"> Students</Link> | 
-                        <Link to="/contacts"> Contacts</Link></p>
+                        <Link to="/home" className="footer-links">Home</Link> | 
+                        <Link to="/admission" className="footer-links"> Admission</Link> | 
+                        <Link to="/schools" className="footer-links"> Schools</Link> | 
+                        <Link to="/students" className="footer-links"> Students</Link> | 
+                        <Link to="/contacts" className="footer-links"> Contacts</Link></p>
                 </div>  
             </div>     
         </React.Fragment>

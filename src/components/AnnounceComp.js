@@ -5,10 +5,10 @@ const Announce = () => {
     return(
         <Container className="my-4">
           <div className="d-flex flex-column align-items-center">
-            <h4>
-            <img src="/assets/images/home/announce.png" alt="Announcement" className="mx-3 img-fluid"></img>
+            <h2 className="bold-font blue-font">
+            <img src="/assets/images/home/announce.png" alt="Announcement" className="mx-3 img-fluid home-banner-icon"></img>
               Announcements
-            </h4>
+            </h2>
             <Row>
               <Col lg="3" md="6" sm="12" className="my-2">
                 <Toast className="mx-auto">

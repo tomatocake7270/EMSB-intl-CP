@@ -1,23 +1,115 @@
-html, body {
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+  
+}
+
+@media (min-width: 576px) { 
+  html {
+    /* font-size: 50%; */
+    font-size: 56.5%;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    /* font-size: 56.25%; */
+    font-size: 75%;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+body {
   height: 100%;
   margin: 0;
-  font-size: 10px;
+  box-sizing: border-box;
 }
+
 
 .App {
   min-height: 100%;
 }
 
+/* .nav {
+  background-color: #54a0ff;
+} */
+
+.nav-link, .footer-links{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
 
 .jumbotron {
   /* //padding: 0; */
-  margin: 0px auto;
+  margin: 0 auto;
   background: #f0f7fd;
   color: #118af4;
 }
 
 .homeCarousel {
   background: #f0f7fd;
+}
+
+.bold-font {
+  font-weight: 700;
+}
+
+.blue-font {
+  color: #2e86de;
+}
+
+.purple-font {
+  color: #5f27cd
+}
+
+.pink-font {
+  color: #ff6b6b
+}
+
+.red-font {
+  color: #ee5253;
+}
+
+.green-font {
+  color: #10ac84;
+}
+
+.orange-font {
+  color: #ff9f43;
+}
+
+.dark-blue-font {
+  color: #1b1464;
+}
+
+.dark-grey-font {
+  color: #222f3e;
+}
+
+.home-banner-icon {
+  width: 3.5rem;
+  height: auto;
 }
 
 .footer {
@@ -27,21 +119,9 @@ html, body {
 }
 
 .emsb-footer-logo {
-  width: 5rem;
+  width: 3rem;
   height: auto;
   margin-bottom: 2rem;
-}
-
-/* .emsb-calendar {
-  width: 40px;
-  height: auto;
-  margin: 0 0 20px 0;
-} */
-
-.home-logos {
-  width: auto;
-  height: auto;
-  /* margin: 0 0 20px 0; */
 }
 
 .admission-checkmark {
@@ -66,28 +146,32 @@ html, body {
   font-size: 2.6rem;
 }
 .admission-qc-edu-title-german {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .students-card-heading {
   color: rgb(238, 243, 249);
+  font-size: 2rem;
+  margin-bottom: 0;
+
 }
 .students-title-icon-small {
-  width: 52px;
+  width: 5.2rem;
   height: auto;
 }
 .students-field-trip-icon {
-  width: 100px;
+  width: 5rem;
   height: auto;
 }
 .students-field-trip-location {
-  font-size: 22px;
+  font-size: 1rem;
+  color: #c8d6e5;
 }
 .students-field-trip-date {
-  font-size: 22px;
+  font-size: 2.2rem;
 }
 .students-field-trip-small-title {
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 .fa-info-circle, .fa-map-marked-alt, .fa-external-link-alt {
@@ -101,9 +185,9 @@ html, body {
   color: #2e86de;
   margin: 0 .4rem 0 .4rem;
 }
-.contact-staff-media {
-  width: 20rem;
-}
+/* .contact-staff-media {
+  width: 2rem;
+} */
 .contact-staff-name {
   text-align: left;
   font-size: 1.3rem;

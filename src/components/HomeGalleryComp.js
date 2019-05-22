@@ -11,8 +11,8 @@ const Gallery = () => {
                                 <Media object src="/assets/images/home/gallery-instagram.png" alt="Instagram gallery" />
                             </Media>
                             <Media body>
-                                <Media heading className="mt-3 ml-2">
-                                    Instagram Posts
+                                <Media heading className="mt-3 ml-2 pink-font bold-font">
+                                    Instagram Gallery
                                 </Media>
                             </Media>
                         </Media>
@@ -23,7 +23,7 @@ const Gallery = () => {
                                 <Media object src="/assets/images/home/gallery-google.png" alt="Instagram gallery" />
                             </Media>
                             <Media body>
-                                <Media heading className="mt-3 ml-2">
+                                <Media heading className="mt-3 ml-2 blue-font bold-font">
                                     Google Photos Album
                                 </Media>
                             </Media>
