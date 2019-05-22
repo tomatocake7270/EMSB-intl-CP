@@ -1,7 +1,8 @@
 import React from 'react';
 import { UncontrolledCarousel, Container, Row, Col, Jumbotron, Button} from 'reactstrap';
 import Announce from './AnnounceComp';
-import StoryGallery from './StoryGalleryComp';
+import Gallery from './HomeGalleryComp';
+import Stories from './HomeStoriesComp';
 
 const items = [
     {
@@ -52,8 +53,9 @@ class Home extends React.Component {
                     </Col>
                     </Row>
                 </Container>
-                <Announce/>
-                <StoryGallery/>
+                <Announce />
+                <Stories />
+                <Gallery />
             </div>
         );
     }

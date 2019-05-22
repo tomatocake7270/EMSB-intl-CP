@@ -2,10 +2,10 @@ import React from 'react';
 import { Row, Col, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-function Footer(props) {
+const Footer = () => {
     return(
         <React.Fragment>
-            <div className="footer mt-auto">       
+            <div className="footer">       
                 <Row>
                     <Col md={{ size: 5, offset: 1}}>
                         <Media>

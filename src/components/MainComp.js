@@ -5,7 +5,6 @@ import AdmissionS2 from './AdmissionStep2Comp';
 import AdmissionS3 from './AdmissionStep3Comp';
 
 import Students from './StudentsComp';
-import StudentZLTest from './StudentsFieldTripTestComp';
 import CurrentFieldTrip from './StudentsFieldTripRenderComp';
 import StudentsStudy from './StudentsStudyComp';
 import StudentsHealth from './StudentsHealthComp';
@@ -321,8 +320,9 @@ class Main extends React.Component {
         
 
         return(
-            <div>
+            <div className="body">
                 <Header />
+                <div className="content">
                 <Switch>
                     <Route path="/home"                     component={HomePage}/>
                     <Route exact path="/admission"          component={AdmissionPage}/>
@@ -356,6 +356,7 @@ class Main extends React.Component {
                     
                     <Redirect to="/home"/>
                 </Switch>
+                </div>
                 <Footer />
             </div>
         );
