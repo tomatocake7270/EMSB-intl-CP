@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col, Media } from 'reactstrap';
-import { Link } from 'react-router-dom';
 
 const Stories = () => {
     return (

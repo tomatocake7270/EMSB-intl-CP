@@ -6,13 +6,19 @@ import Stories from './HomeStoriesComp';
 
 const items = [
     {
-      src: 'assets/images/carousel-1.jpeg',
+        src: 'assets/images/carousel-1.jpeg',
+        altText: '',
+        caption: ''
     },
     {
-      src: 'assets/images/carousel-2.jpeg'
+        src: 'assets/images/carousel-2.jpeg',
+        altText: '',
+        caption: ''
     },
     {
-      src: 'assets/images/carousel-3.jpeg'
+        src: 'assets/images/carousel-3.jpeg',
+        altText: '',
+        caption: ''
     }
   ];
 
