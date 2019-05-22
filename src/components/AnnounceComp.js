@@ -5,7 +5,7 @@ const Announce = () => {
     return(
         <Container className="my-4">
           <div className="d-flex flex-column align-items-center">
-            <h2 className="bold-font blue-font">
+            <h2 className="blue-font">
             <img src="/assets/images/home/announce.png" alt="Announcement" className="mx-3 img-fluid home-banner-icon"></img>
               Announcements
             </h2>

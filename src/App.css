@@ -45,20 +45,18 @@ body {
   box-sizing: border-box;
 }
 
-
 .App {
   min-height: 100%;
 }
-
-/* .nav {
-  background-color: #54a0ff;
-} */
 
 .nav-link, .footer-links{
   font-family: 'Lato', sans-serif;
   font-weight: 700;
 }
 
+.lato-font {
+  font-family: 'Lato', sans-serif;
+}
 
 .jumbotron {
   /* //padding: 0; */
@@ -125,28 +123,30 @@ body {
 }
 
 .admission-checkmark {
-  width: 4rem;
+  width: 2rem;
   height: auto;
 }
-.admission-form-icon {
-  width: 4rem;
-  height: auto;
-}
-.admission-link-icon {
-  width: 3rem;
+.admission-form-icon, .admission-link-icon {
+  width: 2rem;
   height: auto;
 }
 
 .admission-qc-edu-nf {
-  width: 6rem;
+  width: 4rem;
   height: auto;
 }
 
 .admission-qc-edu-title {
-  font-size: 2.6rem;
+  font-size: 1.5rem;
+  margin-top: 1.1rem;
 }
 .admission-qc-edu-title-german {
-  font-size: 1.8rem;
+  font-size: 1.1rem;
+  margin-top: .6rem;
+}
+
+.admission-text {
+  font-size: 1.2rem;
 }
 
 .students-card-heading {
@@ -185,9 +185,7 @@ body {
   color: #2e86de;
   margin: 0 .4rem 0 .4rem;
 }
-/* .contact-staff-media {
-  width: 2rem;
-} */
+
 .contact-staff-name {
   text-align: left;
   font-size: 1.3rem;

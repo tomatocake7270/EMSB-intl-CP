@@ -49,7 +49,6 @@ const AdmissionS3 = () => {
         
             <Container className="my-3">
                 <Row>
-                    {/* className="border border-primary rounded" */}
                     <Col md="6">  
                         <div className="d-flex flex-column align-items-start text-left mt-2">
                             <p>After receiving the CAQ, the Custodian of the Student  (for those requiring custodianship refer to Home Stay) will come to the EMSB with:</p>
@@ -81,7 +80,7 @@ const AdmissionS3 = () => {
                         </div>
                     </Col>
                     <Col md="6">
-                        <div className="d-flex flex-column align-items-start text-left my-3 pt-2 pl-3 border border-primary rounded">
+                        <div className="d-flex flex-column align-items-start text-left my-3 pt-2 pl-3 border rounded">
                             <Media>
                                 <Media left href="#">
                                     <Media object src="/assets/images/admission-link.png" alt="link" className="img-fluid admission-link-icon" />

@@ -56,7 +56,7 @@ const AdmissionS2 = () => {
                                     <Media object src="/assets/images/admission-check.png" alt="checkmark" className="img-fluid admission-checkmark" />
                                 </Media>
                                 <Media body className="ml-2">
-                                    <p>The Parent/Guardian/Agency will then start the process. (Allow 6 - 20 weeks)</p>
+                                    <p className="admission-text">The Parent/Guardian/Agency will then start the process. (Allow 6 - 20 weeks)</p>
                                 </Media>
                             </Media>
                             <Media className="mb-2">
@@ -64,7 +64,7 @@ const AdmissionS2 = () => {
                                     <Media object src="/assets/images/admission-check.png" alt="checkmark" className="img-fluid admission-checkmark" />
                                 </Media>
                                 <Media body className="ml-2">
-                                    <p>Apply for CAQ from Immigration, Diversité et Inclusion Québec: by first register online and pay the fee and then mail the documents to designated address.</p>
+                                    <p className="admission-text">Apply for CAQ from Immigration, Diversité et Inclusion Québec: by first register online and pay the fee and then mail the documents to designated address.</p>
                                 </Media>
                             </Media>
                             <Media className="mb-2">
@@ -72,19 +72,19 @@ const AdmissionS2 = () => {
                                     <Media object src="/assets/images/admission-check.png" alt="checkmark" className="img-fluid admission-checkmark" />
                                 </Media>
                                 <Media body className="ml-2">
-                                    <p>With CAQ in hand, then apply for Study Permit from Canadian Federal Government through the online system. No mailing needed.</p>
+                                    <p className="admission-text">With CAQ in hand, then apply for Study Permit from Canadian Federal Government through the online system. No mailing needed.</p>
                                 </Media>
                             </Media>
                         </div>
                     </Col>
                     <Col md="6">
-                        <div className="d-flex flex-column align-items-start text-left my-4 pt-2 pl-3 border border-primary rounded">
+                        <div className="d-flex flex-column align-items-start text-left my-4 pt-2 pl-3 border rounded">
                             <Media>
                                 <Media left href="#">
                                     <Media object src="/assets/images/admission-link.png" alt="link" className="img-fluid admission-link-icon" />
                                 </Media>
                                 <Media body className="ml-2">
-                                    <p>Steps to Apply for CAQ</p>
+                                    <p className="admission-text">Steps to Apply for CAQ</p>
                                 </Media>
                             </Media>
                             <Media>
@@ -92,7 +92,7 @@ const AdmissionS2 = () => {
                                     <Media object src="/assets/images/admission-link.png" alt="link" className="img-fluid admission-link-icon" />
                                 </Media>
                                 <Media body className="ml-2">
-                                    <p>CAQ Online Application Portal</p>
+                                    <p className="admission-text">CAQ Online Application Portal</p>
                                 </Media>
                             </Media>
                             <Media>
@@ -100,7 +100,7 @@ const AdmissionS2 = () => {
                                     <Media object src="/assets/images/admission-link.png" alt="link" className="img-fluid admission-link-icon" />
                                 </Media>
                                 <Media body className="ml-2">
-                                    <p>CAQ Application Checklist (non-adult)</p>
+                                    <p className="admission-text">CAQ Application Checklist (non-adult)</p>
                                 </Media>
                             </Media>
                             <Media>
@@ -108,7 +108,7 @@ const AdmissionS2 = () => {
                                     <Media object src="/assets/images/admission-link.png" alt="link" className="img-fluid admission-link-icon" />
                                 </Media>
                                 <Media body className="ml-2">
-                                    <p>Study Permit Online Application Portal</p>
+                                    <p className="admission-text">Study Permit Online Application Portal</p>
                                 </Media>
                             </Media>
                             <Media>
@@ -116,7 +116,7 @@ const AdmissionS2 = () => {
                                     <Media object src="/assets/images/admission-link.png" alt="link" className="img-fluid admission-link-icon" />
                                 </Media>
                                 <Media body className="ml-2">
-                                    <p>Study Permit Application Checklist</p>
+                                    <p className="admission-text">Study Permit Application Checklist</p>
                                 </Media>
                             </Media>
                         </div>

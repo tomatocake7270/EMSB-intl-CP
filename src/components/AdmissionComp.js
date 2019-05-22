@@ -55,7 +55,7 @@ const Admission = () => {
                                     <Media object src="assets/images/admission-check.png" alt="checkmark" className="img-fluid admission-checkmark" />
                                 </Media>
                                 <Media body className="ml-2">
-                                    <p>The Parent/Guardian must complete the online application.</p>
+                                    <p className="admission-text">The Parent/Guardian must complete the online application.</p>
                                 </Media>
                             </Media>
                             <Media className="mb-2">
@@ -63,7 +63,7 @@ const Admission = () => {
                                     <Media object src="assets/images/admission-check.png" alt="checkmark" className="img-fluid admission-checkmark" />
                                 </Media>
                                 <Media body className="ml-2">
-                                    <p>The agent/agency must read and complete the documents below and forward them to the EMSB (intstudent@emsb.qc.ca). Once approved, the agent/agency must complete the online application here.</p>
+                                    <p className="admission-text">The agent/agency must read and complete the documents below and forward them to the EMSB (intstudent@emsb.qc.ca). Once approved, the agent/agency must complete the online application here.</p>
                                 </Media>
                             </Media>
                             <Media className="mb-2">
@@ -71,7 +71,7 @@ const Admission = () => {
                                     <Media object src="assets/images/admission-check.png" alt="checkmark" className="img-fluid admission-checkmark" />
                                 </Media>
                                 <Media body className="ml-2">
-                                    <p>Once completed and approved, a school can be chosen with the interests of the student in mind. The Letters of Acceptance for both the C.A.Q. (Certificate d’acceptation du Québec) and Study Permit will be prepared. (Allow 3 - 4 weeks)</p>
+                                    <p className="admission-text">Once completed and approved, a school can be chosen with the interests of the student in mind. The Letters of Acceptance for both the C.A.Q. (Certificate d’acceptation du Québec) and Study Permit will be prepared. (Allow 3 - 4 weeks)</p>
                                 </Media>
                             </Media>
                         </div>
@@ -79,13 +79,13 @@ const Admission = () => {
                     <Col md="6">
                         <div className="d-flex flex-column align-items-center text-left">
                             <Button color="primary" className="mt-3">EMSB Online Application System</Button>
-                            <div className="d-flex flex-column align-items-start text-left my-4 pt-2 pl-1 border border-primary rounded">
+                            <div className="d-flex flex-column align-items-start text-left my-4 pt-2 pl-1 border rounded">
                                 <Media>
                                     <Media left href="#">
                                         <Media object src="assets/images/admission-form.png" alt="form" className="img-fluid admission-form-icon" />
                                     </Media>
                                     <Media body className="ml-2">
-                                        <p>1. International Student Package and Agreement</p>
+                                        <p className="admission-text">1. International Student Package and Agreement</p>
                                     </Media>
                                 </Media>
                                 <Media>
@@ -93,7 +93,7 @@ const Admission = () => {
                                         <Media object src="assets/images/admission-form.png" alt="form" className="img-fluid admission-form-icon" />
                                     </Media>
                                     <Media body className="ml-2">
-                                        <p>2. Instructions for Wire Transfer Payment</p>
+                                        <p className="admission-text">2. Instructions for Wire Transfer Payment</p>
                                     </Media>
                                 </Media>
                                 <Media>
@@ -101,7 +101,7 @@ const Admission = () => {
                                         <Media object src="assets/images/admission-form.png" alt="form" className="img-fluid admission-form-icon" />
                                     </Media>
                                     <Media body className="ml-2">
-                                        <p>3. Custodianship Declaration – Custodian for Minors Studying in Canada</p>
+                                        <p className="admission-text">3. Custodianship Declaration – Custodian for Minors Studying in Canada</p>
                                     </Media>
                                 </Media>
                                 <Media>
@@ -109,7 +109,7 @@ const Admission = () => {
                                         <Media object src="assets/images/admission-form.png" alt="form" className="img-fluid admission-form-icon" />
                                     </Media>
                                     <Media body className="ml-2">
-                                        <p>4. Agency/Agent Qualification Application Form</p>
+                                        <p className="admission-text">4. Agency/Agent Qualification Application Form</p>
                                     </Media>
                                 </Media>
                                 <Media>
@@ -117,7 +117,7 @@ const Admission = () => {
                                         <Media object src="assets/images/admission-form.png" alt="form" className="img-fluid admission-form-icon" />
                                     </Media>
                                     <Media body className="ml-2">
-                                        <p>5. Agency/Agent International Recruiting Agreement 2019-2020 School Year</p>
+                                        <p className="admission-text">5. Agency/Agent International Recruiting Agreement 2019-2020 School Year</p>
                                     </Media>
                                 </Media>
                             </div>

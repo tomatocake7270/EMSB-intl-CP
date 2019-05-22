@@ -126,7 +126,7 @@ const Contacts = () => {
                 <div className="d-flex flex-column align-items-center">
                     <Container className="mt-4 mb-3">
                         <div className="d-flex flex-column align-items-between">
-                            <h4 className="my-1">Director of School Organization – International Students</h4> 
+                            <h4 className="my-1 lato-font bold-font blue-font">Director of School Organization – International Students</h4> 
                             <div className="d-flex justify-content-center">
                                 <Media className="my-2">
                                     <Media left href="#">
@@ -156,9 +156,9 @@ const Contacts = () => {
                 </div>
                 <Row>
                     <Col xs="12" lg={{ size: 5, offset: 1 }}>
-                        <Container className="my-2 border border-primary pb-1 rounded">
+                        <Container className="my-2 border pb-1 rounded">
                             <div className="d-flex flex-column align-items-between">
-                                <h4 className="border-bottom border-secondary mt-3 pb-1 mx-auto">Administrative Technicians</h4>
+                                <h4 className="border-bottom border-secondary mt-3 pb-1 mx-auto blue-font bold-font">Administrative Technicians</h4>
                                 <div className="d-flex justify-content-between">
                                     <Media className="my-2 contact-staff-media">
                                         <Media left href="#">
@@ -205,9 +205,9 @@ const Contacts = () => {
                         </Container>
                     </Col>
                     <Col xs="12" lg="5">
-                        <Container className="my-2 border border-primary pb-1 rounded">
+                        <Container className="my-2 border pb-1 rounded">
                             <div className="d-flex flex-column align-items-between">
-                                <h4 className="border-bottom border-secondary mt-3 mb-3 pb-1 mx-auto">International Students Advisors</h4>
+                                <h4 className="border-bottom border-secondary mt-3 mb-3 pb-1 mx-auto blue-font bold-font">International Students Advisors</h4>
                                 <div className="d-flex justify-content-between">
                                     <Media className="my-2 contact-staff-media">
                                         <Media left href="#">

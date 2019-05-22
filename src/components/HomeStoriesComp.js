@@ -6,7 +6,7 @@ const Stories = () => {
     return (
         <Container className="my-3">
             <div className="d-flex flex-column align-items-center">
-                <h2 className="red-font bold-font">
+                <h2 className="blue-font">
                 <img src="/assets/images/home/students.png" alt="Students" className="home-banner-icon mx-3 img-fluid"></img>
                  Our Students
                 </h2>

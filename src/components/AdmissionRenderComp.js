@@ -5,8 +5,7 @@ export const QcEdu = () => {
     return(
         <div className="text-center">
             <Container className="my-3 border-bottom border-primary pb-1">
-                {/* <div className="d-flex flex-column align-centent-center"></div> */}
-                <h4>Introduction to Quebec Education System</h4>
+                <h2 className="blue-font">Introduction to Quebec Education System</h2>
             </Container>
             <Container className="mb-5 text-left">
                 <Row>
