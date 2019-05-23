@@ -1,5 +1,6 @@
 import React from 'react';
 import Home from './HomeComp';
+
 import Admission from './AdmissionComp';
 import AdmissionS2 from './AdmissionStep2Comp';
 import AdmissionS3 from './AdmissionStep3Comp';
@@ -21,20 +22,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 
 
 class Main extends React.Component {
-    constructor(props) {
-        super(props);
-        this.toggle = this.toggle.bind(this);
-        this.state = {
-          isOpen: false
-        };    
-      }
-      
-    toggle() {
-    this.setState({
-        isOpen: !this.state.isOpen
-    });
-    }
-
+    
     render() {
         const HomePage              = () => { return ( <Home /> )}
         const AdmissionPage         = () => { return ( <Admission /> )}
@@ -322,16 +310,15 @@ class Main extends React.Component {
         return(
             <div className="body">
                 <Header />
-                <div className="content">
                 <Switch>
-                    <Route path="/home"                     component={HomePage}/>
-                    <Route exact path="/admission"          component={AdmissionPage}/>
-                    <Route exact path="/contacts"           component={ContactsPage}/>
+                    <Route path="/home"                     component={HomePage} />
+                    <Route exact path="/admission"          component={AdmissionPage} />
+                    <Route exact path="/contacts"           component={ContactsPage} />
                     
-                    <Route exact path="/admission/step2"    component={AdmissionS2Page}/>
-                    <Route exact path="/admission/step3"    component={AdmissionS3Page}/>
+                    <Route exact path="/admission/step2"    component={AdmissionS2Page} />
+                    <Route exact path="/admission/step3"    component={AdmissionS3Page} />
                     
-                    <Route exact path="/schools"                    component={SchoolsPage}/>
+                    <Route exact path="/schools"                    component={SchoolsPage} />
                     <Route exact path="/schools/face"               component={SchoolFACEPage} />
                     <Route exact path="/schools/jameslyng"          component={SchoolJLPage} />
                     <Route exact path="/schools/johnfkennedy"       component={SchoolJFKPage} />
@@ -356,7 +343,6 @@ class Main extends React.Component {
                     
                     <Redirect to="/home"/>
                 </Switch>
-                </div>
                 <Footer />
             </div>
         );

@@ -6,67 +6,61 @@ class Header extends React.Component {
     constructor(props) {
         super(props);
         this.toggle = this.toggle.bind(this);
+        this.goToAdmin = this.goToAdmin.bind(this);
         this.state = {
-          isOpen: false
+          isOpen: false,
+          accessToAdmin: false
         };    
       }
       
     toggle() {
-    this.setState({
-        isOpen: !this.state.isOpen
-    });
+        this.setState({
+            isOpen: !this.state.isOpen
+        });
+    }
+    goToAdmin() {
+        this.setState({
+            accessToAdmin: !this.state.accessToAdmin
+        })
     }
 
     render() {
         return(
-            <React.Fragment>
-                <Navbar color="light" light expand="md" sticky="top">
-                    <NavbarBrand href="/">EMSB International Students</NavbarBrand>
-                    <NavbarToggler onClick={this.toggle} />
-                    <Collapse isOpen={this.state.isOpen} navbar>
-                    <Nav className="ml-auto" navbar>
-                        <NavItem>
-                            <NavLink className="nav-link" to="/home">Home</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink className="nav-link" to="/admission">Admission</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink  className="nav-link" to="/schools">Schools</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink  className="nav-link" to="/students">Students</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink  className="nav-link" to="/contacts">Contacts</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink  className="nav-link" to="/admin">Admin</NavLink>
-                        </NavItem>
-                        {/* <NavItem>
-                        <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-                        </NavItem> */}
-                        {/* <UncontrolledDropdown nav inNavbar>
-                        <DropdownToggle nav caret>
-                            Login
-                        </DropdownToggle>
-                        <DropdownMenu right>
-                            <DropdownItem>
-                            Option 1
-                            </DropdownItem>
-                            <DropdownItem>
-                            Option 2
-                            </DropdownItem>
-                            <DropdownItem divider />
-                            <DropdownItem>
-                            Reset
-                            </DropdownItem>
-                        </DropdownMenu>
-                        </UncontrolledDropdown> */}
-                    </Nav>
-                    </Collapse>
-                </Navbar>
-            </React.Fragment>
+            <div>
+            {this.state.accessToAdmin ? (
+                    <div>There is Nothing here</div>
+            ) : (
+                
+                <React.Fragment>
+                    <Navbar color="light" light expand="md" sticky="top">
+                        <NavbarBrand href="/">EMSB International Students</NavbarBrand>
+                        <NavbarToggler onClick={this.toggle} />
+                        <Collapse isOpen={this.state.isOpen} navbar>
+                        <Nav className="ml-auto" navbar>
+                            <NavItem>
+                                <NavLink className="nav-link" to="/home">Home</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link" to="/admission">Admission</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink  className="nav-link" to="/schools">Schools</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink  className="nav-link" to="/students">Students</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink  className="nav-link" to="/contacts">Contacts</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink  className="nav-link" onClick={this.goToAdmin} to="/admin">Admin</NavLink>
+                            </NavItem>
+                        </Nav>
+                        </Collapse>
+                    </Navbar>
+                </React.Fragment>
+            )} 
+            </div>
         );
     }
 }

@@ -58,7 +58,7 @@ const Contacts = () => {
         plusBtnClass0    = ["d-none", "contact-icon"].join(" ");
         minusBtnClass0   = "contact-icon";
         staff0Dropdown = (
-            <div className="d-flex flex-column align-items-start text-left border border-secondary mb-2 pl-2 pt-2 rounded">
+            <div className="d-flex flex-column align-items-start text-left border mb-2 pl-2 pt-2 rounded">
                 {/* <h5 className="border-bottom border-info">Job description</h5> */}
                 <h5>{postInfo.leader.postDescription}</h5>
                 <h5 className="border-bottom border-info">Phone number</h5>
@@ -93,7 +93,7 @@ const Contacts = () => {
         plusBtnClass3    = ["d-none", "contact-icon"].join(" ");
         minusBtnClass3   = "contact-icon";
         staff3Dropdown = (
-            <RenderStaffDropdown    post    = {postInfo.adminTech.postDescription}
+            <RenderStaffDropdown    post    = {postInfo.advisor.postDescription}
                                     schools = {<p>{staffInfo.staff3.schools}</p>}
                                     phone   = {staffInfo.staff3.phone}
                                     email   = {staffInfo.staff3.email} />
@@ -103,7 +103,7 @@ const Contacts = () => {
         plusBtnClass4   = ["d-none", "contact-icon"].join(" ");
         minusBtnClass4  = "contact-icon";
         staff4Dropdown = (
-            <RenderStaffDropdown    post    = {postInfo.adminTech.postDescription}
+            <RenderStaffDropdown    post    = {postInfo.advisor.postDescription}
                                     schools = {<p>{staffInfo.staff4.schools}</p>}
                                     phone   = {staffInfo.staff4.phone}
                                     email   = {staffInfo.staff4.email} />
@@ -113,7 +113,7 @@ const Contacts = () => {
         plusBtnClass5    = ["d-none", "contact-icon"].join(" ");
         minusBtnClass5   = "contact-icon";
         staff5Dropdown = (
-            <RenderStaffDropdown    post    = {postInfo.adminTech.postDescription}
+            <RenderStaffDropdown    post    = {postInfo.advisor.postDescription}
                                     schools = {<p>{staffInfo.staff5.schools}</p>}
                                     phone   = {staffInfo.staff5.phone}
                                     email   = {staffInfo.staff5.email} />
