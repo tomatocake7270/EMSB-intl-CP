@@ -26,9 +26,11 @@ function StudentsHealth() {
                                 iconUrl = {cardInfo.guardMe.iconUrl}
                                 altText = {cardInfo.guardMe.altText}
                                 heading = {cardInfo.guardMe.heading}
+                                headingFont= {cardInfo.guardMe.headingFont}
+                                location= {cardInfo.guardMe.location}
                                 faIcon  = { faExternalLinkAlt } />
                     <Col md="6" className="my-1">
-                        <div className="d-flex flex-column align-items-start my-1 py-2 pl-3 border border-primary rounded">
+                        <div className="d-flex flex-column align-items-start my-1 py-2 pl-3 border rounded">
                             <RenderList iconUrl = {listInfo.guardMeItem1.iconUrl}
                                         altText = {listInfo.guardMeItem1.altText}
                                         heading = {listInfo.guardMeItem1.heading} />
@@ -41,9 +43,11 @@ function StudentsHealth() {
                                 iconUrl = {cardInfo.keepMeSafe.iconUrl}
                                 altText = {cardInfo.keepMeSafe.altText}
                                 heading = {cardInfo.keepMeSafe.heading}
+                                headingFont= {cardInfo.keepMeSafe.headingFont}
+                                location= {cardInfo.keepMeSafe.location}
                                 faIcon  = { faExternalLinkAlt } />
                     <Col md="6" className="my-1">
-                        <div className="d-flex flex-column align-items-start my-1 py-2 pl-3 border border-primary rounded">
+                        <div className="d-flex flex-column align-items-start my-1 py-2 pl-3 border rounded">
                             <RenderList iconUrl = {listInfo.keepMeSafeItem1.iconUrl}
                                         altText = {listInfo.keepMeSafeItem1.altText}
                                         heading = {listInfo.keepMeSafeItem1.heading} />

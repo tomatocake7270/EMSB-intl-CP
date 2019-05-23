@@ -33,6 +33,7 @@ export const cardInfo = {
         iconUrl: "/assets/images/fieldTrips/ziplining-bg.png",
         altText: "Ziplining",
         heading: "Abraska Ziplining",
+        headingFont: "students-card-heading",
         location: "Marieville, Québec"
     },
     ski: {
@@ -41,6 +42,7 @@ export const cardInfo = {
         iconUrl: "/assets/images/fieldTrips/ski-bg.png",
         altText: "Ski",
         heading: "Ski and Snowboarding",
+        headingFont: "students-card-heading",
         location: "Mont Rinaud, Québec"
     },
     qcCity: {
@@ -49,6 +51,7 @@ export const cardInfo = {
         iconUrl: "/assets/images/fieldTrips/qc-city-bg.png",
         altText: "QC City",
         heading: "Québec City and Ice Hotel",
+        headingFont: "students-card-heading",
         location: "Québec City, Québec"
     },
     sugarShack: {
@@ -57,6 +60,7 @@ export const cardInfo = {
         iconUrl: "/assets/images/fieldTrips/sugar-shack-bg.png",
         altText: "Sugar Shack",
         heading: "Sugar Shack",
+        headingFont: "students-card-heading",
         location: "Sucrie de la Montagne, Québec"
     },
     rosettaStone: {
@@ -64,35 +68,45 @@ export const cardInfo = {
         imgUrl: "/assets/images/studyAssist/study-rosetta.jpg",
         iconUrl: "/assets/images/studyAssist/study-rosetta-icon.png",
         altText: "Rosetta Stone",
-        heading: "Learn English/French in Rosetta Stone® Full-access Licence"
+        heading: "Learn English/French in Rosetta Stone®",
+        headingFont: "student-study-health-heading",
+        location: "With free full-access licence from EMSB"
     },
     learnQuebec: {
         route: "learnquebec",
         imgUrl: "/assets/images/studyAssist/study-learnQc.jpg",
         iconUrl: "/assets/images/studyAssist/study-learnQc-icon.png",
         altText: "LEARN Quebec",
-        heading: "Online Tutoring for Grade 7 to 11 on LEARN Quebec haha"
+        heading: "Online Tutoring on LEARN Quebec",
+        headingFont: "student-study-health-heading",
+        location: "In all subjects from Grade 7 to 11"
     },
     vitalEnglish: {
         route: "vitalenglish",
         imgUrl: "/assets/images/studyAssist/study-vitalEn.jpg",
         iconUrl: "/assets/images/studyAssist/study-vitalEn-icon.png",
         altText: "Vital English",
-        heading: "Test Your English Skills and Improve them on Vital English"
+        heading: "Improve English on Vital English",
+        headingFont: "student-study-health-heading",
+        location: "With certificate programs"
     },
     guardMe: {
         route: "guardme",
         imgUrl: "/assets/images/healthSupport/health-guardMe.jpg",
         iconUrl: "/assets/images/healthSupport/health-guardMe-icon.png",
         altText: "Guard.Me",
-        heading: "Use Guard.me Insurance Card to Protect Your Physical Health"
+        heading: "Guard.me Health Insurance",
+        headingFont: "student-study-health-heading",
+        location: "Protect health of all international students"
     },
     keepMeSafe: {
         route: "keepmesafe",
         imgUrl: "/assets/images/healthSupport/health-mental.jpg",
         iconUrl: "/assets/images/healthSupport/health-mental-icon.png",
         altText: "Keep.meSAFE",
-        heading: "Find Life Support for International Students on Keep.me Safe"
+        heading: "Keep.me Safe Multilingual Support",
+        headingFont: "student-study-health-heading",
+        location: "Help int'l students overcome life challenges "
     }
 }
 

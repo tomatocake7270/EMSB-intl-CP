@@ -10,13 +10,12 @@
 
 html {
   font-size: 62.5%;
-  
 }
 
 @media (min-width: 576px) { 
   html {
     /* font-size: 50%; */
-    font-size: 56.5%;
+    font-size: 62.5%;
   }
 }
 
@@ -149,11 +148,28 @@ body {
   font-size: 1.2rem;
 }
 
+/* STUDENT pages */ 
+.students-tag-icon {
+  width: 2.6rem;
+  height: auto;
+}
+
+.students-list-icon {
+  width: 4rem;
+  height: auto;
+}
+
 .students-card-heading {
   color: rgb(238, 243, 249);
   font-size: 2rem;
   margin-bottom: 0;
+}
 
+.student-study-health-heading{
+  color: rgb(238, 243, 249);
+  font-size: 1.6rem;
+  margin-top: .3rem;
+  margin-bottom: 0;
 }
 .students-title-icon-small {
   width: 5.2rem;
@@ -164,7 +180,7 @@ body {
   height: auto;
 }
 .students-field-trip-location {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #c8d6e5;
 }
 .students-field-trip-date {

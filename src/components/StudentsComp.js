@@ -26,6 +26,7 @@ function Students() {
                                 iconUrl = {cardInfo.ziplining.iconUrl}
                                 altText = {cardInfo.ziplining.altText}
                                 heading = {cardInfo.ziplining.heading} 
+                                headingFont = {cardInfo.ziplining.headingFont}
                                 location= {cardInfo.ziplining.location}
                                 route   = {cardInfo.ziplining.route}
                                 faIcon  = { faMapMarkedAlt } />
@@ -33,6 +34,7 @@ function Students() {
                                 iconUrl = {cardInfo.ski.iconUrl}
                                 altText = {cardInfo.ski.altText}
                                 heading = {cardInfo.ski.heading} 
+                                headingFont = {cardInfo.ski.headingFont}
                                 location= {cardInfo.ski.location}
                                 route   = {cardInfo.ski.route}
                                 faIcon  = { faMapMarkedAlt } />
@@ -40,6 +42,7 @@ function Students() {
                                 iconUrl = {cardInfo.qcCity.iconUrl}
                                 altText = {cardInfo.qcCity.altText}
                                 heading = {cardInfo.qcCity.heading} 
+                                headingFont = {cardInfo.qcCity.headingFont}
                                 location= {cardInfo.qcCity.location}
                                 route   = {cardInfo.qcCity.route}
                                 faIcon  = { faMapMarkedAlt } />
@@ -47,6 +50,7 @@ function Students() {
                                 iconUrl = {cardInfo.sugarShack.iconUrl}
                                 altText = {cardInfo.sugarShack.altText}
                                 heading = {cardInfo.sugarShack.heading} 
+                                headingFont = {cardInfo.sugarShack.headingFont}
                                 location= {cardInfo.sugarShack.location}
                                 route   = {cardInfo.sugarShack.route}
                                 faIcon  = { faMapMarkedAlt } />

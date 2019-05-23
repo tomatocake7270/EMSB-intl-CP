@@ -47,7 +47,7 @@ class Home extends React.Component {
                     </Col>
                     <Col md="5">
                         <Jumbotron>
-                        <h1 className="display-5">EMSB Intl</h1>
+                        <h1 className="display-5">EMSB International</h1>
                         <p className="lead">Être Bilingue, C'est Gagnant!</p>
                         {/* <p className="lead">Best Bilingual Education in Québec!</p> */}
                         {/* <hr className="my-2" /> */}

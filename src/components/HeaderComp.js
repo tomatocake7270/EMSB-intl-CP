@@ -1,6 +1,5 @@
 import React from 'react';
-import { Container, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem,  
-    UncontrolledDropdown, DropdownMenu, DropdownToggle, DropdownItem } from 'reactstrap';
+import { Collapse, Nav, Navbar, NavItem, NavbarBrand, NavbarToggler } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
 class Header extends React.Component {
@@ -41,10 +40,13 @@ class Header extends React.Component {
                         <NavItem>
                             <NavLink  className="nav-link" to="/contacts">Contacts</NavLink>
                         </NavItem>
+                        <NavItem>
+                            <NavLink  className="nav-link" to="/admin">Admin</NavLink>
+                        </NavItem>
                         {/* <NavItem>
                         <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
                         </NavItem> */}
-                        <UncontrolledDropdown nav inNavbar>
+                        {/* <UncontrolledDropdown nav inNavbar>
                         <DropdownToggle nav caret>
                             Login
                         </DropdownToggle>
@@ -60,7 +62,7 @@ class Header extends React.Component {
                             Reset
                             </DropdownItem>
                         </DropdownMenu>
-                        </UncontrolledDropdown>
+                        </UncontrolledDropdown> */}
                     </Nav>
                     </Collapse>
                 </Navbar>

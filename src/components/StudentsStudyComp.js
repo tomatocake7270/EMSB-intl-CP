@@ -28,10 +28,12 @@ function StudentsStudy() {
                                 iconUrl = {cardInfo.rosettaStone.iconUrl}
                                 altText = {cardInfo.rosettaStone.altText}
                                 heading = {cardInfo.rosettaStone.heading} 
+                                headingFont= {cardInfo.rosettaStone.headingFont}
+                                location= {cardInfo.rosettaStone.location}
                                 faIcon  = { faExternalLinkAlt } />
                     
                     <Col md="6" className="my-1">
-                        <div className="d-flex flex-column align-items-start my-1 py-2 pl-3 border border-primary rounded">
+                        <div className="d-flex flex-column align-items-start my-1 py-2 pl-3 border rounded">
                             <RenderList iconUrl = {listInfo.rosettaItem1.iconUrl}
                                         altText = {listInfo.rosettaItem1.altText}
                                         heading = {listInfo.rosettaItem1.heading} />
@@ -52,12 +54,16 @@ function StudentsStudy() {
                     <RenderCard imgUrl  = {cardInfo.learnQuebec.imgUrl}
                                 iconUrl = {cardInfo.learnQuebec.iconUrl}
                                 altText = {cardInfo.learnQuebec.altText}
-                                heading = {cardInfo.learnQuebec.heading} 
+                                heading = {cardInfo.learnQuebec.heading}
+                                headingFont= {cardInfo.learnQuebec.headingFont}
+                                location= {cardInfo.learnQuebec.location} 
                                 faIcon  = { faExternalLinkAlt } />
                     <RenderCard imgUrl  = {cardInfo.vitalEnglish.imgUrl}
                                 iconUrl = {cardInfo.vitalEnglish.iconUrl}
                                 altText = {cardInfo.vitalEnglish.altText}
                                 heading = {cardInfo.vitalEnglish.heading}
+                                headingFont= {cardInfo.vitalEnglish.headingFont}
+                                location= {cardInfo.vitalEnglish.location}
                                 faIcon  = { faExternalLinkAlt } />
                 </Row>  
             </Container>
