@@ -99,7 +99,7 @@ body {
 .dark-blue-font {
   color: #1b1464;
 }
-
+ 
 .dark-grey-font {
   color: #222f3e;
 }
@@ -291,7 +291,6 @@ ul, .ul-school-mission-list {
 
 .admin-tag-btn {
   padding: 0 1rem;
-  
   color: black;
   /* border-color: #2e86de; */
 }
@@ -302,7 +301,7 @@ ul, .ul-school-mission-list {
 }
 
 .admin-right-table {
-  margin-left: 1.3rem;
+  margin-left: 0.7rem;
   margin-top: 2rem;
 }
 

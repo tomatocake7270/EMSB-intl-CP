@@ -22,7 +22,7 @@ const AdminAnnounce = () => {
                 
                 {/* Title row */}
                 <div className="d-flex justify-content-between">
-                    <h1 className="admin-right-title">Announcements</h1>
+                    <h1 className="admin-right-title dark-blue-font">Announcements</h1>
                     <div className="d-flex justify-content-around ml-auto mr-1">
                         <Form>
                             <Input placeholder="search" className="admin-search-bar" />
