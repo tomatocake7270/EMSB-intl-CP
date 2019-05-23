@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Media } from 'reactstrap';
+import { Container, Media } from 'reactstrap';
 
 const Gallery = () => {
     return (

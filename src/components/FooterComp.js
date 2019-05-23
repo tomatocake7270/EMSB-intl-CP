@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+
+    // const [ adminState, setAdminState ] = useState({
+    //     accessToAdmin: false
+    // })
+    
+    // const goToAdmin = () => {
+    //     const hasGone = adminState.accessToAdmin;
+    //     setAdminState({ accessToAdmin: !hasGone });
+    // }
     return(
         <React.Fragment>
             {/* <Container> */}

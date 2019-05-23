@@ -53,8 +53,9 @@ class Header extends React.Component {
                                 <NavLink  className="nav-link" to="/contacts">Contacts</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink  className="nav-link" onClick={this.goToAdmin} to="/admin">Admin</NavLink>
+                                <NavLink  className="nav-link" to="/admin">Admin</NavLink>
                             </NavItem>
+                            {/* onClick={this.goToAdmin} */}
                         </Nav>
                         </Collapse>
                     </Navbar>

@@ -104,6 +104,10 @@ body {
   color: #222f3e;
 }
 
+.light-grey-font {
+  color: #8395a7;
+}
+
 .home-banner-icon {
   width: 3.5rem;
   height: auto;
@@ -221,4 +225,92 @@ ul, .ul-school-mission-list {
 
 .school-philo-list-icon {
   color: #2e86de;
+}
+
+.admin-content {
+  margin: 0;
+  padding: 0;
+}
+.admin-left {
+  height: 100vh;
+  width: 7rem;
+  background-color: #c8d6e5;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.admin-left-button {
+  width: 5rem;
+  padding: 0 !important;
+  margin: 1rem auto;
+}
+
+.admin-big-logo {
+  width: 4rem;
+  height: auto;
+}
+
+.admin-right {
+  height: 100vh;
+  width: 92vw;
+}
+
+.admin-right-title {
+  margin: 1.9rem 2rem 1.6rem 2rem;
+}
+
+.admin-search-bar {
+  margin-top: 2rem;
+  margin-right: 1rem;
+  height: 3rem;
+  width: 15rem;
+}
+
+.admin-search-btn {
+  margin-top: -4.5rem;
+  margin-left: 12rem;
+}
+
+.admin-search-icon {
+  color: #c8d6e5;
+}
+
+.admin-new-btn {
+  margin: 2.1rem 1rem 0 0;
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.admin-new-icon {
+  color: #f3e3e0;
+}
+
+.admin-right-tags {
+  margin-left: 1.2rem;
+}
+
+.admin-tag-btn {
+  padding: 0 1rem;
+  
+  color: black;
+  /* border-color: #2e86de; */
+}
+
+.admin-tag-text {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.admin-right-table {
+  margin-left: 1.3rem;
+  margin-top: 2rem;
+}
+
+.admin-table-opr-icon {
+  color: #2e86de;
+  margin: 0 .4rem 0 .4rem;
+}
+
+.admin-table-date {
+  margin: 0;
 }
