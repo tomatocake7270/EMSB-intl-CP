@@ -1,5 +1,6 @@
 import React from 'react';
 import Home from './HomeComp';
+import AdminAnnounce from './AdminAnnounceComp';
 
 import Admission from './AdmissionComp';
 import AdmissionS2 from './AdmissionStep2Comp';
@@ -25,6 +26,9 @@ class Main extends React.Component {
     
     render() {
         const HomePage              = () => { return ( <Home /> )}
+
+        const AdminAnnouncePage     = () => { return ( <AdminAnnounce /> )}
+        
         const AdmissionPage         = () => { return ( <Admission /> )}
         const SchoolsPage           = () => { return ( <Schools /> )}
         const StudentsPage          = () => { return ( <Students /> )}
@@ -312,6 +316,9 @@ class Main extends React.Component {
                 <Header />
                 <Switch>
                     <Route path="/home"                     component={HomePage} />
+
+                    <Route exact path="/admin"              component={AdminAnnouncePage} />
+                    
                     <Route exact path="/admission"          component={AdmissionPage} />
                     <Route exact path="/contacts"           component={ContactsPage} />
                     
