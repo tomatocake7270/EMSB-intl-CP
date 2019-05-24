@@ -305,11 +305,20 @@ ul, .ul-school-mission-list {
   margin-top: 2rem;
 }
 
-.admin-table-opr-icon {
-  color: #2e86de;
-  margin: 0 .4rem 0 .4rem;
+.admin-table-opr-btn {
+  margin: 0 .4rem;
+  padding: 0;
 }
 
-.admin-table-date {
+.admin-table-opr-icon {
+  color: #222f3e;
+  margin: 0;
+}
+.admin-table-opr-icon-trash {
+  color: #ee5253;
+  margin: 0;
+}
+
+.admin-table-date, .admin-table-time {
   margin: 0;
 }
