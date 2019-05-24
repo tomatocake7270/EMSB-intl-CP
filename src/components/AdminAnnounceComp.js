@@ -1,11 +1,32 @@
-import React from 'react';
-import RenderAnnnounceTable from './AdminAnnounceRenderComp';
+import React, { useState } from 'react';
+import RenderAnnounceRow from './AdminAnnounceRenderComp';
 import { allAnnouncements } from '../shared/AnnounceDetails';
 import { Table, Form, Input, Button } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faPlus, faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faPlus } from '@fortawesome/free-solid-svg-icons';
+
 
 const AdminAnnounce = () => {
+
+    const [ annoState, setAnnoState ] = useState({
+        announcements: allAnnouncements
+    });
+
+    const emsbRows = [];
+    const emsbIntlRows = [];
+
+    const allRows = annoState.announcements.map(anno => {
+        return (
+            <RenderAnnounceRow  key = {anno.announceId}
+                                announcements = {anno} />
+        )
+    })
+
+    // Disply EMSB announcements
+    // const emsbRows = 
+
+    // Display EMSB-intl announcements
+    // const emsbIntlRows
     
     return (
         <div className="admin-content d-flex justify-content-start">
@@ -42,48 +63,39 @@ const AdminAnnounce = () => {
                 {/* Tabs row */}
                 <div className="d-flex justify-content-start admin-right-tags">
                     <div className="border-bottom border-danger admin-tag-activate">
-                        <Button color="link" className="admin-tag-btn">
+                        <Button color="link" className="admin-tag-btn text-decoration-none">
                             <p className="admin-tag-text lato-font bold-font dark-blue-font">All</p>
                         </Button>
                     </div>
                     <div className="border-bottom">
-                        <Button color="link" className="admin-tag-btn">
+                        <Button color="link" className="admin-tag-btn text-decoration-none">
                             <p className="admin-tag-text lato-font light-grey-font">EMSB</p>
                         </Button>
                     </div>
                     <div className="border-bottom">
-                        <Button color="link" className="admin-tag-btn">
+                        <Button color="link" className="admin-tag-btn text-decoration-none">
                             <p className="admin-tag-text lato-font light-grey-font">EMSB International</p>
                         </Button>
                     </div>
                 </div>
 
                 {/* Table row */}
-                <RenderAnnnounceTable   announceId  = {allAnnouncements[0].announceId}
-                                        sender      = {allAnnouncements[0].sender}
-                                    createTimeStamp = {allAnnouncements[0].createTimeStamp}
-                                    editTimeStamp   = {allAnnouncements[0].editTimpeStamp}
-                                        text        = {allAnnouncements[0].text} />
-                {/* <Table hover borderless className="admin-right-table text-center">
+                <Table hover borderless className="admin-right-table text-center">
                     <thead className="border-bottom">
                     <tr>
-                        <th className="lato-font bold-font">Sender</th>
-                        <th className="lato-font bold-font">Create time</th>
-                        <th className="lato-font bold-font">Modified time</th>
-                        <th className="lato-font bold-font">Status</th>
-                        <th className="lato-font bold-font">Announcement</th>
-                        <th className="lato-font bold-font">•••</th>
+                        <th className="admin-table-header">Sender</th>
+                        <th className="admin-table-header">Created</th>
+                        <th className="admin-table-header">Modified</th>
+                        <th className="admin-table-header">Status</th>
+                        <th className="admin-table-header">Announcement</th>
+                        <th className="admin-table-header admin-table-lastColumn">•••&nbsp;&nbsp;</th>
                     </tr>
                     </thead>
                     <tbody>
-                        <RenderAnnnounceTable   sender = {allAnnouncements[0].sender}
-                                       createTimeStamp = {allAnnouncements[0].createTimeStamp}
-                                       editTimeStamp   = {allAnnouncements[0].editTimpeStamp}
-                                                text   = {allAnnouncements[0].text} />
-                        {/* Need to use "map" method */}
-                    
+                        {allRows}
+                    </tbody>
+                </Table>
             </div>
-            
         </div>
     )
 }

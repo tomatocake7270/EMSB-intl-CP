@@ -298,6 +298,14 @@ ul, .ul-school-mission-list {
 .admin-tag-text {
   font-size: 1.2rem;
   margin: 0;
+  
+}
+
+a:link{
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
 }
 
 .admin-right-table {
@@ -308,6 +316,11 @@ ul, .ul-school-mission-list {
 
 .admin-table-header {
   font-size: .8rem;
+}
+
+.admin-table-row {
+  height: 5rem;
+  
 }
 
 .admin-table-opr-btn {
@@ -327,7 +340,6 @@ ul, .ul-school-mission-list {
   font-size: .8rem;
   margin: 0;
 }
-
 .admin-table-lastColumn {
-  width: 2rem;
+  width: 6rem;
 }
