@@ -48,7 +48,7 @@ body {
   min-height: 100%;
 }
 
-.nav-link, .footer-links{
+.nav-link, .footer-links, .admin-table-header{
   font-family: 'Lato', sans-serif;
   font-weight: 700;
 }
@@ -303,11 +303,16 @@ ul, .ul-school-mission-list {
 .admin-right-table {
   margin-left: 0.7rem;
   margin-top: 2rem;
+  width: 98%;
+}
+
+.admin-table-header {
+  font-size: .8rem;
 }
 
 .admin-table-opr-btn {
-  margin: 0 .4rem;
-  padding: 0;
+  margin: 0 .2rem;
+  padding: 0 .2rem;
 }
 
 .admin-table-opr-icon {
@@ -318,7 +323,11 @@ ul, .ul-school-mission-list {
   color: #ee5253;
   margin: 0;
 }
-
-.admin-table-date, .admin-table-time {
+.admin-table-time {
+  font-size: .8rem;
   margin: 0;
+}
+
+.admin-table-lastColumn {
+  width: 2rem;
 }

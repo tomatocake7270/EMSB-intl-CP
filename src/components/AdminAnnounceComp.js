@@ -1,28 +1,11 @@
-import React, { useState } from 'react';
-import { Table, Badge, Form, Input, Button } from 'reactstrap';
+import React from 'react';
+import RenderAnnnounceTable from './AdminAnnounceRenderComp';
+import { allAnnouncements } from '../shared/AnnounceDetails';
+import { Table, Form, Input, Button } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faPlus, faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 
 const AdminAnnounce = () => {
-
-    const [ oprState, setOprState ] = useState({
-        showOpr: false,
-    });
-
-    const displayOpr = () => {
-        setOprState({ showOpr: true });
-    }
-
-    const hideOpr = () => {
-        setOprState({ showOpr: false });
-    }
-
-    //let RowOperation = null;
-    let rowOprBtnClass = "d-none";
-    
-    if (oprState.showOpr) {
-        rowOprBtnClass = "admin-table-opr-icon";
-    }
     
     return (
         <div className="admin-content d-flex justify-content-start">
@@ -76,7 +59,12 @@ const AdminAnnounce = () => {
                 </div>
 
                 {/* Table row */}
-                <Table hover borderless className="admin-right-table text-center">
+                <RenderAnnnounceTable   announceId  = {allAnnouncements[0].announceId}
+                                        sender      = {allAnnouncements[0].sender}
+                                    createTimeStamp = {allAnnouncements[0].createTimeStamp}
+                                    editTimeStamp   = {allAnnouncements[0].editTimpeStamp}
+                                        text        = {allAnnouncements[0].text} />
+                {/* <Table hover borderless className="admin-right-table text-center">
                     <thead className="border-bottom">
                     <tr>
                         <th className="lato-font bold-font">Sender</th>
@@ -88,79 +76,12 @@ const AdminAnnounce = () => {
                     </tr>
                     </thead>
                     <tbody>
-                    <tr onMouseOver={displayOpr} onMouseOut={hideOpr}>
-                        <th scope="row">
-                            EMSB
-                            <p className="d-none">1</p>
-                        </th>
-                        <td><p className="admin-table-time">16:39 <br /> 2019-05-29</p></td>
-                        <td><p className="admin-table-time">17:46 <br /> 2019-06-01</p></td>
-                        <td><Badge color="danger">Draft</Badge></td>
-                        <td className="text-left">The new EMSB Admin App developed especially for admin users is just available for download on the App Store!</td>
-                        <td className="d-flex justify-content-center">
-                            <Button color="link" className="admin-table-opr-btn">
-                                <FontAwesomeIcon icon={faEdit} className={rowOprBtnClass} />
-                            </Button>
-                            <Button color="link" className="admin-table-opr-btn">
-                                <FontAwesomeIcon icon={faTrashAlt} className={rowOprBtnClass} />
-                            </Button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            EMSB Intl
-                            <p className="d-none">2</p>
-                        </th>
-                        <td><p className="admin-table-time">16:39 <br /> 2019-05-29</p></td>
-                        <td><p className="admin-table-time">17:46 <br /> 2019-06-01</p></td>
-                        <td><Badge color="success">Published</Badge></td>
-                        <td className="text-left">The new EMSB Admin App developed especially for admin users is just available for download on the App Store!</td>
-                        <td className="d-flex justify-content-center">
-                            <Button color="link" className="admin-table-opr-btn">
-                                <FontAwesomeIcon icon={faEdit} className="admin-table-opr-icon"  />
-                            </Button>
-                            <Button color="link" className="admin-table-opr-btn">
-                                <FontAwesomeIcon icon={faTrashAlt} className="admin-table-opr-icon-trash"  />
-                            </Button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            EMSB Intl
-                            <p className="d-none">3</p>
-                        </th>
-                        <td><p className="admin-table-time">16:39 <br /> 2019-05-29</p></td>
-                        <td><p className="admin-table-time">17:46 <br /> 2019-06-01</p></td>
-                        <td><Badge color="success">Published</Badge></td>
-                        <td className="text-left">The new EMSB Admin App developed especially for admin users is just available for download on the App Store!</td>
-                        <td className="d-flex justify-content-center">
-                            <Button color="link" className="admin-table-opr-btn d-none">
-                                <FontAwesomeIcon icon={faEdit} className="admin-table-opr-icon"  />
-                            </Button>
-                            <Button color="link" className="admin-table-opr-btn d-none">
-                                <FontAwesomeIcon icon={faTrashAlt} className="admin-table-opr-icon-trash"  />
-                            </Button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            EMSB <p className="d-none">4</p>
-                        </th>
-                        <td><p className="admin-table-time">16:39 <br /> 2019-05-29</p></td>
-                        <td><p className="admin-table-time">17:46 <br /> 2019-06-01</p></td>
-                        <td><Badge color="danger">Draft</Badge></td>
-                        <td className="text-left">The new EMSB Admin App developed especially for admin users is just available for download on the App Store!</td>
-                        <td className="d-flex justify-content-center">
-                            <Button color="link" className="admin-table-opr-btn d-none">
-                                <FontAwesomeIcon icon={faEdit} className="admin-table-opr-icon"  />
-                            </Button>
-                            <Button color="link" className="admin-table-opr-btn d-none">
-                                <FontAwesomeIcon icon={faTrashAlt} className="admin-table-opr-icon-trash"  />
-                            </Button>
-                        </td>
-                    </tr>
-                    </tbody>
-                </Table>
+                        <RenderAnnnounceTable   sender = {allAnnouncements[0].sender}
+                                       createTimeStamp = {allAnnouncements[0].createTimeStamp}
+                                       editTimeStamp   = {allAnnouncements[0].editTimpeStamp}
+                                                text   = {allAnnouncements[0].text} />
+                        {/* Need to use "map" method */}
+                    
             </div>
             
         </div>
