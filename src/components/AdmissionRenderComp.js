@@ -1,7 +1,11 @@
-import React from 'react';
-import { Container, Row, Col, Media } from 'reactstrap'; 
+import React from 'react'
+import { Container, Row, Col, Media, Button } from 'reactstrap'
+// import Swal from 'sweetalert2'
+// import withReactContent from 'sweetalert2-react-content'
 
-export const QcEdu = () => {
+const QcEdu = () => {
+
+    
     return(
         <div className="text-center">
             <Container className="my-3 border-bottom border-primary pb-1">
@@ -10,17 +14,18 @@ export const QcEdu = () => {
             <Container className="mb-5 text-left">
                 <Row>
                     <Col lg="4" md="6" className="my-2">
-                        <Media>
-                            <Media left href="#">
-                                <Media object src="/assets/images/nationalFlags/qc-edu-english.png" alt="English version" className="img-fluid admission-qc-edu-nf"/>
-                            </Media>
-                            <Media body>
-                                <Media heading className="mt-2 ml-2">
-                                <p className="font-weight-normal admission-qc-edu-title">Education in Quebec</p>
+                        <Button color="link" className="text-decoration-none">
+                            <Media>
+                                <Media left href="#">
+                                    <Media object src="/assets/images/nationalFlags/qc-edu-english.png" alt="English version" className="img-fluid admission-qc-edu-nf"/>
                                 </Media>
-                                {/* <p className="font-weight-light ml-2 pt-0"> – An Overview</p> */}
+                                <Media body>
+                                    <Media heading className="mt-2 ml-2 admission-qc-edu-title">
+                                    <p className="font-weight-normal admission-qc-edu-title">Education in Quebec</p>
+                                    </Media>
+                                </Media>
                             </Media>
-                        </Media>
+                        </Button>
                     </Col>
                     <Col lg="4" md="6" className="my-2">
                         <Media>
@@ -83,7 +88,12 @@ export const QcEdu = () => {
                         </Media>
                     </Col>
                 </Row>
+                
             </Container>
+            
         </div>
+        
     )
 }
+
+export default QcEdu;

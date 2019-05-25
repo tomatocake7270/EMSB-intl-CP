@@ -12,21 +12,12 @@ const AdminAnnounce = () => {
         announcements: allAnnouncements
     });
 
-    const emsbRows = [];
-    const emsbIntlRows = [];
-
     const allRows = annoState.announcements.map(anno => {
         return (
             <RenderAnnounceRow  key = {anno.announceId}
                                 announcements = {anno} />
         )
     })
-
-    // Disply EMSB announcements
-    // const emsbRows = 
-
-    // Display EMSB-intl announcements
-    // const emsbIntlRows
     
     return (
         <div className="admin-content d-flex justify-content-start">

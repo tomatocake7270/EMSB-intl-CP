@@ -1,9 +1,28 @@
-import React from 'react';
-import { Container, Row, Col, Media, Button } from 'reactstrap';
-import { Link } from 'react-router-dom';
-import { QcEdu } from './AdmissionRenderComp';
+import React from 'react'
+import { Container, Row, Col, Media, Button } from 'reactstrap'
+import { Link } from 'react-router-dom'
+import QcEdu from './AdmissionRenderComp'
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 const Admission = () => {
+
+    const applyBtnAlert = withReactContent(Swal)
+
+    const chooseApplyPortal = () => {
+        applyBtnAlert.fire({
+            title: 'Apply as ...',
+            html: '<a role="button" class="btn btn-primary" target="_blank" href="https://mytruenorth.ca/famportalindex.php?db=englishmontreal"><b>Parent</b> or Student</a>' +
+                  '<span>&nbsp;&nbsp;&nbsp;</span>' + 
+                  '<a role="button" class="btn btn-info" target="_blank" href="https://mytruenorth.ca/appagentindex.php?db=englishmontreal">Agent or Agency</a>',              
+            showCloseButton: false,
+            showCancelButton: false,
+            focusConfirm: false,
+            showConfirmButton: false,
+            width: '40%',
+        })
+    }
+    
     return(
         <div className="text-center">
             <Container className="my-3 border-bottom border-primary pb-1">
@@ -78,7 +97,7 @@ const Admission = () => {
                     </Col>
                     <Col md="6">
                         <div className="d-flex flex-column align-items-center text-left">
-                            <Button color="primary" className="mt-3">EMSB Online Application System</Button>
+                            <Button color="primary" className="mt-3" onClick={chooseApplyPortal}>EMSB Online Application System</Button>
                             <div className="d-flex flex-column align-items-start text-left my-4 pt-2 pl-1 border rounded">
                                 <Media>
                                     <Media left href="#">
@@ -125,7 +144,7 @@ const Admission = () => {
                     </Col>
                 </Row>
             </Container>
-            <QcEdu/>
+            <QcEdu />
         </div>
     )
 }

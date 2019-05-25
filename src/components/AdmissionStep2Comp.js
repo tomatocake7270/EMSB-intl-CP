@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import { QcEdu } from './AdmissionRenderComp';
+import QcEdu from './AdmissionRenderComp';
 
 const AdmissionS2 = () => {
     return(

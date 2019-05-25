@@ -3,6 +3,8 @@ import { UncontrolledCarousel, Container, Row, Col, Jumbotron, Button} from 'rea
 import Announce from './AnnounceComp';
 import Gallery from './HomeGalleryComp';
 import Stories from './HomeStoriesComp';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 const items = [
     {
@@ -21,6 +23,22 @@ const items = [
         caption: ''
     }
   ];
+
+  const applyBtnAlert = withReactContent(Swal)
+
+    const chooseApplyPortal = () => {
+        applyBtnAlert.fire({
+            title: 'Apply as ...',
+            html: '<a role="button" class="btn btn-primary" target="_blank" href="https://mytruenorth.ca/famportalindex.php?db=englishmontreal"><b>Parent</b> or Student</a>' +
+                  '<span>&nbsp;&nbsp;&nbsp;</span>' + 
+                  '<a role="button" class="btn btn-info" target="_blank" href="https://mytruenorth.ca/appagentindex.php?db=englishmontreal">Agent or Agency</a>',              
+            showCloseButton: false,
+            showCancelButton: false,
+            focusConfirm: false,
+            showConfirmButton: false,
+            width: '40%',
+        })
+    }
 
 class Home extends React.Component {
     constructor(props) {
@@ -53,7 +71,7 @@ class Home extends React.Component {
                         {/* <hr className="my-2" /> */}
                         {/* <p>smaller texts</p> */}
                         <p className="lead">
-                        <Button color="primary">Apply Now</Button>
+                        <Button color="primary" onClick={chooseApplyPortal}>Apply Now</Button>
                         </p>
                         </Jumbotron>
                     </Col>
