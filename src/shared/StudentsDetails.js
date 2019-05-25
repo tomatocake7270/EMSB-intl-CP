@@ -1,12 +1,16 @@
 //Students 标题选项
 export const titleInfo = {
+    headingClass: {
+        classSelected: "mt-2 mr-2",
+        classDeselected: "mt-2 mr-2 student-categories-text"
+    },
     fieldTrips: {
         href: "/students/",
         url: {
             urlSelected:  "/assets/images/students-bus-selected.png",
             urlDeselected:  "/assets/images/students-bus-deselected.png"
         },        
-        title: "Field Trips"
+        title: "Field Trips",
     },
     studyAssist: {
         href: "/students/study",
@@ -112,13 +116,13 @@ export const cardInfo = {
 
 export const listInfo = {
     fieldTripReg: {
-        linkUrl: "#",
+        linkUrl: "/assets/pdfs/studentDocs/EMSB-Field-Trip-Registration-Form-18-19.pdf",
         iconUrl: "/assets/images/fieldTrips/ft-registration.png",
         altText: "Registration",
         heading: "Field Trip Registration Form"
     },
     fieldTripFAQ: {
-        linkUrl: "#",
+        linkUrl: "/assets/pdfs/studentDocs/EMSB-Field-Trip-Registration-Form-18-19.pdf",
         iconUrl: "/assets/images/fieldTrips/ft-faq.png",
         altText: "FAQ",
         heading: "Frequently Asked Questions"

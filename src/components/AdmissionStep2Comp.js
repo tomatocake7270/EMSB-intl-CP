@@ -11,10 +11,10 @@ const AdmissionS2 = () => {
                     <Link to="/admission">
                         <Media className="mx-3">
                             <Media left>
-                                <Media object src="/assets/images/admission-step-deselected.png" alt="selected" className="img-fluid"/>
+                                <Media object src="/assets/images/admission-step-deselected.png" alt="selected" className="admission-steps-icon"/>
                             </Media>
                             <Media body>
-                                <Media heading className="mt-1 ml-2">
+                                <Media heading className="mt-1 ml-2 admission-steps-text">
                                     <p>Step 1</p>
                                 </Media>
                             </Media>
@@ -23,7 +23,7 @@ const AdmissionS2 = () => {
                     <Link to="/admission/step2">
                         <Media className="mx-3">
                             <Media left>
-                                <Media object src="/assets/images/admission-step-selected.png" alt="selected" className="img-fluid"/>
+                                <Media object src="/assets/images/admission-step-selected.png" alt="selected" className="admission-steps-icon"/>
                             </Media>
                             <Media body>
                                 <Media heading className="mt-1 ml-2">
@@ -35,10 +35,10 @@ const AdmissionS2 = () => {
                     <Link to="/admission/step3">
                         <Media className="mx-3">
                             <Media left>
-                                <Media object src="/assets/images/admission-step-deselected.png" alt="selected" className="img-fluid"/>
+                                <Media object src="/assets/images/admission-step-deselected.png" alt="selected" className="admission-steps-icon"/>
                             </Media>
                             <Media body>
-                                <Media heading className="mt-1 ml-2">
+                                <Media heading className="mt-1 ml-2 admission-steps-text">
                                     <p>Step 3</p>
                                 </Media>
                             </Media>

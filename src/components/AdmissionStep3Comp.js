@@ -11,10 +11,10 @@ const AdmissionS3 = () => {
                     <Link to="/admission">
                         <Media className="mx-3">
                             <Media left>
-                                <Media object src="/assets/images/admission-step-deselected.png" alt="selected" className="img-fluid"/>
+                                <Media object src="/assets/images/admission-step-deselected.png" alt="selected" className="admission-steps-icon"/>
                             </Media>
                             <Media body>
-                                <Media heading className="mt-1 ml-2">
+                                <Media heading className="mt-1 ml-2 admission-steps-text">
                                     <p>Step 1</p>
                                 </Media>
                             </Media>
@@ -23,10 +23,10 @@ const AdmissionS3 = () => {
                     <Link to="/admission/step2">
                         <Media className="mx-3">
                             <Media left>
-                                <Media object src="/assets/images/admission-step-deselected.png" alt="selected" className="img-fluid"/>
+                                <Media object src="/assets/images/admission-step-deselected.png" alt="selected" className="admission-steps-icon"/>
                             </Media>
                             <Media body>
-                                <Media heading className="mt-1 ml-2">
+                                <Media heading className="mt-1 ml-2 admission-steps-text">
                                     <p>Step 2</p>
                                 </Media>
                             </Media>
@@ -35,7 +35,7 @@ const AdmissionS3 = () => {
                     <Link to="/admission/step3">
                         <Media className="mx-3">
                             <Media left>
-                                <Media object src="/assets/images/admission-step-selected.png" alt="selected" className="img-fluid"/>
+                                <Media object src="/assets/images/admission-step-selected.png" alt="selected" className="admission-steps-icon"/>
                             </Media>
                             <Media body>
                                 <Media heading className="mt-1 ml-2">
@@ -76,7 +76,7 @@ const AdmissionS3 = () => {
                                     <p>A Certified Cheque or Money Order payable to the EMSB to cover the full period the student will attend school. </p>
                                 </Media>
                             </Media>
-                            <p>We will then complete the registration and apply for the Certificate of Eligibility for the student to attend an English School. ( Allow 3 - 4 weeks)</p>
+                            <p className="admission-text">We will then complete the registration and apply for the Certificate of Eligibility for the student to attend an English School. ( Allow 3 - 4 weeks)</p>
                         </div>
                     </Col>
                     <Col md="6">

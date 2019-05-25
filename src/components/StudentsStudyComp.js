@@ -13,13 +13,16 @@ function StudentsStudy() {
                 <div className="d-flex justify-content-center">
                     <RenderMedia title = {titleInfo.fieldTrips.title}
                                  href  = {titleInfo.fieldTrips.href}
-                                 url   = {titleInfo.fieldTrips.url.urlDeselected}/>
+                                 url   = {titleInfo.fieldTrips.url.urlDeselected}
+                                 class = {titleInfo.headingClass.classDeselected}/>
                     <RenderMedia title = {titleInfo.studyAssist.title}
                                  href  = {titleInfo.studyAssist.href}
-                                 url   = {titleInfo.studyAssist.url.urlSelected}/>
+                                 url   = {titleInfo.studyAssist.url.urlSelected}
+                                 class = {titleInfo.headingClass.classSelected}/>
                     <RenderMedia title = {titleInfo.healthSupport.title}
                                  href  = {titleInfo.healthSupport.href}
-                                 url   = {titleInfo.healthSupport.url.urlDeselected}/>
+                                 url   = {titleInfo.healthSupport.url.urlDeselected}
+                                 class = {titleInfo.headingClass.classDeselected}/>
                 </div>
             </Container>
             <Container>

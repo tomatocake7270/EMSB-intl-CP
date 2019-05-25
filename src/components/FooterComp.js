@@ -18,7 +18,7 @@ const Footer = () => {
             <div className="footer">
                 <div className="d-flex justify-content-around px-5 mx-5">
                     <Media className="ml-3">
-                        <Media left href="#">
+                        <Media left>
                             <Media object src="/assets/images/EMSB-intl-logo.png" alt="EMSB" className="img-fluid emsb-footer-logo"/>
                         </Media>
                         <Media body className="ml-2">
@@ -46,7 +46,7 @@ const Footer = () => {
                                     <a href="https://www.emsb.qc.ca/emsb/admissions/eligibility/office" rel="noopener noreferrer" target="_blank">here</a></li>
                             </ul>
                         </Media>
-                        {/* <Media right href="#">
+                        {/* <Media right>
                             <Media object src="/assets/images/home/office-hours.png" alt="Office hours" className="img-fluid emsb-footer-logo"/>
                         </Media> */}
                     </Media>
@@ -54,7 +54,7 @@ const Footer = () => {
                 {/* <Row>
                     <Col sm="6">
                         <Media className="ml-3">
-                            <Media left href="#">
+                            <Media left>
                                 <Media object src="/assets/images/EMSB-intl-logo.png" alt="EMSB" className="img-fluid emsb-footer-logo"/>
                             </Media>
                             <Media body className="ml-2">
@@ -72,7 +72,7 @@ const Footer = () => {
                     </Col>
                     <Col sm="6" className="justify-content-end">
                         <Media className="ml-3">
-                            <Media left href="#">
+                            <Media left>
                                 <Media object src="/assets/images/home/office-hours.png" alt="Office hours" className="img-fluid emsb-footer-logo"/>
                             </Media>
                             <Media body className="ml-2">

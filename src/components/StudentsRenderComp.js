@@ -1,15 +1,15 @@
 import React from 'react'
-import { Col, Card, CardImg, CardBody, Media } from 'reactstrap';
+import { Col, Card, CardImg, CardBody, Media, Button } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 
-//数据输出方，用 props.输出数据名
+//数据输出方，用 props.输出数据名 mt-2 mr-2
 export const RenderMedia = (props) => {
     return (
         <Link to={props.href}>
             <Media className="mx-3">
                 <Media body>
-                    <Media heading className="mt-2 mr-2">
+                    <Media heading className={props.class}>
                         {props.title}
                     </Media> 
                 </Media>
@@ -28,7 +28,7 @@ export const RenderCard = (props) => {
                 <CardImg top width="100%" src={props.imgUrl} alt={props.altText} className="img-fluid"/>
                 <CardBody className="bg-primary">
                     <Media>
-                        <Media left href="#">
+                        <Media left>
                             <Media object src={props.iconUrl} alt={props.altText} className="img-fluid students-field-trip-icon"/>
                         </Media>
                         <Media body className="ml-2 mt-1">
@@ -51,13 +51,15 @@ export const RenderCard = (props) => {
 
 export const RenderList = (props) => {
     return (
-        <Media className="my-2">
-            <Media left href={props.linkUrl}>
-                <Media object src={props.iconUrl} alt={props.altText} className="students-list-icon" />
+        <Button color="link" href={props.linkUrl} className="text-decoration-none student-links-text" target="_blank">
+            <Media className="my-2">
+                <Media left>
+                    <Media object src={props.iconUrl} alt={props.altText} className="students-list-icon" />
+                </Media>
+                <Media heading className="ml-2 mt-3">
+                    <p>{props.heading}</p>
+                </Media>
             </Media>
-            <Media heading className="ml-2 mt-3">
-                <p>{props.heading}</p>
-            </Media>
-        </Media>
+        </Button>
     )
 }

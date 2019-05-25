@@ -12,9 +12,9 @@ const Admission = () => {
     const chooseApplyPortal = () => {
         applyBtnAlert.fire({
             title: 'Apply as ...',
-            html: '<a role="button" class="btn btn-primary" target="_blank" href="https://mytruenorth.ca/famportalindex.php?db=englishmontreal"><b>Parent</b> or Student</a>' +
+            html: '<div class="mt-2 mb-3"><a role="button" class="btn btn-primary" target="_blank" href="https://mytruenorth.ca/famportalindex.php?db=englishmontreal"><b>Parent</b> or Student</a>' +
                   '<span>&nbsp;&nbsp;&nbsp;</span>' + 
-                  '<a role="button" class="btn btn-info" target="_blank" href="https://mytruenorth.ca/appagentindex.php?db=englishmontreal">Agent or Agency</a>',              
+                  '<a role="button" class="btn btn-info" target="_blank" href="https://mytruenorth.ca/appagentindex.php?db=englishmontreal">Agent or Agency</a></div>',              
             showCloseButton: false,
             showCancelButton: false,
             focusConfirm: false,
@@ -29,8 +29,8 @@ const Admission = () => {
                 <div className="d-flex justify-content-center">
                     <Link to="/admission">
                         <Media className="mx-3">
-                            <Media left href="#">
-                                <Media object src="/assets/images/admission-step-selected.png" alt="selected" className="img-fluid"/>
+                            <Media left>
+                                <Media object src="/assets/images/admission-step-selected.png" alt="selected" className="admission-steps-icon"/>
                             </Media>
                             <Media body>
                                 <Media heading className="mt-1 ml-2">
@@ -41,11 +41,11 @@ const Admission = () => {
                     </Link>
                     <Link to="/admission/step2">
                         <Media className="mx-3">
-                            <Media left href="#">
-                                <Media object src="/assets/images/admission-step-deselected.png" alt="selected" className="img-fluid"/>
+                            <Media left>
+                                <Media object src="/assets/images/admission-step-deselected.png" alt="selected" className="admission-steps-icon"/>
                             </Media>
                             <Media body>
-                                <Media heading className="mt-1 ml-2">
+                                <Media heading className="mt-1 ml-2 admission-steps-text">
                                     <p>Step 2</p>
                                 </Media>
                             </Media>
@@ -53,11 +53,11 @@ const Admission = () => {
                     </Link>
                     <Link to="/admission/step3">
                         <Media className="mx-3">
-                            <Media left href="#">
-                                <Media object src="/assets/images/admission-step-deselected.png" alt="selected" className="img-fluid"/>
+                            <Media left>
+                                <Media object src="/assets/images/admission-step-deselected.png" alt="selected" className="admission-steps-icon"/>
                             </Media>
                             <Media body>
-                                <Media heading className="mt-1 ml-2">
+                                <Media heading className="mt-1 ml-2 admission-steps-text">
                                     <p>Step 3</p>
                                 </Media>
                             </Media>

@@ -170,19 +170,31 @@ body {
   height: auto;
 }
 
+.admission-steps-icon {
+  width: 2.4rem;
+  height: auto;
+}
+
 .admission-qc-edu-title,
 .admission-text, 
-.emsb-calendar-text{
+.emsb-calendar-text,
+.admission-steps-text,
+.student-categories-text,
+.student-links-text{
   color: #222f3e;
 }
 
 .admission-qc-edu-title {
-  font-size: 1.5rem;
+  text-align: left;
+  font-size: 1.4rem;
   margin-top: 1.1rem;
 }
 .admission-qc-edu-title:hover,
 .admission-text:hover, 
-.emsb-calendar-text:hover{
+.emsb-calendar-text:hover,
+.admission-steps-text:hover,
+.student-categories-text:hover
+.student-link-text:hover {
   color: #2e86de;
 }
 .admission-qc-edu-title-german {

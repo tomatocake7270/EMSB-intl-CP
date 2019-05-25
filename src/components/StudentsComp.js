@@ -11,13 +11,16 @@ function Students() {
                 <div className="d-flex justify-content-center">
                     <RenderMedia title = {titleInfo.fieldTrips.title}
                                  href  = {titleInfo.fieldTrips.href}
-                                 url   = {titleInfo.fieldTrips.url.urlSelected}/>
+                                 url   = {titleInfo.fieldTrips.url.urlSelected}
+                                 class = {titleInfo.headingClass.classSelected}/>
                     <RenderMedia title = {titleInfo.studyAssist.title}
                                  href  = {titleInfo.studyAssist.href}
-                                 url   = {titleInfo.studyAssist.url.urlDeselected}/>
+                                 url   = {titleInfo.studyAssist.url.urlDeselected}
+                                 class = {titleInfo.headingClass.classDeselected}/>
                     <RenderMedia title = {titleInfo.healthSupport.title}
                                  href  = {titleInfo.healthSupport.href}
-                                 url   = {titleInfo.healthSupport.url.urlDeselected}/>
+                                 url   = {titleInfo.healthSupport.url.urlDeselected}
+                                 class = {titleInfo.headingClass.classDeselected}/>
                 </div>
             </Container> 
             <Container>
@@ -62,12 +65,14 @@ function Students() {
                         <Col md="auto" className="ml-4">
                             <RenderList iconUrl = {listInfo.fieldTripReg.iconUrl}
                                         altText = {listInfo.fieldTripReg.altText}
-                                        heading = {listInfo.fieldTripReg.heading} />
+                                        heading = {listInfo.fieldTripReg.heading}
+                                        linkUrl = {listInfo.fieldTripReg.linkUrl} />
                         </Col>
                         <Col md="auto" className="ml-4">
                             <RenderList iconUrl = {listInfo.fieldTripFAQ.iconUrl}
                                         altText = {listInfo.fieldTripFAQ.altText}
-                                        heading = {listInfo.fieldTripFAQ.heading} />
+                                        heading = {listInfo.fieldTripFAQ.heading}
+                                        linkUrl = {listInfo.fieldTripFAQ.linkUrl} />
                         </Col>                
                     </Row>
                 </div>

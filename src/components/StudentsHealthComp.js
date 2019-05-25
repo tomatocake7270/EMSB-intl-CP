@@ -11,13 +11,16 @@ function StudentsHealth() {
                 <div className="d-flex justify-content-center">
                     <RenderMedia title = {titleInfo.fieldTrips.title}
                                  href  = {titleInfo.fieldTrips.href}
-                                 url   = {titleInfo.fieldTrips.url.urlDeselected}/>
+                                 url   = {titleInfo.fieldTrips.url.urlDeselected}
+                                 class = {titleInfo.headingClass.classDeselected}/>
                     <RenderMedia title = {titleInfo.studyAssist.title}
                                  href  = {titleInfo.studyAssist.href}
-                                 url   = {titleInfo.studyAssist.url.urlDeselected}/>
+                                 url   = {titleInfo.studyAssist.url.urlDeselected}
+                                 class = {titleInfo.headingClass.classDeselected}/>
                     <RenderMedia title = {titleInfo.healthSupport.title}
                                  href  = {titleInfo.healthSupport.href}
-                                 url   = {titleInfo.healthSupport.url.urlSelected}/>
+                                 url   = {titleInfo.healthSupport.url.urlSelected}
+                                 class = {titleInfo.headingClass.classSelected}/>
                 </div>
             </Container>
             <Container>

@@ -65,27 +65,30 @@ const CurrentFieldTrip = (props) => {
                 <div className="d-flex justify-content-center">
                     <RenderMedia title = {titleInfo.fieldTrips.title}
                                  href  = {titleInfo.fieldTrips.href}
-                                 url   = {titleInfo.fieldTrips.url.urlSelected}/>
+                                 url   = {titleInfo.fieldTrips.url.urlSelected}
+                                 class = {titleInfo.headingClass.classSelected}/>
                     <RenderMedia title = {titleInfo.studyAssist.title}
                                  href  = {titleInfo.studyAssist.href}
-                                 url   = {titleInfo.studyAssist.url.urlDeselected}/>
+                                 url   = {titleInfo.studyAssist.url.urlDeselected}
+                                 class = {titleInfo.headingClass.classDeselected}/>
                     <RenderMedia title = {titleInfo.healthSupport.title}
                                  href  = {titleInfo.healthSupport.href}
-                                 url   = {titleInfo.healthSupport.url.urlDeselected}/>
+                                 url   = {titleInfo.healthSupport.url.urlDeselected}
+                                 class = {titleInfo.headingClass.classDeselected}/>
                 </div>
             </Container>
 
             <Container className="px-5">
                 <Breadcrumb tag="nav" listTag="div" className="mx-2 school-breadcrumb">
-                    <BreadcrumbItem tag="a" className=""><Link to="/students">Field Trips</Link></BreadcrumbItem>
-                    <BreadcrumbItem active tag="span" href="#">{props.trip}</BreadcrumbItem>
+                    <BreadcrumbItem><Link to="/students">Field Trips</Link></BreadcrumbItem>
+                    <BreadcrumbItem active tag="span">{props.trip}</BreadcrumbItem>
                 </Breadcrumb>
                 <Row className="text-left mx-2 mb-3">
                     <Col lg="5" className="mb-3">
                         <div className="d-flex flex-column align-items-start">
                             <UncontrolledCarousel items={props.imgs} />
                             <Media className="mt-4">
-                                    <Media left href="#">
+                                    <Media left>
                                         <Media object src="/assets/images/schools/school-address.png" alt="Intro" className="img-fluid" />
                                     </Media>
                                     <Media body className="ml-2 mt-1">
@@ -93,7 +96,7 @@ const CurrentFieldTrip = (props) => {
                                     </Media>
                             </Media>
                             <Media>
-                                    <Media left href="#">
+                                    <Media left>
                                         <Media object src={props.introIcon} alt="Intro" className="img-fluid" />
                                     </Media>
                                     <Media body className="ml-2 mt-1">
@@ -108,7 +111,7 @@ const CurrentFieldTrip = (props) => {
                         <Row>
                             <Col sm="12" className="mt-0">
                                 <Media>
-                                    <Media left href="#">
+                                    <Media left>
                                         <Media object src="/assets/images/fieldTrips/ft-date-time.png" alt="School address" className="img-fluid" />
                                     </Media>
                                     <Media body className="ml-2 mt-1">
@@ -120,7 +123,7 @@ const CurrentFieldTrip = (props) => {
                             
                             <Col sm="12" className="my-1">
                                 <Media>
-                                    <Media left href="#">
+                                    <Media left>
                                         <Media object src="/assets/images/fieldTrips/ft-meet.png" alt="School address" className="img-fluid" />
                                     </Media>
                                     <Media body className="ml-2 mt-1">
@@ -131,7 +134,7 @@ const CurrentFieldTrip = (props) => {
                             </Col>
                             <Col sm="12" lg="6" className="my-1">
                                 <Media>
-                                    <Media left href="#">
+                                    <Media left>
                                         <Media object src="/assets/images/fieldTrips/ft-back.png" alt="School address" className="img-fluid" />
                                     </Media>
                                     <Media body className="ml-2 mt-1">
@@ -142,7 +145,7 @@ const CurrentFieldTrip = (props) => {
                             </Col>
                             <Col sm="12" lg="6" className="my-1">
                                 <Media>
-                                    <Media left href="#">
+                                    <Media left>
                                         <Media object src="/assets/images/fieldTrips/ft-transport.png" alt="School address" className="img-fluid" />
                                     </Media>
                                     <Media body className="ml-2 mt-1">
@@ -153,7 +156,7 @@ const CurrentFieldTrip = (props) => {
                             </Col>
                             <Col sm="12" md="6" className="my-1">
                                 <Media>
-                                    <Media left href="#">
+                                    <Media left>
                                         <Media object src="/assets/images/fieldTrips/ft-to-bring.png" alt="School address" className="img-fluid" />
                                     </Media>
                                     <Media body className="ml-2 mt-1">
@@ -164,7 +167,7 @@ const CurrentFieldTrip = (props) => {
                             </Col>
                             <Col sm="12" md="6" className="my-1">
                                 <Media>
-                                    <Media left href="#">
+                                    <Media left>
                                         <Media object src="/assets/images/fieldTrips/ft-to-wear.png" alt="School address" className="img-fluid" />
                                     </Media>
                                     <Media body className="ml-2 mt-1">
@@ -175,7 +178,7 @@ const CurrentFieldTrip = (props) => {
                             </Col>
                             <Col sm="12" lg="6" className="my-1">
                                 <Media>
-                                    <Media left href="#">
+                                    <Media left>
                                         <Media object src="/assets/images/fieldTrips/ft-schedule.png" alt="School missions" className="img=fluid" />
                                     </Media>
                                     <Media body className="ml-2 mt-1">
@@ -195,7 +198,7 @@ const CurrentFieldTrip = (props) => {
                             <Col sm="12" lg="6" className="my-1">
                                 <Link to="/contacts">
                                     <Media>
-                                        <Media left href="#">
+                                        <Media left>
                                             <Media object src="/assets/images/fieldTrips/ft-faq-small.png" alt="School missions" className="img=fluid" />
                                         </Media>
                                         <Media body className="ml-2 mt-1">
