@@ -82,7 +82,7 @@ const Admission = () => {
                                     <Media object src="assets/images/admission-check.png" alt="checkmark" className="img-fluid admission-checkmark" />
                                 </Media>
                                 <Media body className="ml-2">
-                                    <p className="admission-text">The agent/agency must read and complete the documents below and forward them to the EMSB (intstudent@emsb.qc.ca). Once approved, the agent/agency must complete the online application here.</p>
+                                    <p className="admission-text">The Agent/Agency must read and complete the documents below and forward them to the EMSB (intstudent@emsb.qc.ca). Once approved, the agent/agency must complete the online application here.</p>
                                 </Media>
                             </Media>
                             <Media className="mb-2">
@@ -99,46 +99,56 @@ const Admission = () => {
                         <div className="d-flex flex-column align-items-center text-left">
                             <Button color="primary" className="mt-3" onClick={chooseApplyPortal}>EMSB Online Application System</Button>
                             <div className="d-flex flex-column align-items-start text-left my-4 pt-2 pl-1 border rounded">
-                                <Media>
-                                    <Media left href="#">
-                                        <Media object src="assets/images/admission-form.png" alt="form" className="img-fluid admission-form-icon" />
+                                <Button color="link" className="text-decoration-none" href="/assets/pdfs/admissionDocs/Admission-Doc-1.pdf" target="_blank">
+                                    <Media>
+                                        <Media left href="#">
+                                            <Media object src="/assets/images/admission-form.png" alt="form" className="img-fluid admission-form-icon" />
+                                        </Media>
+                                        <Media body className="ml-2">
+                                            <p className="admission-text">1. International Student Package and Agreement</p>
+                                        </Media>
                                     </Media>
-                                    <Media body className="ml-2">
-                                        <p className="admission-text">1. International Student Package and Agreement</p>
+                                </Button>
+                                <Button color="link" className="text-decoration-none" href="/assets/pdfs/admissionDocs/Admission-Doc-2.pdf" target="_blank">
+                                    <Media>
+                                        <Media left href="#">
+                                            <Media object src="/assets/images/admission-form.png" alt="form" className="img-fluid admission-form-icon" />
+                                        </Media>
+                                        <Media body className="ml-2">
+                                            <p className="admission-text">2. Instructions for Wire Transfer Payment</p>
+                                        </Media>
                                     </Media>
-                                </Media>
-                                <Media>
-                                    <Media left href="#">
-                                        <Media object src="assets/images/admission-form.png" alt="form" className="img-fluid admission-form-icon" />
+                                </Button>
+                                <Button color="link" className="text-decoration-none" href="/assets/pdfs/admissionDocs/Admission-Doc-3.pdf" target="_blank">
+                                    <Media>
+                                        <Media left href="#">
+                                            <Media object src="/assets/images/admission-form.png" alt="form" className="img-fluid admission-form-icon" />
+                                        </Media>
+                                        <Media body className="ml-2">
+                                            <p className="admission-text">3. Custodianship Declaration – Custodian for Minors Studying in Canada</p>
+                                        </Media>
                                     </Media>
-                                    <Media body className="ml-2">
-                                        <p className="admission-text">2. Instructions for Wire Transfer Payment</p>
+                                </Button>
+                                <Button color="link" className="text-decoration-none" href="/assets/pdfs/admissionDocs/Admission-Doc-4.pdf" target="_blank">
+                                    <Media>
+                                        <Media left href="#">
+                                            <Media object src="/assets/images/admission-form.png" alt="form" className="img-fluid admission-form-icon" />
+                                        </Media>
+                                        <Media body className="ml-2">
+                                            <p className="admission-text">4. Agency/Agent Qualification Application Form</p>
+                                        </Media>
                                     </Media>
-                                </Media>
-                                <Media>
-                                    <Media left href="#">
-                                        <Media object src="assets/images/admission-form.png" alt="form" className="img-fluid admission-form-icon" />
+                                </Button>
+                                <Button color="link" className="text-decoration-none" href="/assets/pdfs/admissionDocs/Admission-Doc-5.pdf" target="_blank">
+                                    <Media>
+                                        <Media left href="#">
+                                            <Media object src="/assets/images/admission-form.png" alt="form" className="img-fluid admission-form-icon" />
+                                        </Media>
+                                        <Media body className="ml-2">
+                                            <p className="admission-text">5. Agency/Agent International Recruiting Agreement 2019-2020 School Year</p>
+                                        </Media>
                                     </Media>
-                                    <Media body className="ml-2">
-                                        <p className="admission-text">3. Custodianship Declaration – Custodian for Minors Studying in Canada</p>
-                                    </Media>
-                                </Media>
-                                <Media>
-                                    <Media left href="#">
-                                        <Media object src="assets/images/admission-form.png" alt="form" className="img-fluid admission-form-icon" />
-                                    </Media>
-                                    <Media body className="ml-2">
-                                        <p className="admission-text">4. Agency/Agent Qualification Application Form</p>
-                                    </Media>
-                                </Media>
-                                <Media>
-                                    <Media left href="#">
-                                        <Media object src="assets/images/admission-form.png" alt="form" className="img-fluid admission-form-icon" />
-                                    </Media>
-                                    <Media body className="ml-2">
-                                        <p className="admission-text">5. Agency/Agent International Recruiting Agreement 2019-2020 School Year</p>
-                                    </Media>
-                                </Media>
+                                </Button>
                             </div>
                         </div>
                     </Col>

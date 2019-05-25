@@ -142,14 +142,27 @@ body {
 .admission-qc-edu-title {
   font-size: 1.5rem;
   margin-top: 1.1rem;
+  color: #222f3e;
+}
+.admission-qc-edu-title:hover {
+  color: #2e86de;
 }
 .admission-qc-edu-title-german {
-  font-size: 1.1rem;
-  margin-top: .6rem;
+  font-size: 1rem;
+  margin-top: 1.45rem;
+}
+.admission-qc-edu-title-spanish {
+  font-size: 1.4rem;
+  margin-top: 1.2rem;
 }
 
 .admission-text {
   font-size: 1.2rem;
+  color: #222f3e;
+  text-align: left;
+}
+.admission-text:hover {
+  color: #2e86de;
 }
 
 /* STUDENT pages */ 
