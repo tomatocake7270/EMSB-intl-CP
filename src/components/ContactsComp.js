@@ -158,7 +158,7 @@ const Contacts = () => {
                     <Col xs="12" lg={{ size: 5, offset: 1 }}>
                         <Container className="my-2 border pb-1 rounded">
                             <div className="d-flex flex-column align-items-between">
-                                <h4 className="border-bottom border-secondary mt-3 pb-1 mx-auto blue-font bold-font">Administrative Technicians</h4>
+                                <h4 className="border-bottom border-secondary mt-3 pb-1 mx-auto lato-font blue-font bold-font">Administrative Technicians</h4>
                                 <div className="d-flex justify-content-between">
                                     <Media className="my-2 contact-staff-media">
                                         <Media left href="#">
@@ -207,7 +207,7 @@ const Contacts = () => {
                     <Col xs="12" lg="5">
                         <Container className="my-2 border pb-1 rounded">
                             <div className="d-flex flex-column align-items-between">
-                                <h4 className="border-bottom border-secondary mt-3 mb-3 pb-1 mx-auto blue-font bold-font">International Students Advisors</h4>
+                                <h4 className="border-bottom border-secondary mt-3 mb-3 pb-1 mx-auto lato-font blue-font bold-font">International Students Advisors</h4>
                                 <div className="d-flex justify-content-between">
                                     <Media className="my-2 contact-staff-media">
                                         <Media left href="#">
