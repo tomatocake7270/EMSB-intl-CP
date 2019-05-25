@@ -11,9 +11,9 @@ const QcEdu = () => {
             <Container className="mb-5 text-left">
                 <Row>
                     <Col lg="4" md="6" className="my-2">
-                        <Button color="link" className="text-decoration-none" href="assets/pdfs/qcEdu/english-qc-edu.pdf" target="_blank">
+                        <Button color="link" className="text-decoration-none" href="/assets/pdfs/qcEdu/english-qc-edu.pdf" target="_blank">
                             <Media>
-                                <Media left href="#">
+                                <Media left>
                                     <Media object src="/assets/images/nationalFlags/qc-edu-english.png" alt="English version" className="img-fluid admission-qc-edu-nf"/>
                                 </Media>
                                 <Media body>
@@ -25,9 +25,9 @@ const QcEdu = () => {
                         </Button>
                     </Col>
                     <Col lg="4" md="6" className="my-2">
-                        <Button color="link" className="text-decoration-none" href="assets/pdfs/qcEdu/french-qc-edu.pdf" target="_blank">
+                        <Button color="link" className="text-decoration-none" href="/assets/pdfs/qcEdu/french-qc-edu.pdf" target="_blank">
                             <Media>
-                                <Media left href="#">
+                                <Media left>
                                     <Media object src="/assets/images/nationalFlags/qc-edu-french.png" alt="French version" className="img-fluid admission-qc-edu-nf"/>
                                 </Media>
                                 <Media body>
@@ -39,9 +39,9 @@ const QcEdu = () => {
                         </Button>
                     </Col>
                     <Col lg="4" md="6" className="my-2">
-                        <Button color="link" className="text-decoration-none" href="assets/pdfs/qcEdu/chinese-qc-edu.pdf" target="_blank">
+                        <Button color="link" className="text-decoration-none" href="/assets/pdfs/qcEdu/chinese-qc-edu.pdf" target="_blank">
                             <Media>
-                                <Media left href="#">
+                                <Media left>
                                     <Media object src="/assets/images/nationalFlags/qc-edu-chinese.png" alt="Chinese version" className="img-fluid admission-qc-edu-nf"/>
                                 </Media>
                                 <Media body>
@@ -53,9 +53,9 @@ const QcEdu = () => {
                         </Button>
                     </Col>
                     <Col lg="4" md="6" className="my-2">
-                        <Button color="link" className="text-decoration-none" href="assets/pdfs/qcEdu/spanish-qc-edu.pdf" target="_blank">
+                        <Button color="link" className="text-decoration-none" href="/assets/pdfs/qcEdu/spanish-qc-edu.pdf" target="_blank">
                             <Media>
-                                <Media left href="#">
+                                <Media left>
                                     <Media object src="/assets/images/nationalFlags/qc-edu-spanish.png" alt="Spanish version" className="img-fluid admission-qc-edu-nf"/>
                                 </Media>
                                 <Media body>
@@ -67,9 +67,9 @@ const QcEdu = () => {
                         </Button>
                     </Col>
                     <Col lg="4" md="6" className="my-2">
-                        <Button color="link" className="text-decoration-none" href="assets/pdfs/qcEdu/portuguese-qc-edu.pdf" target="_blank">
+                        <Button color="link" className="text-decoration-none" href="/assets/pdfs/qcEdu/portuguese-qc-edu.pdf" target="_blank">
                             <Media>
-                                <Media left href="#">
+                                <Media left>
                                     <Media object src="/assets/images/nationalFlags/qc-edu-portuguese.png" alt="Portuguese version" className="img-fluid admission-qc-edu-nf"/>
                                 </Media>
                                 <Media body>
@@ -81,9 +81,9 @@ const QcEdu = () => {
                         </Button>
                     </Col>
                     <Col lg="4" md="6" className="my-2">
-                        <Button color="link" className="text-decoration-none" href="assets/pdfs/qcEdu/german-qc-edu.pdf" target="_blank">
+                        <Button color="link" className="text-decoration-none" href="/assets/pdfs/qcEdu/german-qc-edu.pdf" target="_blank">
                             <Media>
-                                <Media left href="#">
+                                <Media left>
                                     <Media object src="/assets/images/nationalFlags/qc-edu-german.png" alt="German version" className="img-fluid admission-qc-edu-nf"/>
                                 </Media>
                                 <Media body>

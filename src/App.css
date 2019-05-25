@@ -11,11 +11,22 @@
 html {
   font-size: 75%;
 }
+.emsb-calendar-title-crumb {
+  display: none;
+}
+
+
 
 @media (min-width: 576px) { 
   html {
     /* font-size: 50%; */
     font-size: 75%;
+  }
+  .emsb-calendar-title-crumb {
+    display: inline;
+  }
+  .emsb-calendar-btn-right {
+    margin-left: 0;
   }
 }
 
@@ -24,17 +35,29 @@ html {
     /* font-size: 56.25%; */
     font-size: 100%;
   }
+  .emsb-calendar-title-crumb {
+    display: none;
+  }
+  .emsb-calendar-btn-right {
+    margin-left: -1rem;
+  }
 }
 
 @media (min-width: 992px) {
   html {
     font-size: 100%;
   }
+  .emsb-calendar-title-crumb {
+    display: inline;
+  }
 }
 
 @media (min-width: 1200px) {
   html {
     font-size: 100%;
+  }
+  .emsb-calendar-title-crumb {
+    display: inline;
   }
 }
 
@@ -125,6 +148,14 @@ body {
   margin-bottom: 2rem;
 }
 
+.emsb-calendar-icon {
+  width: 3.5rem;
+  height: auto;
+}
+
+
+
+
 .admission-checkmark {
   width: 2rem;
   height: auto;
@@ -139,12 +170,19 @@ body {
   height: auto;
 }
 
+.admission-qc-edu-title,
+.admission-text, 
+.emsb-calendar-text{
+  color: #222f3e;
+}
+
 .admission-qc-edu-title {
   font-size: 1.5rem;
   margin-top: 1.1rem;
-  color: #222f3e;
 }
-.admission-qc-edu-title:hover {
+.admission-qc-edu-title:hover,
+.admission-text:hover, 
+.emsb-calendar-text:hover{
   color: #2e86de;
 }
 .admission-qc-edu-title-german {
@@ -158,11 +196,7 @@ body {
 
 .admission-text {
   font-size: 1.2rem;
-  color: #222f3e;
   text-align: left;
-}
-.admission-text:hover {
-  color: #2e86de;
 }
 
 /* STUDENT pages */ 

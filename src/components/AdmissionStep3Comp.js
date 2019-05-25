@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Media } from 'reactstrap';
+import { Container, Row, Col, Media, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import QcEdu from './AdmissionRenderComp';
 
@@ -10,7 +10,7 @@ const AdmissionS3 = () => {
                 <div className="d-flex justify-content-center">
                     <Link to="/admission">
                         <Media className="mx-3">
-                            <Media left href="#">
+                            <Media left>
                                 <Media object src="/assets/images/admission-step-deselected.png" alt="selected" className="img-fluid"/>
                             </Media>
                             <Media body>
@@ -22,7 +22,7 @@ const AdmissionS3 = () => {
                     </Link>
                     <Link to="/admission/step2">
                         <Media className="mx-3">
-                            <Media left href="#">
+                            <Media left>
                                 <Media object src="/assets/images/admission-step-deselected.png" alt="selected" className="img-fluid"/>
                             </Media>
                             <Media body>
@@ -34,7 +34,7 @@ const AdmissionS3 = () => {
                     </Link>
                     <Link to="/admission/step3">
                         <Media className="mx-3">
-                            <Media left href="#">
+                            <Media left>
                                 <Media object src="/assets/images/admission-step-selected.png" alt="selected" className="img-fluid"/>
                             </Media>
                             <Media body>
@@ -51,28 +51,28 @@ const AdmissionS3 = () => {
                 <Row>
                     <Col md="6">  
                         <div className="d-flex flex-column align-items-start text-left mt-2">
-                            <p>After receiving the CAQ, the Custodian of the Student  (for those requiring custodianship refer to Home Stay) will come to the EMSB with:</p>
+                            <p className="admission-text">After receiving the CAQ, the Custodian of the Student  (for those requiring custodianship refer to Home Stay) will come to the EMSB with:</p>
                             <Media className="my-1">
-                                <Media left href="#">
+                                <Media left>
                                     <Media object src="/assets/images/admission-check.png" alt="checkmark" className="img-fluid admission-checkmark" />
                                 </Media>
-                                <Media body className="ml-2">
+                                <Media body className="ml-2 admission-text">
                                     <p>The CAQ</p>
                                 </Media>
                             </Media>
                             <Media className="mb-1">
-                                <Media left href="#">
+                                <Media left>
                                     <Media object src="/assets/images/admission-check.png" alt="checkmark" className="img-fluid admission-checkmark" />
                                 </Media>
-                                <Media body className="ml-2">
+                                <Media body className="ml-2 admission-text">
                                     <p>The birth certificate of the student showing parents names (in their mother tongue  and translated into either English or French).</p>
                                 </Media>
                             </Media>
                             <Media className="mb-1">
-                                <Media left href="#">
+                                <Media left>
                                     <Media object src="/assets/images/admission-check.png" alt="checkmark" className="img-fluid admission-checkmark" />
                                 </Media>
-                                <Media body className="ml-2">
+                                <Media body className="ml-2 admission-text">
                                     <p>A Certified Cheque or Money Order payable to the EMSB to cover the full period the student will attend school. </p>
                                 </Media>
                             </Media>
@@ -81,22 +81,26 @@ const AdmissionS3 = () => {
                     </Col>
                     <Col md="6">
                         <div className="d-flex flex-column align-items-start text-left my-3 pt-2 pl-3 border rounded">
-                            <Media>
-                                <Media left href="#">
-                                    <Media object src="/assets/images/admission-link.png" alt="link" className="img-fluid admission-link-icon" />
+                            <Button color="link" className="text-decoration-none" href="https://www.immigration-quebec.gouv.qc.ca/en/immigrate-settle/students/finding-out/education-costs.html" target="_blank">
+                                <Media>
+                                    <Media left>
+                                        <Media object src="/assets/images/admission-link.png" alt="link" className="img-fluid admission-link-icon" />
+                                    </Media>
+                                    <Media body className="ml-2 admission-text">
+                                        <p>Education Cost for Foreign Students in Quebec</p>
+                                    </Media>
                                 </Media>
-                                <Media body className="ml-2">
-                                    <p>Education Cost in Quebec</p>
+                            </Button>
+                            <Button color="link" className="text-decoration-none" href="http://canadahomestaynetwork.ca" target="_blank">
+                                <Media>
+                                    <Media left>
+                                        <Media object src="/assets/images/admission-link.png" alt="link" className="img-fluid admission-link-icon" />
+                                    </Media>
+                                    <Media body className="ml-2 admission-text">
+                                        <p>Canada Homestay Network</p>
+                                    </Media>
                                 </Media>
-                            </Media>
-                            <Media>
-                                <Media left href="#">
-                                    <Media object src="/assets/images/admission-link.png" alt="link" className="img-fluid admission-link-icon" />
-                                </Media>
-                                <Media body className="ml-2">
-                                    <p>Canada Homestay Network</p>
-                                </Media>
-                            </Media>
+                            </Button>
                         </div>
                     </Col>
                 </Row>
