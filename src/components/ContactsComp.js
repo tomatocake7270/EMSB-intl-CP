@@ -1,12 +1,153 @@
-import React, { useState } from 'react';
-import { Container, Row, Col, Media } from 'reactstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlusCircle, faMinusCircle, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { RenderStaffDropdown } from './ContactsRenderComp';
-import { postInfo, staffInfo } from '../shared/ContactDetails';
+import React, { useState } from 'react'
+import { Container, Row, Col, Media } from 'reactstrap'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlusCircle, faMinusCircle, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { RenderStaffDropdown } from './ContactsRenderComp'
+import { postInfo, staffInfo } from '../shared/ContactDetails'
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+//import RenderStaffInfo from './ContactRenderStaffComp'
 
 const Contacts = () => {
 
+    // Email copying alerts
+    const staffEmailAlert = withReactContent(Swal)
+
+    const copyStaff0Email = () => {
+        let staff0Name  = staffInfo.staff0.name
+        let staff0Email = staffInfo.staff0.email
+        //var text = "Example text to appear on clipboard";
+        navigator.clipboard.writeText(staff0Email).then(() => {
+            staffEmailAlert.fire({
+                type: 'success',
+                //title: 'Email address of Ms. Léveillé has copied on your clipboard.',
+                html: '<h4>Email address of <b>'+ staff0Name + '</b></h4><h5>has been copied to clipboard.</h5>',
+                showCloseButton: false,
+                showCancelButton: false,
+                focusConfirm: false,
+                showConfirmButton: true,
+                width: '40%',
+            })
+        }, (err) => {
+            console.error('Async: Could not copy text: ', err);
+        })
+    }
+    const copyStaff1Email = () => {
+        let staff1Name  = staffInfo.staff1.name
+        let staff1Email = staffInfo.staff1.email
+        //var text = "Example text to appear on clipboard";
+        navigator.clipboard.writeText(staff1Email).then(() => {
+            staffEmailAlert.fire({
+                type: 'success',
+                //title: 'Email address of Ms. Léveillé has copied on your clipboard.',
+                html: '<h4>Email address of <b>'+ staff1Name + '</b></h4><h5>has been copied to clipboard.</h5>',
+                showCloseButton: false,
+                showCancelButton: false,
+                focusConfirm: false,
+                showConfirmButton: true,
+                width: '40%',
+            })
+        }, (err) => {
+            console.error('Async: Could not copy text: ', err);
+        })
+    }
+    const copyStaff2Email = () => {
+        let staff2Name  = staffInfo.staff2.name
+        let staff2Email = staffInfo.staff2.email
+        //var text = "Example text to appear on clipboard";
+        navigator.clipboard.writeText(staff2Email).then(() => {
+            staffEmailAlert.fire({
+                type: 'success',
+                //title: 'Email address of Ms. Léveillé has copied on your clipboard.',
+                html: '<h4>Email address of <b>'+ staff2Name + '</b></h4><h5>has been copied to clipboard.</h5>',
+                showCloseButton: false,
+                showCancelButton: false,
+                focusConfirm: false,
+                showConfirmButton: true,
+                width: '40%',
+            })
+        }, (err) => {
+            console.error('Async: Could not copy text: ', err);
+        })
+    }
+    const copyStaff3Email = () => {
+        let staff3Name  = staffInfo.staff3.name
+        let staff3Email = staffInfo.staff3.email
+        //var text = "Example text to appear on clipboard";
+        navigator.clipboard.writeText(staff3Email).then(() => {
+            staffEmailAlert.fire({
+                type: 'success',
+                //title: 'Email address of Ms. Léveillé has copied on your clipboard.',
+                html: '<h4>Email address of <b>'+ staff3Name + '</b></h4><h5>has been copied to clipboard.</h5>',
+                showCloseButton: false,
+                showCancelButton: false,
+                focusConfirm: false,
+                showConfirmButton: true,
+                width: '40%',
+            })
+        }, (err) => {
+            console.error('Async: Could not copy text: ', err);
+        })
+    }
+    const copyStaff4Email = () => {
+        let staff4Name  = staffInfo.staff4.name
+        let staff4Email = staffInfo.staff4.email
+        //var text = "Example text to appear on clipboard";
+        navigator.clipboard.writeText(staff4Email).then(() => {
+            staffEmailAlert.fire({
+                type: 'success',
+                //title: 'Email address of Ms. Léveillé has copied on your clipboard.',
+                html: '<h4>Email address of <b>'+ staff4Name + '</b></h4><h5>has been copied to clipboard.</h5>',
+                showCloseButton: false,
+                showCancelButton: false,
+                focusConfirm: false,
+                showConfirmButton: true,
+                width: '40%',
+            })
+        }, (err) => {
+            console.error('Async: Could not copy text: ', err);
+        })
+    }
+    const copyStaff5Email = () => {
+        let staff5Name  = staffInfo.staff5.name
+        let staff5Email = staffInfo.staff5.email
+        //var text = "Example text to appear on clipboard";
+        navigator.clipboard.writeText(staff5Email).then(() => {
+            staffEmailAlert.fire({
+                type: 'success',
+                //title: 'Email address of Ms. Léveillé has copied on your clipboard.',
+                html: '<h4>Email address of <b>'+ staff5Name + '</b></h4><h5>has been copied to clipboard.</h5>',
+                showCloseButton: false,
+                showCancelButton: false,
+                focusConfirm: false,
+                showConfirmButton: true,
+                width: '40%',
+            })
+        }, (err) => {
+            console.error('Async: Could not copy text: ', err);
+        })
+    }
+    const copyStaff6Email = () => {
+        let staff6Name  = staffInfo.staff6.name
+        let staff6Email = staffInfo.staff6.email
+        //var text = "Example text to appear on clipboard";
+        navigator.clipboard.writeText(staff6Email).then(() => {
+            staffEmailAlert.fire({
+                type: 'success',
+                //title: 'Email address of Ms. Léveillé has copied on your clipboard.',
+                html: '<h4>Email address of <b>'+ staff6Name + '</b></h4><h5>has been copied to clipboard.</h5>',
+                showCloseButton: false,
+                showCancelButton: false,
+                focusConfirm: false,
+                showConfirmButton: true,
+                width: '40%',
+            })
+        }, (err) => {
+            console.error('Async: Could not copy text: ', err);
+        })
+    }
+
+    //Toggle Staff Dropdowns
     const [ staffState, setStaffState ] = useState({
         showStaff0: false,
         showStaff1: false,
@@ -72,8 +213,7 @@ const Contacts = () => {
         plusBtnClass1    = ["d-none", "contact-icon"].join(" ");
         minusBtnClass1   = "contact-icon";
         staff1Dropdown = (
-            <RenderStaffDropdown    //>id      = {staffInfo.staff1.id}
-                                    post    = {postInfo.adminTech.postDescription}
+            <RenderStaffDropdown    post    = {postInfo.adminTech.postDescription}
                                     schools = {<p>{staffInfo.staff1.schools}</p>}
                                     phone   = {staffInfo.staff1.phone}
                                     email   = {staffInfo.staff1.email} />
@@ -139,8 +279,8 @@ const Contacts = () => {
                                     </Media>
                                 </Media>
                                 <div className="d-flex justify-content-end contact-icon-group">
-                                    <FontAwesomeIcon icon={ faEnvelope } size="lg" className="contact-icon" />
-                                    <FontAwesomeIcon icon={ faPhone } size="lg" className="contact-icon" />
+                                    <FontAwesomeIcon icon={ faEnvelope } size="lg" className="contact-icon" onClick={copyStaff0Email} />
+                                    <FontAwesomeIcon icon={ faPhone } size="lg" className="contact-icon" onClick={toggleStaff0} />
                                     <FontAwesomeIcon icon={ faPlusCircle } size="lg" className={plusBtnClass0} onClick={toggleStaff0} />
                                     <FontAwesomeIcon icon={ faMinusCircle } size="lg" className={minusBtnClass0} onClick={toggleStaff0} />
                                 </div>
@@ -150,7 +290,6 @@ const Contacts = () => {
                                     {staff0Dropdown}
                                 </Col>
                             </Row>
-                            
                         </div>
                     </Container>
                 </div>
@@ -171,9 +310,10 @@ const Contacts = () => {
                                         </Media>
                                     </Media>
                                     <div className="d-flex justify-content-end contact-icon-group">
-                                        <FontAwesomeIcon icon={ faEnvelope } size="lg" className="contact-icon" />
-                                        <FontAwesomeIcon icon={ faPhone } size="lg" className="contact-icon" />
-                                        <FontAwesomeIcon icon={ faPlusCircle } size="lg" className={plusBtnClass1}  onClick={toggleStaff1} />
+                                        <FontAwesomeIcon icon={ faEnvelope } size="lg" className="contact-icon" onClick={copyStaff1Email} />
+                                        <FontAwesomeIcon icon={ faPhone } size="lg" className="contact-icon" onClick={toggleStaff1} />
+                                        {/* <RenderStaffInfo /> */}
+                                        <FontAwesomeIcon icon={ faPlusCircle } size="lg" className={plusBtnClass1} onClick={toggleStaff1} />
                                         <FontAwesomeIcon icon={ faMinusCircle } size="lg" className={minusBtnClass1} onClick={toggleStaff1} />
                                     </div>
                                 </div>
@@ -192,9 +332,9 @@ const Contacts = () => {
                                         </Media>
                                     </Media>
                                     <div className="d-flex justify-content-end contact-icon-group">
-                                        <FontAwesomeIcon icon={ faEnvelope } size="lg" className="contact-icon" />
-                                        <FontAwesomeIcon icon={ faPhone } size="lg" className="contact-icon" />
-                                        <FontAwesomeIcon icon={ faPlusCircle } size="lg" className={plusBtnClass2}  onClick={toggleStaff2} />
+                                        <FontAwesomeIcon icon={ faEnvelope } size="lg" className="contact-icon" onClick={copyStaff2Email} />
+                                        <FontAwesomeIcon icon={ faPhone } size="lg" className="contact-icon" onClick={toggleStaff2} />
+                                        <FontAwesomeIcon icon={ faPlusCircle } size="lg" className={plusBtnClass2} onClick={toggleStaff2} />
                                         <FontAwesomeIcon icon={ faMinusCircle } size="lg" className={minusBtnClass2} onClick={toggleStaff2} />
                                     </div>
                                 </div>
@@ -220,8 +360,8 @@ const Contacts = () => {
                                         </Media>
                                     </Media>
                                     <div className="d-flex justify-content-end contact-icon-group">
-                                        <FontAwesomeIcon icon={ faEnvelope } size="lg" className="contact-icon" />
-                                        <FontAwesomeIcon icon={ faPhone } size="lg" className="contact-icon" />
+                                        <FontAwesomeIcon icon={ faEnvelope } size="lg" className="contact-icon" onClick={copyStaff3Email} />
+                                        <FontAwesomeIcon icon={ faPhone } size="lg" className="contact-icon" onClick={toggleStaff3} />
                                         <FontAwesomeIcon icon={ faPlusCircle } size="lg" className={plusBtnClass3} onClick={toggleStaff3} />
                                         <FontAwesomeIcon icon={ faMinusCircle } size="lg" className={minusBtnClass3} onClick={toggleStaff3} />
                                     </div>
@@ -241,8 +381,8 @@ const Contacts = () => {
                                         </Media>
                                     </Media>
                                     <div className="d-flex justify-content-end contact-icon-group">
-                                        <FontAwesomeIcon icon={ faEnvelope } size="lg" className="contact-icon" />
-                                        <FontAwesomeIcon icon={ faPhone } size="lg" className="contact-icon" />
+                                        <FontAwesomeIcon icon={ faEnvelope } size="lg" className="contact-icon" onClick={copyStaff4Email} />
+                                        <FontAwesomeIcon icon={ faPhone } size="lg" className="contact-icon" onClick={toggleStaff4} />
                                         <FontAwesomeIcon icon={ faPlusCircle } size="lg" className={plusBtnClass4} onClick={toggleStaff4} />
                                         <FontAwesomeIcon icon={ faMinusCircle } size="lg" className={minusBtnClass4} onClick={toggleStaff4} />
                                     </div>
@@ -262,14 +402,15 @@ const Contacts = () => {
                                         </Media>
                                     </Media>
                                     <div className="d-flex justify-content-end contact-icon-group">
-                                        <FontAwesomeIcon icon={ faEnvelope } size="lg" className="contact-icon" />
-                                        <FontAwesomeIcon icon={ faPhone } size="lg" className="contact-icon" />
+                                        <FontAwesomeIcon icon={ faEnvelope } size="lg" className="contact-icon" onClick={copyStaff5Email} />
+                                        <FontAwesomeIcon icon={ faPhone } size="lg" className="contact-icon" onClick={toggleStaff5} />
                                         <FontAwesomeIcon icon={ faPlusCircle } size="lg" className={plusBtnClass5} onClick={toggleStaff5} />
                                         <FontAwesomeIcon icon={ faMinusCircle } size="lg" className={minusBtnClass5} onClick={toggleStaff5} />
                                     </div>
                                 </div>
 
                                 { staff5Dropdown }
+                                
                             </div>
                         </Container>
                     </Col>

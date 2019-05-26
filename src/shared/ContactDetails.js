@@ -10,15 +10,18 @@ export const postInfo = {
     }
 }
 
+
 export const staffInfo = {
     staff0: {
         id: 0,
+        name: "Ms. Léveillé",
         schools: "",
         phone: "(514) 483-7200 ext. 7483",
         email: "sleveille@emsb.qc.ca"
     },
     staff1: { //Natasha
         id: 1,
+        name: "Ms. Gillespie",
         schools: [
             "F.A.C.E. School, ",
             "James Lyng High School, ",
@@ -32,6 +35,7 @@ export const staffInfo = {
     },
     staff2: { //Jeanine
         id: 2,
+        name: "Ms. Lason",
         schools: [
             "LaurenHill Academy, ",
             "LaurenHill Junior Campus, ",
@@ -46,6 +50,7 @@ export const staffInfo = {
     },
     staff3: { //Charles
         id: 3,
+        name: "Mr. Ai",
         schools: [
             "F.A.C.E. School, ",
             "James Lyng High School, ",
@@ -60,6 +65,7 @@ export const staffInfo = {
     },
     staff4: { //Ping
         id: 4,
+        name: "Ms. Ji",
         schools: [
             "LaurenHill Junior Campus, ",
             "Westmount High School"
@@ -69,6 +75,7 @@ export const staffInfo = {
     },
     staff5: { //Angela
         id: 5,
+        name: "Ms. Kim",
         schools: [
             "John F. Kennedy High School, ",
             "LaurenHill Academy, ",
