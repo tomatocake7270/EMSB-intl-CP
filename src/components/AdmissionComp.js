@@ -11,15 +11,14 @@ const Admission = () => {
 
     const chooseApplyPortal = () => {
         applyBtnAlert.fire({
-            title: 'Apply as ...',
-            html: '<div class="mt-2 mb-3"><a role="button" class="btn btn-primary" target="_blank" href="https://mytruenorth.ca/famportalindex.php?db=englishmontreal"><b>Parent</b> or Student</a>' +
+            title: 'Apply as',
+            html: '<div class="mt-2 mb-3"><a role="button" class="btn btn-primary" target="_blank" href="https://mytruenorth.ca/famportalindex.php?db=englishmontreal"><b>Parent</b> / Student</a>' +
                   '<span>&nbsp;&nbsp;&nbsp;</span>' + 
-                  '<a role="button" class="btn btn-info" target="_blank" href="https://mytruenorth.ca/appagentindex.php?db=englishmontreal">Agent or Agency</a></div>',              
+                  '<a role="button" class="btn btn-info" target="_blank" href="https://mytruenorth.ca/appagentindex.php?db=englishmontreal">Agent / Agency</a></div>',              
             showCloseButton: false,
             showCancelButton: false,
             focusConfirm: false,
             showConfirmButton: false,
-            width: '40%',
         })
     }
     

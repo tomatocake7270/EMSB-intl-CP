@@ -1,8 +1,8 @@
-import React from 'react';
-import { UncontrolledCarousel, Container, Row, Col, Jumbotron, Button} from 'reactstrap';
-import Announce from './AnnounceComp';
-import Gallery from './HomeGalleryComp';
-import Stories from './HomeStoriesComp';
+import React from 'react'
+import { UncontrolledCarousel, Container, Row, Col, Jumbotron, Button} from 'reactstrap'
+import Announce from './AnnounceComp'
+import Gallery from './HomeGalleryComp'
+import Stories from './HomeStoriesComp'
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 
@@ -24,19 +24,19 @@ const items = [
     }
   ];
 
-  const applyBtnAlert = withReactContent(Swal)
+    const applyBtnAlert = withReactContent(Swal)
 
     const chooseApplyPortal = () => {
         applyBtnAlert.fire({
-            title: 'Apply as ...',
-            html: '<a role="button" class="btn btn-primary" target="_blank" href="https://mytruenorth.ca/famportalindex.php?db=englishmontreal"><b>Parent</b> or Student</a>' +
-                  '<span>&nbsp;&nbsp;&nbsp;</span>' + 
-                  '<a role="button" class="btn btn-info" target="_blank" href="https://mytruenorth.ca/appagentindex.php?db=englishmontreal">Agent or Agency</a>',              
+            title: 'Apply as',
+            html: '<div class="mt-2 mb-3"><a role="button" class="btn btn-primary" target="_blank" href="https://mytruenorth.ca/famportalindex.php?db=englishmontreal"><b>Parent</b> / Student</a>' +
+                    '<span>&nbsp;&nbsp;&nbsp;</span>' + 
+                    '<a role="button" class="btn btn-info" target="_blank" href="https://mytruenorth.ca/appagentindex.php?db=englishmontreal">Agent / Agency</a></div>',                
             showCloseButton: false,
             showCancelButton: false,
             focusConfirm: false,
             showConfirmButton: false,
-            width: '40%',
+            padding: '2.5em'
         })
     }
 
