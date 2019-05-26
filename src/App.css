@@ -351,13 +351,18 @@ ul, .ul-school-mission-list {
 .admin-tag-btn {
   padding: 0 1rem;
   color: black;
-  /* border-color: #2e86de; */
 }
 
-.admin-tag-text {
+.admin-tag-text,
+.admin-tag-text-active {
   font-size: 1.2rem;
   margin: 0;
-  
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #8395a7;
+}
+.admin-tag-text-active {
+  color: #1b1464;
 }
 
 a:link{

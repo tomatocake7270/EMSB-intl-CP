@@ -14,8 +14,26 @@ const AdminAnnounce = () => {
         showEmsbIntlRows: false
     })
 
+    const [ tagClassState, setTagClassState ] = useState({
+        tag1Class: "admin-tag-text-active",
+        tag2Class: "admin-tag-text",
+        tag3Class: "admin-tag-text",
+        tag1Border: "border-bottom border-danger",
+        tag2Border: "border-bottom",
+        tag3Border: "border-bottom",
+    })
+    
+
     // Display all anno
     const setAllRows = () => {
+        setTagClassState({
+            tag1Class: "admin-tag-text-active",
+            tag2Class: "admin-tag-text",
+            tag3Class: "admin-tag-text",
+            tag1Border: "border-bottom border-danger",
+            tag2Border: "border-bottom",
+            tag3Border: "border-bottom",
+        })
         setRowState({ 
             showAllRows: true,
             showEmsbRows: false,
@@ -44,6 +62,14 @@ const AdminAnnounce = () => {
 
     const setEmsbRows = () => {
         setEmsbState({ emsbAnnounces: emsbFilter })
+        setTagClassState({
+            tag1Class: "admin-tag-text",
+            tag2Class: "admin-tag-text-active",
+            tag3Class: "admin-tag-text",
+            tag1Border: "border-bottom",
+            tag2Border: "border-bottom border-danger",
+            tag3Border: "border-bottom",
+        })
         setRowState({ 
             showAllRows: false,
             showEmsbRows: true,
@@ -69,6 +95,14 @@ const AdminAnnounce = () => {
 
     const setEmsbIntlRows = () => {
         setEmsbIntlState({ esmbIntlAnnounces: emsbIntlFilter })
+        setTagClassState({
+            tag1Class: "admin-tag-text",
+            tag2Class: "admin-tag-text",
+            tag3Class: "admin-tag-text-active",
+            tag1Border: "border-bottom",
+            tag2Border: "border-bottom",
+            tag3Border: "border-bottom border-danger",
+        })
         setRowState({ 
             showAllRows: false,
             showEmsbRows: false,
@@ -84,6 +118,7 @@ const AdminAnnounce = () => {
     })
 
     let tableRows = null;
+    
     if (rowState.showAllRows) {
         tableRows = allRows
     } else if (rowState.showEmsbRows) {
@@ -127,19 +162,19 @@ const AdminAnnounce = () => {
 
                 {/* Tabs row */}
                 <div className="d-flex justify-content-start admin-right-tags">
-                    <div className="border-bottom border-danger admin-tag-activate">
+                    <div className={tagClassState.tag1Border}>
                         <Button color="link" className="admin-tag-btn text-decoration-none" onClick={setAllRows}>
-                            <p className="admin-tag-text lato-font bold-font dark-blue-font">All</p>
+                            <p className={tagClassState.tag1Class}>All</p>
                         </Button>
                     </div>
-                    <div className="border-bottom">
+                    <div className={tagClassState.tag2Border}>
                         <Button color="link" className="admin-tag-btn text-decoration-none" onClick={setEmsbRows}>
-                            <p className="admin-tag-text lato-font light-grey-font">EMSB</p>
+                            <p className={tagClassState.tag2Class}>EMSB</p>
                         </Button>
                     </div>
-                    <div className="border-bottom">
+                    <div className={tagClassState.tag3Border}>
                         <Button color="link" className="admin-tag-btn text-decoration-none" onClick={setEmsbIntlRows}>
-                            <p className="admin-tag-text lato-font light-grey-font">EMSB International</p>
+                            <p className={tagClassState.tag3Class}>EMSB International</p>
                         </Button>
                     </div>
                 </div>
