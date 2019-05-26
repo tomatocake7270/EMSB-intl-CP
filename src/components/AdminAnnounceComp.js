@@ -8,9 +8,23 @@ import { faSearch, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const AdminAnnounce = () => {
 
+    const [ rowState, setRowState ] = useState({
+        showAllRows: true,
+        showEmsbRows: false,
+        showEmsbIntlRows: false
+    })
+
+    // Display all anno
+    const setAllRows = () => {
+        setRowState({ 
+            showAllRows: true,
+            showEmsbRows: false,
+            showEmsbIntlRows: false
+        })
+    }
     const [ annoState, setAnnoState ] = useState({
         announcements: allAnnouncements
-    });
+    })    
 
     const allRows = annoState.announcements.map(anno => {
         return (
@@ -18,6 +32,66 @@ const AdminAnnounce = () => {
                                 announcements = {anno} />
         )
     })
+
+    // Filter EMSB anno
+    const [ emsbState, setEmsbState ] = useState({
+        emsbAnnounces: []
+    })
+
+    const emsbFilter = annoState.announcements.filter(anno => {
+        return anno.sender === "EMSB"
+    })
+
+    const setEmsbRows = () => {
+        setEmsbState({ emsbAnnounces: emsbFilter })
+        setRowState({ 
+            showAllRows: false,
+            showEmsbRows: true,
+            showEmsbIntlRows: false
+        })
+    }
+    
+    const emsbRows = emsbState.emsbAnnounces.map(anno => {
+        return (
+            <RenderAnnounceRow  key = {anno.announceId}
+                                announcements = {anno} />
+        )
+    })
+
+    //Filter EMSB-intl anno
+    const [ emsbIntlState, setEmsbIntlState ] = useState({
+        esmbIntlAnnounces: []
+    })
+    
+    const emsbIntlFilter = annoState.announcements.filter(anno => {
+        return anno.sender === "EMSB-Intl"
+    })
+
+    const setEmsbIntlRows = () => {
+        setEmsbIntlState({ esmbIntlAnnounces: emsbIntlFilter })
+        setRowState({ 
+            showAllRows: false,
+            showEmsbRows: false,
+            showEmsbIntlRows: true
+        })
+    }
+
+    const emsbIntlRows = emsbIntlState.esmbIntlAnnounces.map(anno => {
+        return (
+            <RenderAnnounceRow key = {anno.announceId}
+                               announcements = {anno} />
+        )
+    })
+
+    let tableRows = null;
+    if (rowState.showAllRows) {
+        tableRows = allRows
+    } else if (rowState.showEmsbRows) {
+        tableRows = emsbRows
+    } else if (rowState.showEmsbIntlRows) {
+        tableRows = emsbIntlRows
+    }
+
     
     return (
         <div className="admin-content d-flex justify-content-start">
@@ -54,17 +128,17 @@ const AdminAnnounce = () => {
                 {/* Tabs row */}
                 <div className="d-flex justify-content-start admin-right-tags">
                     <div className="border-bottom border-danger admin-tag-activate">
-                        <Button color="link" className="admin-tag-btn text-decoration-none">
+                        <Button color="link" className="admin-tag-btn text-decoration-none" onClick={setAllRows}>
                             <p className="admin-tag-text lato-font bold-font dark-blue-font">All</p>
                         </Button>
                     </div>
                     <div className="border-bottom">
-                        <Button color="link" className="admin-tag-btn text-decoration-none">
+                        <Button color="link" className="admin-tag-btn text-decoration-none" onClick={setEmsbRows}>
                             <p className="admin-tag-text lato-font light-grey-font">EMSB</p>
                         </Button>
                     </div>
                     <div className="border-bottom">
-                        <Button color="link" className="admin-tag-btn text-decoration-none">
+                        <Button color="link" className="admin-tag-btn text-decoration-none" onClick={setEmsbIntlRows}>
                             <p className="admin-tag-text lato-font light-grey-font">EMSB International</p>
                         </Button>
                     </div>
@@ -83,7 +157,7 @@ const AdminAnnounce = () => {
                     </tr>
                     </thead>
                     <tbody>
-                        {allRows}
+                        {tableRows}
                     </tbody>
                 </Table>
             </div>
