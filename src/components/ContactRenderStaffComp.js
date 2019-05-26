@@ -1,4 +1,4 @@
-//Temporarily unfinished
+//This component is temporarily useless
 
 import React from 'react'
 import { staffInfo } from '../shared/ContactDetails'
@@ -8,7 +8,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 const RenderStaffInfo = (props) => {
-
 
     const staffEmailAlert = withReactContent(Swal)
 

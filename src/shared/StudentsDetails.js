@@ -131,7 +131,7 @@ export const listInfo = {
         linkUrl: "#",
         iconUrl: "/assets/images/studyAssist/study-rosetta-demo.png",
         altText: "Rosetta demo",
-        heading: "Video Video Demo"
+        heading: "View Video Demo"
     },
     rosettaItem2: {
         linkUrl: "#",
