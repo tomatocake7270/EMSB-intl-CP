@@ -127,25 +127,25 @@ const Contacts = () => {
             console.error('Async: Could not copy text: ', err);
         })
     }
-    const copyStaff6Email = () => {
-        let staff6Name  = staffInfo.staff6.name
-        let staff6Email = staffInfo.staff6.email
-        //var text = "Example text to appear on clipboard";
-        navigator.clipboard.writeText(staff6Email).then(() => {
-            staffEmailAlert.fire({
-                type: 'success',
-                //title: 'Email address of Ms. Léveillé has copied on your clipboard.',
-                html: '<h4>Email address of <b>'+ staff6Name + '</b></h4><h5>has been copied to clipboard.</h5>',
-                showCloseButton: false,
-                showCancelButton: false,
-                focusConfirm: false,
-                showConfirmButton: true,
-                width: '40%',
-            })
-        }, (err) => {
-            console.error('Async: Could not copy text: ', err);
-        })
-    }
+    // const copyStaff6Email = () => {
+    //     let staff6Name  = staffInfo.staff6.name
+    //     let staff6Email = staffInfo.staff6.email
+    //     //var text = "Example text to appear on clipboard";
+    //     navigator.clipboard.writeText(staff6Email).then(() => {
+    //         staffEmailAlert.fire({
+    //             type: 'success',
+    //             //title: 'Email address of Ms. Léveillé has copied on your clipboard.',
+    //             html: '<h4>Email address of <b>'+ staff6Name + '</b></h4><h5>has been copied to clipboard.</h5>',
+    //             showCloseButton: false,
+    //             showCancelButton: false,
+    //             focusConfirm: false,
+    //             showConfirmButton: true,
+    //             width: '40%',
+    //         })
+    //     }, (err) => {
+    //         console.error('Async: Could not copy text: ', err);
+    //     })
+    // }
 
     //Toggle Staff Dropdowns
     const [ staffState, setStaffState ] = useState({

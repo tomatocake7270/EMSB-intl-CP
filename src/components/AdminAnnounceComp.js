@@ -40,7 +40,7 @@ const AdminAnnounce = () => {
             showEmsbIntlRows: false
         })
     }
-    const [ annoState, setAnnoState ] = useState({
+    const [ annoState ] = useState({
         announcements: allAnnouncements
     })    
 
